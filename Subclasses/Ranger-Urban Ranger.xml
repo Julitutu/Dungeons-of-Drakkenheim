@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Ranger-Urban Ranger.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Ranger-Urban Ranger.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Ranger-Urban%20Ranger.xml" />
 		</update>
 	</info>
 	<element name="Urban Ranger" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_URBAN_RANGER">
