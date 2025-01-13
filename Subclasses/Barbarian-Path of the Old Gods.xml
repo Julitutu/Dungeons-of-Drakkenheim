@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Barbarian-Path of the Old Gods.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Barbarian-Path%20of%20the%20Old%20Gods.xml"" />
+			<file name="Barbarian-Path of the Old Gods.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Barbarian-Path%20of%20the%20Old%20Gods.xml" />
 		</update>
 	</info>
 	<element name="Path of the Old Gods" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_BARBARIAN_ARCHETYPE_OLD_GODS">
