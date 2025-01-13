@@ -11,14 +11,22 @@
     <!-- Continental Nobility -->
 	<element name="Continental Nobility" type="Background" source="Dungeons of Drakkenheim" id="ID_DOD_BACKGROUND_CONTINENTAL_NOBILITY">
 		<prerequisite>Requirements: Any class except sorcerer, warlock, or wizard</prerequisite>
-		<requirements>!ID_WOTC_PHB_CLASS_SORCERER||!ID_WOTC_PHB_CLASS_WARLOCK||!ID_WOTC_PHB_CLASS_WIZARD</requirements>
+		<requirements>![level:sorcerer:1]||![level:warlock:1]||![level:wizard:1]</requirements>
 		<description>
 			<p>You are the scion of a noble household. Whether you hail from Caspia, Elyria, or Westemär, the fall of Drakkenheim has either adversely impacted your family’s fortunes, or created a tantalizing opportunity to increase your political power and influence.</p>
 			<p class="indent"><b>Skill Proficiencies:</b> Two of the following: Persuasion, Athletics, History, or Intimidation</p>
 			<p class="indent"><b>Languages:</b> Two of your choice</p>
 			<p class="indent"><b>Equipment:</b> A signet ring or brooch bearing your family crest, a cape in the colours of your house, a set of fine clothes, and a pouch containing 25 gp.</p>
 			<div element="ID_DOD_BACKGROUND_FEATURE_NOBLE_CONFIDENCE" />
-			<h5>DEFINING EVENT</h5>
+		</description>
+		<setters>
+			<set name="short">Choose two from Persuasion, Athletics, History, or Intimidation. Two languages. Noble Confidence feature.</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Continental Nobility)" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION" number="2" />
+			<select type="Language" name="Language (Continental Nobility)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_NOBLE_CONFIDENCE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 			<select type="List" name="Defining Event (Continental Nobility)" id="ID_DOD_LIST_CONTINENTAL_NOBILITY_DEFINING_EVENT">
 				<item id="1">I was well celebrated in my city as a slayer of a great troll.</item>
 				<item id="2">I witnessed the death of my family during the civil war. They were targets for their ties to the von Kessel name.</item>
@@ -29,9 +37,6 @@
 				<item id="7">I am related, not to a king or queen, but to a noble figure who sat in the small council and made important decisions for their represented house.</item>
 				<item id="8">My family lost everything in the destruction of Drakkenheim. We are noble only in name, no longer in standing.</item>
 			</select>
-			
-			<h5>SUGGESTED CHARACTERISTICS</h5>
-			<p><b>Personality Trait (1d8)</b></p>
 			<select type="List" name="Personality Trait (Continental Nobility)" id="ID_DOD_LIST_CONTINENTAL_NOBILITY_PERSONALITY_TRAIT">
 				<item id="1">I consider myself a renowned monster slayer, and like to remind everyone of the many accomplishments I hold to my name.</item>
 				<item id="2">I keep family traditions close. Honour and family are amongst the most important things in the world, and I cherish them.</item>
@@ -42,8 +47,6 @@
 				<item id="7">I may be of noble birth, but have lived life on the road for some time. I am more than willing to share what I have with others, as I am no better or worse than anyone else.</item>
 				<item id="8">There is no challenge I can’t face. I heard about the horrors and monsters of this world, and I am what they fear the most.</item>
 			</select>
-			
-			<p><b>Ideal (1d6)</b></p>
 			<select type="List" name="Ideal (Continental Nobility)" id="ID_DOD_LIST_CONTINENTAL_NOBILITY_IDEAL">
 				<item id="1"><b>Respect.</b> I am a respected member of my family, and I expect what remains of Drakkenheim’s nobility and royal line to acknowledge my standing. (Lawful)</item>
 				<item id="2"><b>Responsibility.</b> It is my responsibility as a representative of my noble line to remain cordial, and diplomatic in dealings with the various high ranking members of Drakkenheim’s society. (Good)</item>
@@ -52,8 +55,6 @@
 				<item id="5"><b>Glory.</b> I must claim my victories and prove myself in battle. (Any)</item>
 				<item id="6"><b>Family.</b> Blood is thicker than water and I will fight to defend my family’s honour. (Good)</item>
 			</select>
-			
-			<p><b>Bond (1d6)</b></p>
 			<select type="List" name="Bond (Continental Nobility)" id="ID_DOD_LIST_CONTINENTAL_NOBILITY_BOND">
 				<item id="1">I must prove myself as a great warrior for my house and my people.</item>
 				<item id="2">My family was once bound to the royal family of Westemär, I must ensure we remain bound to whoever takes the throne.</item>
@@ -62,8 +63,6 @@
 				<item id="5">I am destined to rule, as my ancestors before me have.</item>
 				<item id="6">I have been sent unwillingly on a diplomatic mission to Drakkenheim. I am to gain political standing in these crumbling ruins.</item>
 			</select>
-			
-			<p><b>Flaw (1d6)</b></p>
 			<select type="List" name="Flaw (Continental Nobility)" id="ID_DOD_LIST_CONTINENTAL_NOBILITY_FLAW">
 				<item id="1">I boast about my own triumphs, and belittle the accomplishments of others.</item>
 				<item id="2">Bound by honor, I can never back down from a challenge, nor can I let those who undervalue my name go unchallenged.</item>
@@ -72,15 +71,6 @@
 				<item id="5">I’m never wrong. Even if I was, I would never admit it.</item>
 				<item id="6">I was forced to lead, but I am very far out of my depth and desperately hoping people do not catch on that I don’t know what I am doing here.</item>
 			</select>
-		</description>
-		<setters>
-			<set name="short">Choose two from Persuasion, Athletics, History, or Intimidation. Two languages. Noble Confidence feature.</set>
-		</setters>
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Continental Nobility)" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION" number="2" />
-			<select type="Language" name="Language (Continental Nobility)" number="2" supports="Standard||Exotic" />
-			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_NOBLE_CONFIDENCE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
-			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 		</rules>
 	</element>
 
@@ -102,7 +92,7 @@
     <!-- Mageborn -->
 	<element name="Mageborn" type="Background" source="Dungeons of Drakkenheim" id="ID_DOD_BACKGROUND_MAGEBORN">
 		<prerequisite>Requirement: You must be a bard, sorcerer, warlock, or wizard</prerequisite>
-		<requirements>ID_WOTC_PHB_CLASS_BARD||ID_WOTC_PHB_CLASS_SORCERER||ID_WOTC_PHB_CLASS_WARLOCK||ID_WOTC_PHB_CLASS_WIZARD</requirements>
+		<requirements>[level:bard:1]||[level:sorcerer:1]||[level:warlock:1]||[level:wizard:1]||[level:apothecary:1]</requirements>
 		<description>
 			<p>You manifested arcane magical abilities at a young age, and were taken into the guardianship of the Amethyst Academy. You learned to harness your magic at a secluded magical school. After you came of age and completed your apprenticeship, you became free to pursue your own interests, but you must respect the laws and customs that govern all those with spellcasting powers. Under the Edicts of Lumen, mages are disinherited of any noble titles, and cannot own land.</p>
 			<p class="indent"><b>Skill Proficiencies:</b> Two of the following: Arcana, Deception, Investigation, Perception</p>
@@ -110,7 +100,16 @@
 			<p class="indent"><b>Equipment:</b> A gnarled wand made of wood, a duster jacket, a satchel for material components and potions, an amulet or other trinket of importance to you</p>
 			<p class="indent"><b>Tool Proficiencies:</b> Either calligraphers’ supplies or alchemists’ supplies</p>
 			<div element="ID_DOD_BACKGROUND_FEATURE_BOOKWORM" />
-			<h5>MAGEBORN QUIRK</h5>
+		</description>
+		<setters>
+			<set name="short">Choose two from Arcana, Deception, Investigation, or Perception. Draconic or Elven language. Either calligraphers’ supplies or alchemists’ supplies. Bookworm feature.</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Mageborn)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION" number="2" />
+			<select type="Language" name="Language (Mageborn)" supports="Draconic||Elven" number="1" />
+			<select type="Proficiency" name="Tool Proficiency (Mageborn)" supports="ID_PROFICIENCY_TOOL_CALLIGRAPHERS_SUPPLIES||ID_PROFICIENCY_TOOL_ALCHEMISTS_SUPPLIES" number="1" />
+			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_BOOKWORM" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 			<select type="List" name="Mageborn Quirk" id="ID_DOD_LIST_MAGEBORN_QUIRK">
 				<item id="1">My eyes are two different colours.</item>
 				<item id="2">Whenever I cast a spell, my voice echoes and an unknown wind seems to blow around me.</item>
@@ -121,9 +120,6 @@
 				<item id="7">I speak to beings from other planes of existence who manifest as simple creatures before me.</item>
 				<item id="8">I have a birthmark in a unique shape that appears every day for 2 and a half hours, then vanishes.</item>
 			</select>
-			
-			<h5>SUGGESTED CHARACTERISTICS</h5>
-			<p><b>Personality Trait (1d8)</b></p>
 			<select type="List" name="Personality Trait (Mageborn)" id="ID_DOD_LIST_MAGEBORN_PERSONALITY_TRAIT">
 				<item id="1">I idolize one of the archmages of the Academy and hope to prove myself to them in time.</item>
 				<item id="2">Nothing will get between me and my goals. When people say something I care about is impossible, I prove them wrong.</item>
@@ -134,8 +130,6 @@
 				<item id="7">Everyone is always so serious - we all die in the end, might as well enjoy the ride.</item>
 				<item id="8">I always push myself to be the best at whatever it is I set out to do.</item>
 			</select>
-			
-			<p><b>Ideal (1d6)</b></p>
 			<select type="List" name="Ideal (Mageborn)" id="ID_DOD_LIST_MAGEBORN_IDEAL">
 				<item id="1"><b>Respect.</b> My powers are a blessing and a curse, and I work diligently to show people not to fear magic. (Good)</item>
 				<item id="2"><b>Knowledge.</b> I left the Academy on good terms to work at one of the many historical institutes of the world, hoping that my love for books and history would be of use. (Any)</item>
@@ -154,8 +148,6 @@
 				<item id="5">My nightmares have guided me to Drakkenheim. I must investigate these visions.</item>
 				<item id="6">I come from a long line of wizards, my exit from the Academy was highly upsetting to them and I need to earn my way back into their favour, even if it means risking my life in Drakkenheim.</item>
 			</select>
-			
-			<p><b>Flaw (1d6)</b></p>
 			<select type="List" name="Flaw (Mageborn)" id="ID_DOD_LIST_MAGEBORN_FLAW">
 				<item id="1">I walk straight into danger. What’s the worst that could happen?</item>
 				<item id="2">I believe my plan is always far superior to everyone else’s.</item>
@@ -164,16 +156,6 @@
 				<item id="5">I get angry quickly, and cause more harm than good with my magic when I get mad.</item>
 				<item id="6">I can’t get enough delerium. I want the power for myself.</item>
 			</select>
-		</description>
-		<setters>
-			<set name="short">Choose two from Arcana, Deception, Investigation, or Perception. Draconic or Elven language. Either calligraphers’ supplies or alchemists’ supplies. Bookworm feature.</set>
-		</setters>
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Mageborn)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION" number="2" />
-			<select type="Language" name="Language (Mageborn)" supports="Draconic||Elven" number="1" />
-			<select type="Proficiency" name="Tool Proficiency (Mageborn)" supports="ID_PROFICIENCY_TOOL_CALLIGRAPHERS_SUPPLIES||ID_PROFICIENCY_TOOL_ALCHEMISTS_SUPPLIES" number="1" />
-			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_BOOKWORM" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
-			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 		</rules>
 	</element>
 
@@ -200,7 +182,15 @@
 			<p class="indent"><b>Equipment:</b> A set of pale robes, a small chip of delerium encased in glass, a walking stick, an amulet with a symbol of your chosen god, a small book of religious text</p>
 			<p class="indent"><b>Languages:</b> Any two of your choice</p>
 			<div element="ID_DOD_BACKGROUND_FEATURE_GUIDED_BY_FAITH" />
-			<h5>MISSIONARY LIFE</h5>
+		</description>
+		<setters>
+			<set name="short">Choose two from History, Religion, Arcana, or Nature. Two languages. Guided by Faith feature.</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Devoted Missionary)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_NATURE" number="2" />
+			<select type="Language" name="Language (Devoted Missionary)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_GUIDED_BY_FAITH" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 			<select type="List" name="Missionary Life" id="ID_DOD_LIST_DEVOTED_MISSIONARY_MISSIONARY_LIFE">
 				<item id="1">I was on a quest of self-enlightenment.</item>
 				<item id="2">I ritualistically surround myself with lit candles and ancient texts when I rest.</item>
@@ -211,9 +201,6 @@
 				<item id="7">I broke my vows to my faith and was exiled. I seek redemption.</item>
 				<item id="8">I must prove myself worthy to my faith and its purpose, no matter the amount of blood spilled or lives lost.</item>
 			</select>
-			
-			<h5>SUGGESTED CHARACTERISTICS</h5>
-			<p><b>Personality Trait (1d8)</b></p>
 			<select type="List" name="Personality Trait (Devoted Missionary)" id="ID_DOD_LIST_DEVOTED_MISSIONARY_PERSONALITY_TRAIT">
 				<item id="1">I empathize with those who do not follow the path of light. Creatures of all types can be brought back to the path of righteousness and are often suffering and in great pain.</item>
 				<item id="2">I believe in the words of my religion and quote its texts and scriptures as often as I can.</item>
@@ -224,8 +211,6 @@
 				<item id="7">I have extremely strict etiquette and manners for interactions and tasks, and I refuse to stray from them.</item>
 				<item id="8">I am working on my thesis of religious ongoings in the world and excitedly discuss the nuances of these ideas with anyone and everyone.</item>
 			</select>
-			
-			<p><b>Ideal (1d6)</b></p>
 			<select type="List" name="Ideal (Devoted Missionary)" id="ID_DOD_LIST_DEVOTED_MISSIONARY_IDEAL">
 				<item id="1"><b>Logic.</b> Emotions must not cloud our judgement on what is right or true. (Lawful)</item>
 				<item id="2"><b>Self.</b> My religious journey is that of discovering myself. If I can obtain that, there is nothing left to know. (Any)</item>
@@ -234,8 +219,6 @@
 				<item id="5"><b>Power.</b> The gods have granted me divine powers and I must use them to make those who do not worship as strongly as I see the divine light and understand that I am the one true speaker of my faith. (Chaotic)</item>
 				<item id="6"><b>Peace.</b> I do not like to be part of conflicts, rather a neutral voice of reason to all sides. (Neutral)</item>
 			</select>
-			
-			<p><b>Bond (1d6)</b></p>
 			<select type="List" name="Bond (Devoted Missionary)" id="ID_DOD_LIST_DEVOTED_MISSIONARY_BOND">
 				<item id="1">Nothing is more important than my church and what it represents.</item>
 				<item id="2">I joined my religion to hide from a past I would rather forget.</item>
@@ -244,8 +227,6 @@
 				<item id="5">Everything I do is for the good of the common people.</item>
 				<item id="6">I seek to preserve the ancient texts and artefact of my religion.</item>
 			</select>
-			
-			<p><b>Flaw (1d6)</b></p>
 			<select type="List" name="Flaw (Devoted Missionary)" id="ID_DOD_LIST_DEVOTED_MISSIONARY_FLAW">
 				<item id="1">I judge others harshly and believe my path to be the one true path.</item>
 				<item id="2">I believe in the words of my religion so strongly that I follow them without question.</item>
@@ -254,15 +235,6 @@
 				<item id="5">This is my first taste of life outside my religion, and I enjoy its pleasures a little too much.</item>
 				<item id="6">The gods and my faith have determined that I am always correct as I speak on their behalf. There is no question in my mind that I speak the ultimate truths and any who do not agree are misguided fools.</item>
 			</select>
-		</description>
-		<setters>
-			<set name="short">Choose two from History, Religion, Arcana, or Nature. Two languages. Guided by Faith feature.</set>
-		</setters>
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Devoted Missionary)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_NATURE" number="2" />
-			<select type="Language" name="Language (Devoted Missionary)" number="2" supports="Standard||Exotic" />
-			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_GUIDED_BY_FAITH" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
-			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 		</rules>
 	</element>
 
@@ -290,60 +262,6 @@
 			<p class="indent"><b>Equipment:</b> Cook’s utensils, climber’s kit, a shovel, a pair of thick gloves, a cloak with a hood.</p>
 			<p class="indent"><b>Tool Proficiencies:</b> Cook’s utensils, one other set of artisan’s tools.</p>
 			<div element="ID_DOD_BACKGROUND_FEATURE_MAKESHIFT_MEALS" />
-			<h5>MARKS OF SURVIVAL</h5>
-			<select type="List" name="Marks of Survival" id="ID_DOD_LIST_SURVIVOR_MARKS_OF_SURVIVAL">
-				<item id="1">Being alone for so long means I am very used to conversing with myself out loud.</item>
-				<item id="2">I eat things that others find disgusting. I have learned to love the delicacies of scavenged food in the ruins.</item>
-				<item id="3">I have many scars across my body from barely scraping by.</item>
-				<item id="4">I am missing a finger on one hand due to a horrible encounter I had in the ruins.</item>
-				<item id="5">I keep a locket of someone I lost in the ruins. I stare at it every night before I fall asleep to remember what I am looking for.</item>
-				<item id="6">I keep souvenirs of the monsters I have bested in these ruins, to remind myself how strong I truly am.</item>
-				<item id="7">I can sleep just about anywhere, nothing really phases me anymore.</item>
-				<item id="8">I often recite the names of people I used to know and lost so I can hold on to their memory.</item>
-			</select>
-			
-			<h5>SUGGESTED CHARACTERISTICS</h5>
-			<p><b>Personality Trait (1d8)</b></p>
-			<select type="List" name="Personality Trait (Survivor)" id="ID_DOD_LIST_SURVIVOR_PERSONALITY_TRAIT">
-				<item id="1">I always have an exit strategy in mind if things go poorly.</item>
-				<item id="2">You can’t survive in this grim city without a good sense of humor, but I have a taste for gallows humor.</item>
-				<item id="3">I try to work in the thin grey area between the squabbling factions, squeezing under their radar when possible. The less I am seen, the better.</item>
-				<item id="4">If you spot danger, it is best to avoid it, that’s how you survive.</item>
-				<item id="5">Drakkenheim is a dangerous place. But I can navigate it with my eyes closed. No one else I’ve ever met is as good as I am.</item>
-				<item id="6">In order to survive the monsters of Drakkenheim, one must be a monster of Drakkenheim.</item>
-				<item id="7">Take everything you can from the dead, take it from the living if you can. If you are to survive, you must take any opportunity to scavenge.</item>
-				<item id="8">I will never give up until I reclaim what I lost in these ruins.</item>
-			</select>
-			
-			<p><b>Ideal (1d6)</b></p>
-			<select type="List" name="Ideal (Survivor)" id="ID_DOD_LIST_SURVIVOR_IDEAL">
-				<item id="1"><b>Self-Reliance.</b> I won’t risk my life for others. Everyone must fend for themselves -- better you than me. (Evil)</item>
-				<item id="2"><b>Bravery.</b> I find the thrill of surviving the monsters and magics of Drakkenheim exhilarating and thrive on the chaos. (Chaotic)</item>
-				<item id="3"><b>Safety.</b> Whatever I can do to keep myself fed and keep a safe place to rest is good in my books. (Any)</item>
-				<item id="4"><b>Helpful.</b> People need all the help they can get in the city, and I know I can provide it. (Good)</item>
-				<item id="5"><b>Hope.</b> I believe there is something worth saving here, we must hold on to the idea of a better future. (Good)</item>
-				<item id="6"><b>Responsibility.</b> I lived here before the meteor, I’ll live here long after. I must protect my home and do what I can to make it livable again. (Lawful)</item>
-			</select>
-			
-			<p><b>Bond (1d6)</b></p>
-			<select type="List" name="Bond (Survivor)" id="ID_DOD_LIST_SURVIVOR_BOND">
-				<item id="1">I had family in these ruins. I know not what became of them, but I must find out.</item>
-				<item id="2">This city is my home, and I will fight for what’s left of it until the very end.</item>
-				<item id="3">I’ll do any dirty work in the city if it means a hot meal, a warm bed, or some good company.</item>
-				<item id="4">I’ve spent so long in these ruins, its the outside world that terrifies me now.</item>
-				<item id="5">Why haven’t I left Drakkenheim? Have you seen how much gold there is to be made here?</item>
-				<item id="6">I am bound to the throne of Drakkenheim, and fight to see it one day reclaimed.</item>
-			</select>
-			
-			<p><b>Flaw (1d6)</b></p>
-			<select type="List" name="Flaw (Survivor)" id="ID_DOD_LIST_SURVIVOR_FLAW">
-				<item id="1">Any meal could be my last. I’ll eat just about anything. I do what I must to survive.</item>
-				<item id="2">I don’t like being outside the Haze of the city for too long, I’ve gotten used to it.</item>
-				<item id="3">I am convinced my family is alive in the city somewhere. I hear their voices call to me at night.</item>
-				<item id="4">I don’t trust anyone easily. I’ll sleep with one eye open even around my companions, for Drakkenheim makes monsters of us all.</item>
-				<item id="5">The years spent here have turned me to a vice, I very much rely on that vice to get me through my days.</item>
-				<item id="6">I hear voices constantly. Sometimes I get distracted with conversations with people who are not there.</item>
-			</select>
 		</description>
 		<setters>
 			<set name="short">Choose two from Perception, Survival, Stealth, or Athletics. Cook’s utensils, one other set of artisan’s tools. Makeshift Meals feature.</set>
@@ -354,6 +272,50 @@
 			<select type="Proficiency" name="Artisan’s Tools Proficiency (Survivor)" supports="Artisan" number="1" />
 			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_MAKESHIFT_MEALS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Marks of Survival" id="ID_DOD_LIST_SURVIVOR_MARKS_OF_SURVIVAL">
+				<item id="1">Being alone for so long means I am very used to conversing with myself out loud.</item>
+				<item id="2">I eat things that others find disgusting. I have learned to love the delicacies of scavenged food in the ruins.</item>
+				<item id="3">I have many scars across my body from barely scraping by.</item>
+				<item id="4">I am missing a finger on one hand due to a horrible encounter I had in the ruins.</item>
+				<item id="5">I keep a locket of someone I lost in the ruins. I stare at it every night before I fall asleep to remember what I am looking for.</item>
+				<item id="6">I keep souvenirs of the monsters I have bested in these ruins, to remind myself how strong I truly am.</item>
+				<item id="7">I can sleep just about anywhere, nothing really phases me anymore.</item>
+				<item id="8">I often recite the names of people I used to know and lost so I can hold on to their memory.</item>
+			</select>
+			<select type="List" name="Personality Trait (Survivor)" id="ID_DOD_LIST_SURVIVOR_PERSONALITY_TRAIT">
+				<item id="1">I always have an exit strategy in mind if things go poorly.</item>
+				<item id="2">You can’t survive in this grim city without a good sense of humor, but I have a taste for gallows humor.</item>
+				<item id="3">I try to work in the thin grey area between the squabbling factions, squeezing under their radar when possible. The less I am seen, the better.</item>
+				<item id="4">If you spot danger, it is best to avoid it, that’s how you survive.</item>
+				<item id="5">Drakkenheim is a dangerous place. But I can navigate it with my eyes closed. No one else I’ve ever met is as good as I am.</item>
+				<item id="6">In order to survive the monsters of Drakkenheim, one must be a monster of Drakkenheim.</item>
+				<item id="7">Take everything you can from the dead, take it from the living if you can. If you are to survive, you must take any opportunity to scavenge.</item>
+				<item id="8">I will never give up until I reclaim what I lost in these ruins.</item>
+			</select>
+			<select type="List" name="Ideal (Survivor)" id="ID_DOD_LIST_SURVIVOR_IDEAL">
+				<item id="1"><b>Self-Reliance.</b> I won’t risk my life for others. Everyone must fend for themselves -- better you than me. (Evil)</item>
+				<item id="2"><b>Bravery.</b> I find the thrill of surviving the monsters and magics of Drakkenheim exhilarating and thrive on the chaos. (Chaotic)</item>
+				<item id="3"><b>Safety.</b> Whatever I can do to keep myself fed and keep a safe place to rest is good in my books. (Any)</item>
+				<item id="4"><b>Helpful.</b> People need all the help they can get in the city, and I know I can provide it. (Good)</item>
+				<item id="5"><b>Hope.</b> I believe there is something worth saving here, we must hold on to the idea of a better future. (Good)</item>
+				<item id="6"><b>Responsibility.</b> I lived here before the meteor, I’ll live here long after. I must protect my home and do what I can to make it livable again. (Lawful)</item>
+			</select>
+			<select type="List" name="Bond (Survivor)" id="ID_DOD_LIST_SURVIVOR_BOND">
+				<item id="1">I had family in these ruins. I know not what became of them, but I must find out.</item>
+				<item id="2">This city is my home, and I will fight for what’s left of it until the very end.</item>
+				<item id="3">I’ll do any dirty work in the city if it means a hot meal, a warm bed, or some good company.</item>
+				<item id="4">I’ve spent so long in these ruins, its the outside world that terrifies me now.</item>
+				<item id="5">Why haven’t I left Drakkenheim? Have you seen how much gold there is to be made here?</item>
+				<item id="6">I am bound to the throne of Drakkenheim, and fight to see it one day reclaimed.</item>
+			</select>
+			<select type="List" name="Flaw (Survivor)" id="ID_DOD_LIST_SURVIVOR_FLAW">
+				<item id="1">Any meal could be my last. I’ll eat just about anything. I do what I must to survive.</item>
+				<item id="2">I don’t like being outside the Haze of the city for too long, I’ve gotten used to it.</item>
+				<item id="3">I am convinced my family is alive in the city somewhere. I hear their voices call to me at night.</item>
+				<item id="4">I don’t trust anyone easily. I’ll sleep with one eye open even around my companions, for Drakkenheim makes monsters of us all.</item>
+				<item id="5">The years spent here have turned me to a vice, I very much rely on that vice to get me through my days.</item>
+				<item id="6">I hear voices constantly. Sometimes I get distracted with conversations with people who are not there.</item>
+			</select>
 		</rules>
 	</element>
 
@@ -381,60 +343,6 @@
 			<p class="indent"><b>Equipment:</b> Thieves’ tools, a set of dark clothes with a hood and a face covering. A signet ring of a fake lord, a fake identification, a set of weighted dice, and a deck of cards.</p>
 			<p class="indent"><b>Tool Proficiencies:</b> Thieves’ tools, cartographer’s tools</p>
 			<div element="ID_DOD_BACKGROUND_FEATURE_DETAIL_ORIENTED" />
-			<h5>TREASURE HUNTERS’ SECRETS</h5>
-			<select type="List" name="Treasure Hunters’ Secrets" id="ID_DOD_LIST_TREASURE_SEEKER_TREASURE_HUNTERS_SECRETS">
-				<item id="1">You keep a cryptic map to a lost treasure that you have always wanted to uncover.</item>
-				<item id="2">You have a coin that is heads on both sides, helpful for winning a chance game.</item>
-				<item id="3">You have a magnifying spyglass you use to examine items.</item>
-				<item id="4">You have a ring that opens to reveal a small compartment inside.</item>
-				<item id="5">Your left boot has a compartment for a hidden dagger.</item>
-				<item id="6">You carry an old compass that doesn’t point north, you hope it points towards a great treasure.</item>
-				<item id="7">You have a collection of exotic coins and medals that are of personal value to you.</item>
-				<item id="8">You have a rival treasure hunter who used to be a partner. You parted ways years ago.</item>
-			</select>
-			
-			<h5>SUGGESTED CHARACTERISTICS</h5>
-			<p><b>Personality Trait (1d8)</b></p>
-			<select type="List" name="Personality Trait (Treasure Seeker)" id="ID_DOD_LIST_TREASURE_SEEKER_PERSONALITY_TRAIT">
-				<item id="1">I believe that I am destined for greatness, and nothing can convince me otherwise.</item>
-				<item id="2">I always have a plan or plot to outwit my foes. It may not always be good, but it’s almost always overly complex.</item>
-				<item id="3">I love to flaunt my wealth and showcase the things I have bought with it.</item>
-				<item id="4">I pay no mind to the risks of a situation. I always bet on myself and my abilities and it’s gotten me this far. Never tell me the odds.</item>
-				<item id="5">I have a quip, allegory, or joke for almost any situation.</item>
-				<item id="6">I lie about anything and everything. I lie for almost no reason at all, sometimes just to see if I can fool the people around me.</item>
-				<item id="7">I use flattery and honeyed words to get what I want.</item>
-				<item id="8">I can’t help it if valuable objects lying around end up in my pockets. It’s for safe keeping.</item>
-			</select>
-			
-			<p><b>Ideal (1d6)</b></p>
-			<select type="List" name="Ideal (Treasure Seeker)" id="ID_DOD_LIST_TREASURE_SEEKER_IDEAL">
-				<item id="1"><b>Independent.</b> No one tells me what to do. I make my own rules, and my own luck. (Chaotic)</item>
-				<item id="2"><b>Fair.</b> I do not take anything from anyone who couldn’t afford to lose it. I am a treasure hunter, not a thief. (Lawful)</item>
-				<item id="3"><b>Family.</b> I care about material possessions and wealth, but not as much as I care about my friends and family. (Good)</item>
-				<item id="4"><b>Aspiration.</b> Wealth is power. Wealth means you will be remembered. In this world making a name for yourself is as simple as acquiring enough gold to buy your way to victory. I intend to be remembered. (Any)</item>
-				<item id="5"><b>Danger.</b> Every great discovery requires risk. The greater the risk, the greater the reward. It’s the thrill of the hunt that I live for. (Any)</item>
-				<item id="6"><b>Dignity.</b> The dead and their prized belongings deserve more than to waste away in the ruins. They deserve to be found, remembered, and taken care of. (Lawful)</item>
-			</select>
-			
-			<p><b>Bond (1d6)</b></p>
-			<select type="List" name="Bond (Treasure Seeker)" id="ID_DOD_LIST_TREASURE_SEEKER_BOND">
-				<item id="1">My desire for wealth is out of a need to protect my family.</item>
-				<item id="2">Something important to me was stolen. I’ve longed to get it back ever since.</item>
-				<item id="3">I’m wanted for my many crimes and hope that where I am going, the law will not follow.</item>
-				<item id="4">I made mistakes in my past that cost me the life of someone I loved. I will not let that happen again.</item>
-				<item id="5">I plan to be the greatest thief or most cunning explorer of all time.</item>
-				<item id="6">This is my last job, the big one. After this I hope to settle down with my wealth, maybe start a family.</item>
-			</select>
-			
-			<p><b>Flaw (1d6)</b></p>
-			<select type="List" name="Flaw (Treasure Seeker)" id="ID_DOD_LIST_TREASURE_SEEKER_FLAW">
-				<item id="1">My entire identity is layers of falsities presented to hide my true self, for I am not a good person. I’ve never told the truth for as long as I can remember and it’s too late now to stop.</item>
-				<item id="2">Every situation, every person, is only as valuable to me as what I can gain from them. I’m not afraid to pull strings to bend luck in my favour.</item>
-				<item id="3">I jump to defensive measures as soon as someone catches me in a lie, or tries to call me out for anything.</item>
-				<item id="4">I take what I want, and I want it all.</item>
-				<item id="5">I like to show my skills, talk big, and take big risks in the hopes of impressing everyone watching.</item>
-				<item id="6">I know for a fact I am the smartest person in the room, and if people are suggesting anything otherwise they are terribly mistaken.</item>
-			</select>
 		</description>
 		<setters>
 			<set name="short">Investigation and choose one from Stealth, Insight, or Perception. Thieves’ tools, cartographer’s tools. Detail-Oriented feature.</set>
@@ -446,6 +354,50 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_CARTOGRAPHERS_TOOLS" />
 			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_DETAIL_ORIENTED" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Treasure Hunters’ Secrets" id="ID_DOD_LIST_TREASURE_SEEKER_TREASURE_HUNTERS_SECRETS">
+				<item id="1">You keep a cryptic map to a lost treasure that you have always wanted to uncover.</item>
+				<item id="2">You have a coin that is heads on both sides, helpful for winning a chance game.</item>
+				<item id="3">You have a magnifying spyglass you use to examine items.</item>
+				<item id="4">You have a ring that opens to reveal a small compartment inside.</item>
+				<item id="5">Your left boot has a compartment for a hidden dagger.</item>
+				<item id="6">You carry an old compass that doesn’t point north, you hope it points towards a great treasure.</item>
+				<item id="7">You have a collection of exotic coins and medals that are of personal value to you.</item>
+				<item id="8">You have a rival treasure hunter who used to be a partner. You parted ways years ago.</item>
+			</select>
+			<select type="List" name="Personality Trait (Treasure Seeker)" id="ID_DOD_LIST_TREASURE_SEEKER_PERSONALITY_TRAIT">
+				<item id="1">I believe that I am destined for greatness, and nothing can convince me otherwise.</item>
+				<item id="2">I always have a plan or plot to outwit my foes. It may not always be good, but it’s almost always overly complex.</item>
+				<item id="3">I love to flaunt my wealth and showcase the things I have bought with it.</item>
+				<item id="4">I pay no mind to the risks of a situation. I always bet on myself and my abilities and it’s gotten me this far. Never tell me the odds.</item>
+				<item id="5">I have a quip, allegory, or joke for almost any situation.</item>
+				<item id="6">I lie about anything and everything. I lie for almost no reason at all, sometimes just to see if I can fool the people around me.</item>
+				<item id="7">I use flattery and honeyed words to get what I want.</item>
+				<item id="8">I can’t help it if valuable objects lying around end up in my pockets. It’s for safe keeping.</item>
+			</select>
+			<select type="List" name="Ideal (Treasure Seeker)" id="ID_DOD_LIST_TREASURE_SEEKER_IDEAL">
+				<item id="1"><b>Independent.</b> No one tells me what to do. I make my own rules, and my own luck. (Chaotic)</item>
+				<item id="2"><b>Fair.</b> I do not take anything from anyone who couldn’t afford to lose it. I am a treasure hunter, not a thief. (Lawful)</item>
+				<item id="3"><b>Family.</b> I care about material possessions and wealth, but not as much as I care about my friends and family. (Good)</item>
+				<item id="4"><b>Aspiration.</b> Wealth is power. Wealth means you will be remembered. In this world making a name for yourself is as simple as acquiring enough gold to buy your way to victory. I intend to be remembered. (Any)</item>
+				<item id="5"><b>Danger.</b> Every great discovery requires risk. The greater the risk, the greater the reward. It’s the thrill of the hunt that I live for. (Any)</item>
+				<item id="6"><b>Dignity.</b> The dead and their prized belongings deserve more than to waste away in the ruins. They deserve to be found, remembered, and taken care of. (Lawful)</item>
+			</select>
+			<select type="List" name="Bond (Treasure Seeker)" id="ID_DOD_LIST_TREASURE_SEEKER_BOND">
+				<item id="1">My desire for wealth is out of a need to protect my family.</item>
+				<item id="2">Something important to me was stolen. I’ve longed to get it back ever since.</item>
+				<item id="3">I’m wanted for my many crimes and hope that where I am going, the law will not follow.</item>
+				<item id="4">I made mistakes in my past that cost me the life of someone I loved. I will not let that happen again.</item>
+				<item id="5">I plan to be the greatest thief or most cunning explorer of all time.</item>
+				<item id="6">This is my last job, the big one. After this I hope to settle down with my wealth, maybe start a family.</item>
+			</select>
+			<select type="List" name="Flaw (Treasure Seeker)" id="ID_DOD_LIST_TREASURE_SEEKER_FLAW">
+				<item id="1">My entire identity is layers of falsities presented to hide my true self, for I am not a good person. I’ve never told the truth for as long as I can remember and it’s too late now to stop.</item>
+				<item id="2">Every situation, every person, is only as valuable to me as what I can gain from them. I’m not afraid to pull strings to bend luck in my favour.</item>
+				<item id="3">I jump to defensive measures as soon as someone catches me in a lie, or tries to call me out for anything.</item>
+				<item id="4">I take what I want, and I want it all.</item>
+				<item id="5">I like to show my skills, talk big, and take big risks in the hopes of impressing everyone watching.</item>
+				<item id="6">I know for a fact I am the smartest person in the room, and if people are suggesting anything otherwise they are terribly mistaken.</item>
+			</select>
 		</rules>
 	</element>
 
