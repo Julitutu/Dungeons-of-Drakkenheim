@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Fighter-Commander.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Fighter-Commander.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Fighter-Commander.xml" />
 		</update>
 	</info>
 	<element name="Commander" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_COMMANDER">
