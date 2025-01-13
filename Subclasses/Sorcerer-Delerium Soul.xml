@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Sorcerer-Delerium Soul.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Sorcerer-Delerium Soul.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Sorcerer-Delerium%20Soul.xml" />
 		</update>
 	</info>
 	<element name="Delerium Soul" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_DELERIUM_SOUL">
