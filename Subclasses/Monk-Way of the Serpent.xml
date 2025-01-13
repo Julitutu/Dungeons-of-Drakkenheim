@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Monk-Way of the Serpent.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Monk-Way of the Serpent.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Monk-Way%20of%20the%20Serpent.xml" />
 		</update>
 	</info>
 	<element name="Way of the Serpent" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MONK_ARCHETYPE_SERPENT">
