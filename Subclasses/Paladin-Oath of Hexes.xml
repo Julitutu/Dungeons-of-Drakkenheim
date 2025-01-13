@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Paladin-Oath of Hexes.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Paladin-Oath of Hexes.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Paladin-Oath%20of%20Hexes.xml" />
 		</update>
 	</info>
 	<element name="Oath of Hexes" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_OATH_OF_HEXES">
