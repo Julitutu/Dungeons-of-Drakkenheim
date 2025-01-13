@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Wizard-Malfeasant.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Wizard-Malfeasant.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Wizard-Malfeasant.xml" />
 		</update>
 	</info>
 	<element name="Malfeasant" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WIZARD_ARCHETYPE_MALFEASANT">
