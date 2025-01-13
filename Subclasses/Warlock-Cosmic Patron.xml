@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Warlock-Cosmic Patron.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Warlock-Cosmic Patron.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Warlock-Cosmic%20Patron.xml" />
 		</update>
 	</info>
 	<element name="Cosmic Patron" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_COSMIC_PATRON">
