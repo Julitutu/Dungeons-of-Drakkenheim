@@ -1,4 +1,4 @@
-Additional content from Dungeons of Drakkenheim Setting to extend Aurora.
+Additional content from Dungeons of Drakkenheim Setting to extend [Aurora](http://www.aurorabuilder.com/).
 
 Extending Content
 Go to the Additional Content tab in Aurora, enter the URL of the index file, and have Aurora download the content to the custom folder for you.
