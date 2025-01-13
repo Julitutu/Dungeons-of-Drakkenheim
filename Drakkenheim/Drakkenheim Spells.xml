@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.5.5">
-			<file name="Drakkenheim Spells.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/spells.xml" />
+		<update version="0.1.0">
+			<file name="Drakkenheim Spells.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Drakkenheim/Drakkenheim%20Spells.xml" />
 		</update>
 	</info>
 
