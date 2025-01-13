@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/source.xml" />
 		<file name="Apothecary.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary.xml" />
 		<file name="Apothecary-Alienist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Alienist.xml" />
 		<file name="Apothecary-Chemist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Chemist.xml" />
