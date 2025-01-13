@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Warlock-Flesh Patron.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Warlock-Flesh Patron.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Warlock-Flesh%20Patron.xml" />
 		</update>
 	</info>
 	<element name="Flesh Patron" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FLESH_PATRON">
