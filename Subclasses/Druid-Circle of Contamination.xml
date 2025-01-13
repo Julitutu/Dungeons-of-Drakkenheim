@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Druid-Circle of Contamination.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+	<element name="Circle of Contamination" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_CIRCLE_OF_CONTAMINATION">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>As druids are often in tune with nature and the natural order, most see delerium as a scourge upon the world. However, a rare few see the truth: the eldritch stones are an essential part of the natural order, one which works at a cosmic scale. Druids of the Circle of Contamination use the blighted rocks and contaminating Haze as a conduit for supernatural evolution. They have embraced the chaotic power of Delerium as an extension of the inherent chaos in the natural order, spreading the Haze while wielding it as a powerful ally to fuel their spells.</p>
+			<div element="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_CIRCLE_SPELLS" />
+			<div element="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_BLIGHTED_MAGIC" />
+			<div element="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DESPOILER" />
+			<div element="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_CYCLE_OF_CONTAMINATION" />
+			<div element="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DRAW_CORRUPTION" />
+			<div element="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DEFILE_ELEMENTS" />
+			<div element="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_HAZE_AURA" />
+		</description>
+		<sheet display="false">
+			<description>Druids of the Circle of Contamination use the blighted rocks and contaminating Haze as a conduit for supernatural evolution. They have embraced the chaotic power of Delerium as an extension of the inherent chaos in the natural order, spreading the Haze while wielding it as a powerful ally to fuel their spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_BLIGHTED_MAGIC" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DESPOILER" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_CYCLE_OF_CONTAMINATION" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DRAW_CORRUPTION" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DEFILE_ELEMENTS" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_HAZE_AURA" level="14" />
+		</rules>
+	</element>
+
+	<element name="Circle Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_CIRCLE_SPELLS">
+		<description>
+			<p>At 2nd level, you learn the chill touch and poison needle* cantrips. These don’t count against the number of druid cantrips you know.</p>
+			<p>At 3rd, 5th, 7th, and 9th level you gain access to the spells ilsted for that level in the Circle of Contamination Spells table. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5>Circle of Contamination Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>3rd</td><td><i>biohazard*, controlled mutation*</i></td></tr>
+					<tr><td>5th</td><td><i>purge contamination*, venomous aura*</i></td></tr>
+					<tr><td>7th</td><td><i>horrific transformation*, poison wave*</i></td></tr>
+					<tr><td>9th</td><td><i>acid rain*, toxic barrage*</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<sheet>
+			<description>At 2nd level, you learn the chill touch and poison needle* cantrips. These don’t count against the number of druid cantrips you know.</description>
+			<description>At 3rd, 5th, 7th, and 9th level you gain access to the spells ilsted for that level in the Circle of Contamination Spells table. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" spellcasting="Druid" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_POISON_NEEDLE" spellcasting="Druid" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_BIOHAZARD" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_CONTROLLED_MUTATION" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_PURGE_CONTAMINATION" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_VENOMOUS_AURA" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_HORRIFIC_TRANSFORMATION" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_POISON_WAVE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_ACID_RAIN" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_TOXIC_BARRAGE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Blighted Magic" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_BLIGHTED_MAGIC">
+		<description>
+			<p>Your magic becomes a twisted mockery of druidic principles, and you can twist your spells to suit your needs. Your spells which conjure creatures or natural flora and fauna now appear like sickly, fleshy tentacles, and animals you summon are cancerous and mutated. In addition, when you cast a spell, you can choose one of the following blighted magic options:</p>
+			<ul>
+				<li><b>Twin Spell.</b> If the spell you cast targets only one creature and doesn’t have a range of self, you can expend a use of your Wild Shape feature to target a second creature in range with the same spell. To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level.</li>
+				<li><b>Quicken Spell.</b> When you cast a spell that has a casting time of 1 action, you can expend a use of your Wild Shape feature to cast the spell as a bonus action.</li>
+				<li><b>Corrupt Spell.</b> When you roll damage for a spell, you can expend a use of your Wild Shape feature to change the damage type of all damage caused by the spell to necrotic. In addition, you can reroll a number of the damage dice up to your Wisdom modifier (minimum one). You must use the new rolls.</li>
+				<li><b>Purify Spell.</b> When you cast a contaminated spell (found in Chapter 4), you can expend a use of your Wild Shape feature to cast the spell without gaining a Contamination Level.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your magic becomes a twisted mockery of druidic principles, and you can twist your spells to suit your needs. Your spells which conjure creatures or natural flora and fauna now appear like sickly, fleshy tentacles, and animals you summon are cancerous and mutated. In addition, when you cast a spell, you can choose one of the following blighted magic options:</description>
+			<description>Twin Spell. If the spell you cast targets only one creature and doesn’t have a range of self, you can expend a use of your Wild Shape feature to target a second creature in range with the same spell. To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level.</description>
+			<description>Quicken Spell. When you cast a spell that has a casting time of 1 action, you can expend a use of your Wild Shape feature to cast the spell as a bonus action.</description>
+			<description>Corrupt Spell. When you roll damage for a spell, you can expend a use of your Wild Shape feature to change the damage type of all damage caused by the spell to necrotic. In addition, you can reroll a number of the damage dice up to your Wisdom modifier (minimum one). You must use the new rolls.</description>
+			<description>Purify Spell. When you cast a contaminated spell (found in Chapter 4), you can expend a use of your Wild Shape feature to cast the spell without gaining a Contamination Level.</description>
+		</sheet>
+	</element>
+
+	<element name="Despoiler" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DESPOILER">
+		<description>
+			<p>You gain resistance to poison and necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>You gain resistance to poison and necrotic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Cycle of Contamination" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_CYCLE_OF_CONTAMINATION">
+		<description>
+			<p>Though your magic is infused with contaminated power, you have also learned ways to effectively expel these energies. You can cast the purge contamination* spell as an action without expending a spell slot. You don’t need to provide the material components when you cast the spell in this way, and the target does not gain any exhaustion levels from this casting of the spell. When you cast purge contamination* in this way, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Though your magic is infused with contaminated power, you have also learned ways to effectively expel these energies. You can cast the purge contamination* spell as an action without expending a spell slot. You don’t need to provide the material components when you cast the spell in this way, and the target does not gain any exhaustion levels from this casting of the spell. When you cast purge contamination* in this way, you can’t do so again until you finish a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Draw Corruption" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DRAW_CORRUPTION">
+		<description>
+			<p>You gain the ability to draw contamination into yourself to empower your magic. Once per turn as a bonus action, you can gain one Contamination Level. If you do, you regain one use of your Wild Shape feature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You gain the ability to draw contamination into yourself to empower your magic. Once per turn as a bonus action, you can gain one Contamination Level. If you do, you regain one use of your Wild Shape feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Defile Elements" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_DEFILE_ELEMENTS">
+		<description>
+			<p>You learn the summon delerium elemental spell, and always have this spell prepared (it doesn’t count against the number of druid spells you can prepare). You can cast it once without a spell slot, material component, or gaining a contamination level, and you regain the ability to do so when you finish a long rest. When you cast the spell, you can modify it so that it doesn’t require concentration. When you do, the spell’s duration for that casting changes to 1 minute.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You learn the summon delerium elemental spell, and always have this spell prepared (it doesn’t count against the number of druid spells you can prepare). You can cast it once without a spell slot, material component, or gaining a contamination level, and you regain the ability to do so when you finish a long rest. When you cast the spell, you can modify it so that it doesn’t require concentration. When you do, the spell’s duration for that casting changes to 1 minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SCGTD_SPELL_SUMMON_DELERIUM_ELEMENTAL" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Haze Aura" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_HAZE_AURA">
+		<description>
+			<p>You have become such a locus for contamination that you project the Haze around your body. The aura persists so long as you are not incapacitated. Creatures of your choice which start their turn within 10 feet of you must make a Constitution saving throw against your spell save DC. Those who fail the save take 3d6 necrotic damage. A creature who fails this saving throw by 5 or more gains one Contamination Level.</p>
+			<p>A creature which makes a successful saving throw against your Haze Aura is immune to its effects for 24 hours.</p>
+		</description>
+		<sheet>
+			<description>You have become such a locus for contamination that you project the Haze around your body. The aura persists so long as you are not incapacitated. Creatures of your choice which start their turn within 10 feet of you must make a Constitution saving throw against your spell save DC. Those who fail the save take 3d6 necrotic damage. A creature who fails this saving throw by 5 or more gains one Contamination Level.</description>
+			<description>A creature which makes a successful saving throw against your Haze Aura is immune to its effects for 24 hours.</description>
+		</sheet>
+	</element>
+</elements>

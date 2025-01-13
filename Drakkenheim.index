@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Sebastien Crowe's Guide to Drakkenheim</name>
+		<description>This book expands the world originally presented in our adventure <em>Dungeons of Drakkenheim</em>. If you own a copy of that book and are planning to run the campaign, you’ll find a wealth of information herein to broaden the scope of the campaign, taking the conflict beyond the walls of Drakkenheim.</description>
+		<author url="https://ghostfiregaming.com/sc-guide-to-drakkenheim/">Ghostfire Gaming</author>
+		<update version="0.2.2">
+			<file name="Drakkenheim.index" url="Drakkenheim.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="" />
+		<file name="Apothecary.xml" url="" />
+		<file name="Apothecary-Alienist.xml" url="" />
+		<file name="Apothecary-Chemist.xml" url="" />
+		<file name="Apothecary-Exorcist.xml" url="" />
+		<file name="Apothecary-Mutagenist.xml" url="" />
+		<file name="Apothecary-Pathogenist.xml" url="" />
+		<file name="Apothecary-Reanimator.xml" url="" />
+		<file name="Barbarian-Path of the Haze Rager.xml" url="" />
+		<file name="Barbarian-Path of the Old Gods.xml" url="" />
+		<file name="Bard-College of Doomsayers.xml" url="" />
+		<file name="Cleric-Shadow Domain.xml" url="" />
+		<file name="Drakkenheim Spells.xml" url="" />
+		<file name="Druid-Circle of Contamination.xml" url="" />
+		<file name="Esoteric Theories.xml" url="" />
+		<file name="Fighter-Commander.xml" url="" />
+		<file name="Monk-Way of the Arcane Hand.xml" url="" />
+		<file name="Monk-Way of the Serpent.xml" url="" />
+		<file name="Paladin-Oath of Hexes.xml" url="" />
+		<file name="Ranger-Urban Ranger.xml" url="" />
+		<file name="Rogue-Smuggler.xml" url="" />
+		<file name="Sorcerer-Delerium Soul.xml" url="" />
+		<file name="Warlock-Cosmic Patron.xml" url="" />
+		<file name="Warlock-Flesh Patron.xml" url="" />
+		<file name="Wizard-Malfeasant" url="" />
+		<file name="Backgrounds of Drakkenheim.xml" url="" />
+		<file name="Drakkenheim Spells.xml" url="" />
+		<file name="Items of Drakkenheim.xml" url="" />
+		<file name="Tool Feats.xml" url="" />
+	</files>
+</index>

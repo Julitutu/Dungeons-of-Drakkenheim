@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Apothecary-Exorcist.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+
+	<element name="Exorcist" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_EXORCIST">
+		<supports>Occult Practices</supports>
+		<description>
+			<p>An Exorcist comes prepared to deal with evil entities, sinister spirits, and fearsome fiends. Equipped with their holy symbol, a book of prayers, and a bag of ritualistic baubles, they stand ready to face the most unnatural and otherworldly entities of the realms. An Exorcist is accustomed to facing down insurmountable threats, with a holy symbol in hand they fear nothing, and stand as a shield between the realms of men, and those of monsters.</p>
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SPIRITUAL_STUDY" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SPELLS" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_EXORCISM" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SACRED_VESSEL" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_NEGATION" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_EMPOWERED_HEALING" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_DEVOUT_WITNESS" />
+		</description>
+		<sheet display="false">
+			<description>An Exorcist comes prepared to deal with evil entities, sinister spirits, and fearsome fiends. Equipped with their holy symbol, a book of prayers, and a bag of ritualistic baubles, they stand ready to face the most unnatural and otherworldly entities of the realms.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SPIRITUAL_STUDY" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_EXORCISM" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SACRED_VESSEL" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_NEGATION" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_EMPOWERED_HEALING" level="14" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_DEVOUT_WITNESS" level="18" />
+		</rules>
+	</element>
+
+	<element name="Spiritual Study" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SPIRITUAL_STUDY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_SPIRITUAL_STUDY</requirements>
+		<description>
+			<p>You gain proficiency in heavy armor and the Religion Skill. If you already have this proficiency, you gain proficiency with another skill of your choice. You can use a holy symbol as an arcane focus for your apothecary spells and you gain a cantrip of your choice from the cleric spell list. This cantrip counts as an apothecary cantrip for you.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in heavy armor and the Religion Skill. If you already have this proficiency, you gain proficiency with another skill of your choice. You can use a holy symbol as an arcane focus for your apothecary spells and you gain a cantrip of your choice from the cleric spell list. This cantrip counts as an apothecary cantrip for you.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<select type="Proficiency" name="Skill Proficiency (Spiritual Study)" supports="Skill" default="ID_PROFICIENCY_SKILL_RELIGION" />
+			<select type="Spell" name="Cleric Cantrip (Spiritual Study)" supports="0,Cleric" spellcasting="Apothecary" />
+		</rules>
+	</element>
+
+	<element name="Exorcist Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_SPELLS</requirements>
+		<description>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Exorcist Spells table. These spells count as apothecary spells for you, but they don’t count against the number of apothecary spells you prepare.</p>
+			<h5>Exorcist Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Apothecary Level</td><td>Spell</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1st</td><td><i>bless, protection from evil and good</i></td></tr>
+					<tr><td>3rd</td><td><i>spiritual weapon, zone of truth</i></td></tr>
+					<tr><td>5th</td><td><i>counterspell, spirit guardians</i></td></tr>
+					<tr><td>7th</td><td><i>banishment, last rites</i></td></tr>
+					<tr><td>9th</td><td><i>dispel evil and good, flame strike</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class. These spells count as apothecary spells for you, but they don’t count against the number of apothecary spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="1" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="5" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_GFG_SCGTD_SPELL_LAST_RITES" level="7" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="9" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Apothecary" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Exorcism" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_EXORCISM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_EXORCISM</requirements>
+		<description>
+			<p>At 3rd level you gain the ability to imbue divine energy through your holy symbol to expel evil entities in the area, or purge their harmful effects from your allies.</p>
+			<p>When you use this feature, you choose which effect to create. You can use this feature a number of times equal to half your proficiency bonus rounded down, you regain all expended uses on a short or long rest.</p>
+			<p>If an Exorcism effect requires a saving throw, the DC equals your Apothecary spell save DC.</p>
+			<p>Starting at 5th level, when an undead or fiend fails its saving throw against your Expel Evil feature, that creature suffers 4d8 radiant damage.</p>
+			<p><b>Expel Evil.</b> As an action, you present your holy symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
+			<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
+			<p><b>Purge Corruption.</b> You touch a creature or item and can end either one condition afflicting it. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. Additionally, if a creature is possessed or mind controlled by a spirit or foreign entity, you can use this feature to remove any traits or other features related to the possession. If possessed, the creature possessing it is shunted out of its host to an unoccupied space within 5 feet and takes psychic damage equal to 2d8 + your apothecary level.</p>
+		</description>
+		<sheet usage="{{proficiency:half}}/Long Rest">
+			<description>You can use this feature {{proficiency:half}} times, you regain all expended uses on a short or long rest. If an Exorcism effect requires a saving throw, the DC equals your Apothecary spell save DC.</description>
+			<description action="Action">Expel Evil. As an action, you present your holy symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</description>
+			<description>Purge Corruption. You touch a creature or item and can end either one condition afflicting it. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. Additionally, if a creature is possessed or mind controlled by a spirit or foreign entity, you can use this feature to remove any traits or other features related to the possession. The creature possessing takes psychic damage equal to 2d8 + {{apothecary:level}}.</description>
+			<description level="5">Expel Evil. As an action, you present your holy symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. Starting at 5th level, when an undead or fiend fails its saving throw against your Expel Evil feature, that creature suffers 4d8 radiant damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Sacred Vessel" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SACRED_VESSEL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_SACRED_VESSEL</requirements>
+		<description>
+			<p>You are immune to the frightened condition, and cannot be possessed or cursed. You also have advantage on saving throws against being charmed.</p>
+		</description>
+		<sheet>
+			<description>You are immune to the frightened condition, and cannot be possessed or cursed. You also have advantage on saving throws against being charmed.</description>
+		</sheet>
+	</element>
+
+	<element name="Negation" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_NEGATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_NEGATION</requirements>
+		<description>
+			<p>As a reaction when a hostile creature you can see targets an ally with an attack, spell, or other effect, you can expend an Apothecary spell slot to force it to make a Charisma saving throw against your spell save DC. On a failure, the action they were attempting fails and resources used are wasted.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a hostile creature you can see targets an ally with an attack, spell, or other effect, you can expend an Apothecary spell slot to force it to make a Charisma saving throw against your spell save DC. On a failure, the action they were attempting fails and resources used are wasted.</description>
+		</sheet>
+	</element>
+
+	<element name="Empowered Healing" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_EMPOWERED_HEALING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EMPOWERED_HEALING</requirements>
+		<description>
+			<p>Whenever you cast a spell that heals a creature, that spell deals maximum healing and the creature immediately gains temporary hit points equal to your apothecary level.</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a spell that heals a creature, that spell deals maximum healing and the creature immediately gains {{apothecary:level}} temporary hit points.</description>
+		</sheet>
+	</element>
+
+	<element name="Devout Witness" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_DEVOUT_WITNESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_DEVOUT_WITNESS</requirements>
+		<description>
+			<p>As a Devout Witness, you speak on behalf of your gods and can feel their powers surging through you. Commanding spirits and vanquishing evil is second nature to you. You have added benefits that bolster your abilities.</p>
+			<ul>
+				<li>Creatures who fail their saving throws against your Exorcism: Expel Evil feature take an additional 4d8 radiant damage.</li>
+				<li>Creatures who are aided by your Exorcism: Purge Corruption feature gain 4d8 temporary hit points.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>As a Devout Witness, you speak on behalf of your gods and can feel their powers surging through you. Commanding spirits and vanquishing evil is second nature to you. You have added benefits that bolster your abilities.</description>
+			<description>Creatures who fail their saving throws against your Exorcism: Expel Evil feature take an additional 4d8 radiant damage.</description>
+			<description>Creatures who are aided by your Exorcism: Purge Corruption feature gain 4d8 temporary hit points.</description>
+		</sheet>
+	</element>
+
+		<!--Feature Replacement Grants-->
+	<element name="Exorcist Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_SPELLS" />
+	<element name="Spiritual Study Feature Replacement" type="Grants" source="Internal" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SPIRITUAL_STUDY" />
+	<element name="Exorcism Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_EXORCISM" />
+	<element name="Sacred Vessel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_SACRED_VESSEL" />
+	<element name="Negation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_NEGATION" />
+	<element name="Empowered Healing Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EMPOWERED_HEALING" />
+	<element name="Devout Witness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_EXORCIST_DEVOUT_WITNESS" />
+</elements>

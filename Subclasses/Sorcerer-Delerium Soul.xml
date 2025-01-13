@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Sorcerer-Delerium Soul.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+	<element name="Delerium Soul" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_DELERIUM_SOUL">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Delerium is naturally drawn to magic and can twist and augment its presence in unnatural and unpredictable ways. Some who ventured into the ruins of Drakkenheim are twisted by the eldritch powers and emerge infused with contaminated energies. They become a living vessel for the Arcane Anomalies and twisting realities found within the ruins.</p>
+			<div element="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_SPELLS" />
+			<div element="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_MUTANT_MANIFESTATION" />
+			<div element="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_CONTAMINATED_SORCERY" />
+			<div element="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_INCOMPREHENSIBLE_ARCANA" />
+			<div element="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_CHAOS_THEORY" />
+		</description>
+		<sheet display="false">
+			<description>Delerium is naturally drawn to magic and can twist and augment its presence in unnatural and unpredictable ways. Some who ventured into the ruins of Drakkenheim are twisted by the eldritch powers and emerge infused with contaminated energies. They become a living vessel for the Arcane Anomalies and twisting realities found within the ruins.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_MUTANT_MANIFESTATION" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_CONTAMINATED_SORCERY" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_INCOMPREHENSIBLE_ARCANA" level="14" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_CHAOS_THEORY" level="18" />
+		</rules>
+	</element>
+
+	<element name="Delerium Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_SPELLS">
+		<description>
+			<p>Imbued with the eldritch power of delerium, your magic is fundamentally contaminated. You learn additional spells when you reach certain levels in this class, as shown on the Delerium Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+			<p>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a contaminated spell.</p>
+			<h5>Delerium Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1st</td><td><i>comet shards*, faerie fire</i></td></tr>
+					<tr><td>3rd</td><td><i>controlled mutation*, grasping ghost*</i></td></tr>
+					<tr><td>5th</td><td><i>vanish to the space between worlds*, weave the elder sign*</i></td></tr>
+					<tr><td>7th</td><td><i>siphon time*, summon delerium elemental*</i></td></tr>
+					<tr><td>9th</td><td><i>contaminated hand*, wall of force</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Imbued with the eldritch power of delerium, your magic is fundamentally contaminated. You learn additional spells when you reach certain levels in this class, as shown on the Delerium Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</description>
+			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a contaminated spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SCGTD_SPELL_COMET_SHARDS" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_CONTROLLED_MUTATION" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_GRASPING_GHOST" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_VANISH_TO_THE_SPACE_BETWEEN_WORLDS" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_WEAVE_THE_ELDER_SIGN" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_SIPHON_TIME" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_SUMMON_DELERIUM_ELEMENTAL" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_CONTAMINATED_HAND" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Mutant Manifestation" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_MUTANT_MANIFESTATION">
+		<description>
+			<p>When you finish a long rest, you can choose to roll twice on the Mutations table (see page 231), and must select one of the results. You gain that mutation, which remains until you finish a long rest, even if you don’t currently have any contamination levels.</p>
+		</description>
+		<sheet>
+			<description>When you finish a long rest, you can choose to roll twice on the Mutations table (see page 231), and must select one of the results. You gain that mutation, which remains until you finish a long rest, even if you don’t currently have any contamination levels.</description>
+		</sheet>
+	</element>
+
+	<element name="Contaminated Sorcery" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_CONTAMINATED_SORCERY">
+		<description>
+			<p>When you cast a contaminated spell, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell’s level. If you cast the spell using sorcery points, you don’t gain a Contamination Level by casting the spell, and if the spell requires delerium as a material component, it is not consumed by the spell. In addition, casting a contaminated spell in this manner immediately causes an Arcane Anomaly (see page 233).</p>
+		</description>
+		<sheet>
+			<description>When you cast a contaminated spell, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell’s level. If you cast the spell using sorcery points, you don’t gain a Contamination Level by casting the spell, and if the spell requires delerium as a material component, it is not consumed by the spell. In addition, casting a contaminated spell in this manner immediately causes an Arcane Anomaly (see page 233).</description>
+		</sheet>
+	</element>
+
+	<element name="Incomprehensible Arcana" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_INCOMPREHENSIBLE_ARCANA">
+		<description>
+			<p>You can tap into contaminated energy to cast a spell you do not know. You can cast any spell from any class spell list. The spell must be of a level for which you have spell slots, and you must expend a spell slot as normal. Casting the spell uses the spell’s normal casting time, and if the spell has material components, you must provide those components as normal. As part of casting the spell, but before the spell takes effect, you gain a number of Contamination Levels equal to half the spell’s level, rounded down (minimum of one). You can’t prevent or reduce these Contamination Levels by any means, but you can remove them as normal.</p>
+		</description>
+		<sheet>
+			<description>You can tap into contaminated energy to cast a spell you do not know. You can cast any spell from any class spell list. The spell must be of a level for which you have spell slots, and you must expend a spell slot as normal. Casting the spell uses the spell’s normal casting time, and if the spell has material components, you must provide those components as normal. As part of casting the spell, but before the spell takes effect, you gain a number of Contamination Levels equal to half the spell’s level, rounded down (minimum of one). You can’t prevent or reduce these Contamination Levels by any means, but you can remove them as normal.</description>
+		</sheet>
+	</element>
+
+	<element name="Chaos Theory" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_CHAOS_THEORY">
+		<description>
+			<p>Once per turn when you make an attack roll, ability check, or saving throw, you can choose to trigger an Arcane Anomaly (see page 233). If you do, you make that roll with advantage. You can use this feature a number of times equal to your Charisma modifier (minimum once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Long Rest">
+			<description>Once per turn when you make an attack roll, ability check, or saving throw, you can choose to trigger an Arcane Anomaly (see page 233). If you do, you make that roll with advantage. You can use this feature a number of times equal to your Charisma modifier (minimum once). You regain all expended uses when you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

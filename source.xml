@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.4">
+			<file name="source.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything/source.xml" />
+		</update>
+	</info>	
+	<element name="Sebastien Crowe's Guide to Drakkenheim" type="Source" source="Core" id="ID_GFG_SOURCE_SEBASTIEN_CROWES_GUIDE_TO_DRAKKENHEIM">
+		<description>			
+			<p>This book expands the world originally presented in our adventure <em>Dungeons of Drakkenheim</em>. If you own a copy of that book and are planning to run the campaign, you’ll find a wealth of information herein to broaden the scope of the campaign, taking the conflict beyond the walls of Drakkenheim.</p>
+			<p>Dungeons of Drakkenheim is confined to the city of Drakkenheim itself, and covers the factions, conflicts, and locations within that city in detail. This book references characters and the original five factions from that campaign, including the Amethyst Academy, the Followers of the Falling Fire, the Knights of the Silver Order, the Queen’s Men, and the Hooded Lanterns, and focuses on how these factions operate in the world at large.</p>
+			<p>If you don’t have a copy of Dungeons of Drakkenheim, don’t worry! We’ve gone to great lengths to ensure this work stands on its own, whether you wish to use the new player options in your own campaign, or create adventures in the world of Drakkenheim which take place outside (and far away from) the cursed city itself.</p>
+			<p>The material in this book is meant for both players and Game Masters. As such, the secrets behind the origins of the meteor, the secrets of delerium, and the true prophecies of Lucretia Mathias remain unrevealed herein. The explanations behind these mysteries can be found within Dungeons of Drakkenheim!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">SCGTD</set>
+			<set name="url">https://ghostfiregaming.com/sc-guide-to-drakkenheim/</set>
+			<set name="image">https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything/TCOE.png</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com/sc-guide-to-drakkenheim/">Ghostfire Gaming</set>
+			<set name="Third Party">true</set>
+			<set name="supplement">true</set>
+			<set name="release">20230706</set>
+		</setters>
+	</element>
+</elements>

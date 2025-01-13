@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Apothecary-Chemist.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/warlock-great-old-one.xml" />
+		</update>
+	</info>
+
+	<element name="Chemist" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_OCCULT_PRACTICES_CHEMIST">
+		<supports>Occult Practices</supports>
+		<description>
+			<p>A Chemist is a studied scientist whose advanced research in to chemical compounds has granted them the ability to terrorize their enemies with alchemical explosions, devastating gasses, and other horrific concoctions. Chemists love testing their new compounds in the field, and are always keen to advance their study and research further, finding new combinations to combust their foes with.</p>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_SPELL"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_COMPOUND"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_PRECISE_APPLICATION"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHAIN_REACTION"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_CONDITIONING"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_BOTTLED_SPELLS"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_ELEMENTAL_ADJUSTMENT"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_CARACLYSM"/>
+		</description>
+		<sheet display="false">
+			<description>A Chemist is a studied scientist whose advanced research in to chemical compounds has granted them the ability to terrorize their enemies with alchemical explosions, devastating gasses, and other horrific concoctions.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_SPELL" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_COMPOUND" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_PRECISE_APPLICATION" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHAIN_REACTION" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_CONDITIONING" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_BOTTLED_SPELLS" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_ELEMENTAL_ADJUSTMENT" level="14" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_CARACLYSM" level="18" />
+		</rules>
+	</element>
+	<element name="Chemist Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_SPELL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_SPELL</requirements>
+		<description>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Chemist Spells table. These spells count as apothecary spells for you, but they don`t count against the number of apothecary spells you prepare.</p>
+			<h5 class="caption">CHEMIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>burning hands, grease</em></td></tr>
+				<tr><td>3nd</td><td><em>acid arrow, flaming sphere</em></td></tr>
+				<tr><td>5rd</td><td><em>fireball, stinking cloud</em></td></tr>
+				<tr><td>7th</td><td><em>ice storm, wall of fire</em></td></tr>
+				<tr><td>9th</td><td><em>cloudkill, cone of cold</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the CHEMIST Spells table</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREASE" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="5" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Apothecary" prepared="true" />
+		</rules>
+	</element>
+	<element name="Chemical Compound" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_COMPOUND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_CHEMICAL_COMPOUND</requirements>
+		<description>
+			<p>You gain proficiency in alchemist`s supplies if you do not already have it. You also learn the <i>firebolt </i>cantrip and one additional evocation cantrip of your choice from the wizard spell list. These cantrips count as apothecary cantrips for you, but do not count against your cantrips known.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in alchemist`s supplies if you do not already have it. You also learn the firebolt cantrip and one additional evocation cantrip of your choice from the wizard spell list.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" level="1" spellcasting="Apothecary" prepared="true" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<select type="Spell" name="Chemical Compound" supports="0,Wizard" number="1"  spellcasting="Apothecary"/>
+		</rules>
+	</element>
+	<element name="Precise Application" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_PRECISE_APPLICATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_PRECISE_APPLICATION</requirements>
+		<description>
+			<p>When you cast a spell that deals acid, cold, fire, lightning, or poison damage to other creatures that you can see, you can choose a number of them equal to your Intelligence modifier. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals acid, cold, fire, lightning, or poison damage to other creatures that you can see, you can choose a number of {{intelligence:modifier}}. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</description>
+		</sheet>
+	</element>
+	<element name="Chain Reaction" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHAIN_REACTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_CHAIN_REACTION</requirements>
+		<description>
+			<p>When you cast an apothecary cantrip that normally targets only one creature and deals acid, cold, fire, lightning, or poison damage, the spell can instead target two creatures that are within the spell`s range.</p>
+		</description>
+		<sheet>
+			<description>When you cast an apothecary cantrip that normally targets only one creature and deals acid, cold, fire, lightning, or poison damage, the spell can instead target two creatures that are within the spell`s range.</description>
+		</sheet>
+	</element>
+	<element name="Chemical Conditioning" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_CONDITIONING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_CHEMICAL_CONDITIONING</requirements>
+		<description>
+			<p>As an action, you give one creature you touch (including possibly yourself) resistance to acid, cold, fire, lightning, or poison damage for 1 hour. This benefit ends immediately if you use this feature again.</p>
+		</description>
+		<sheet action="Action">
+			<description> As an action, you give one creature you touch (including possibly yourself) resistance to acid, cold, fire, lightning, or poison damage for 1 hour. This benefit ends immediately if you use this feature again.</description>
+		</sheet>
+	</element>	
+	<element name="Bottled Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_BOTTLED_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_BOTTLED_SPELLS</requirements>
+		<description>
+			<p>You can store a spell from your Chemist Spells feature as a liquid in a small vial or bottle you touch when you cast the spell. The spell has no effect other than to be stored in the bottle. The spell remains stored inside until a creature opens the bottle. Once you use this feature, any unused bottled spell you previously created becomes inert, and you can`t bottle another spell until you finish a short rest. Any creature holding the bottle may spend an action to open it and cast the spell inside. The spell uses your spell attack bonus and save DC, but the spell treats the creature who released it as the caster in all other respects.</p>
+		</description>
+		<sheet>
+			<description>You can store a spell from your Chemist Spells feature as a liquid in a small vial or bottle you touch when you cast the spell.</description>
+		</sheet>
+	</element>	
+	<element name="Elemental Adjustment" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_ELEMENTAL_ADJUSTMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_ELEMENTAL_ADJUSTMENT</requirements>
+		<description>
+			<p>When you cast a spell using an apothecary spell slot which deals a type of damage from the following list, you can change that damage type to one of the other listed types: acid, cold, fire, lightning, or poison.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell using an apothecary spell slot which deals a type of damage from the following list, you can change that damage type to one of the other listed types: acid, cold, fire, lightning, or poison.</description>
+		</sheet>
+	</element>	
+	<element name="Chemical Cataclysm" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_CHEMICAL_CARACLYSM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_CHEMICAL_CARACLYSM</requirements>
+		<description>
+			<p>When you cast a spell that deals acid, cold, fire, lighting, or poison damage using an apothecary spell slot, it is treated as if it was cast using a 7th-level spell slot.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals acid, cold, fire, lighting, or poison damage using an apothecary spell slot, it is treated as if it was cast using a 7th-level spell slot.</description>
+		</sheet>
+	</element>	
+
+	<!--Feature Replacement Grants-->
+	<element name="Chemist Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_SPELL" />
+	<element name="Chemical Compound Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_CHEMICAL_COMPOUND" />
+	<element name="Precise Application Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_PRECISE_APPLICATION" />
+	<element name="Chain Reaction Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_CHAIN_REACTION" />
+	<element name="Chemical Conditioning Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_CHEMICAL_CONDITIONING" />
+	<element name="Bottled Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_BOTTLED_SPELLS" />
+	<element name="Elemental Adjustment Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_ELEMENTAL_ADJUSTMENT" />
+	<element name="Chemical Cataclysm Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_CHEMIST_CHEMICAL_CARACLYSM" />
+</elements>

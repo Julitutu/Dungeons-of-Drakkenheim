@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Fighter-Commander.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+	<element name="Commander" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_COMMANDER">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Between the nations of Westemär, Elyria, and Caspia there have been countless wars fought. Many great knights, valiant soldiers, and powerful combatants have tested their mettle against man and monster alike. Amongst the brave there are always those who are born to lead, and the Commander is just that. They stand at the front of battle, uniting their allies and leading the charge against their enemies.</p>
+			<div element="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_GROOMED_FOR_LEADERSHIP" />
+			<div element="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_BATTLE_COMMANDS" />
+			<div element="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_FEARLESS_COMMANDER" />
+			<div element="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_COORDINATED_COMMAND" />
+			<div element="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_ADAPTIVE_STRATEGY" />
+			<div element="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_CALL_TO_ACTION" />
+		</description>
+		<sheet display="false">
+			<description>Amongst the brave there are always those who are born to lead, and the Commander is just that. They stand at the front of battle, uniting their allies and leading the charge against their enemies.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_GROOMED_FOR_LEADERSHIP" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_BATTLE_COMMANDS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_FEARLESS_COMMANDER" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_COORDINATED_COMMAND" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_ADAPTIVE_STRATEGY" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_CALL_TO_ACTION" level="18" />
+		</rules>
+	</element>
+
+	<element name="Groomed for Leadership" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_GROOMED_FOR_LEADERSHIP">
+		<description>
+			<p>You gain proficiency in the History and Persuasion skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the History and Persuasion skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+
+	<element name="Battle Commands" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_BATTLE_COMMANDS">
+		<description>
+			<p>You can issue a battle command as a bonus action to an ally within 120 feet of you who can hear you. Choose one of the following commands:</p>
+			<ul>
+				<li><b>Fight On!</b> The target regains a number of hit points equal to 1d10 + your fighter level. The creature can’t regain hit points from this command again until it finishes a short or long rest.</li>
+				<li><b>For Glory!</b> The target can use their reaction to make a melee or ranged weapon attack.</li>
+				<li><b>Move It!</b> The target can use their reaction to move up to their speed without provoking opportunity attacks.</li>
+				<li><b>Never Falter!</b> The target recovers from one charmed or frightened condition. Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can issue a battle command as a bonus action to an ally within 120 feet of you who can hear you. Choose one of the following commands:</description>
+			<description usage="1/Short Rest">Fight On! The target regains a number of hit points equal to 1d10 + your fighter level. The creature can’t regain hit points from this command again until it finishes a short or long rest.</description>
+			<description>For Glory! The target can use their reaction to make a melee or ranged weapon attack.</description>
+			<description>Move It! The target can use their reaction to move up to their speed without provoking opportunity attacks.</description>
+			<description usage="1/Short Rest">Never Falter! The target recovers from one charmed or frightened condition. Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Fearless Commander" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_FEARLESS_COMMANDER">
+		<description>
+			<p>You gain proficiency in Wisdom saving throws, and you have advantage on saving throws against effects which charm or frighten you.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in Wisdom saving throws, and you have advantage on saving throws against effects which charm or frighten you.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Coordinated Command" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_COORDINATED_COMMAND">
+		<description>
+			<p>When you issue a battle command on your turn, you can target two allies instead of one. You can give both the same command or a different command to each ally. Both targets must be within 120 feet of you.</p>
+		</description>
+		<sheet>
+			<description>When you issue a battle command on your turn, you can target two allies instead of one. You can give both the same command or a different command to each ally. Both targets must be within 120 feet of you.</description>
+		</sheet>
+	</element>
+
+	<element name="Adaptive Strategy" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_ADAPTIVE_STRATEGY">
+		<description>
+			<p>When you issue a battle command, the targets gain advantage on their next attack roll or saving throw they make before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you issue a battle command, the targets gain advantage on their next attack roll or saving throw they make before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Call to Action" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_FIGHTER_ARCHETYPE_FEATURE_COMMANDER_CALL_TO_ACTION">
+		<description>
+			<p>At 18th level, when you use your Action Surge ability, instead of taking an additional action yourself, one ally you can see can immediately take an additional tturn immediately after you finish your turn.</p>
+		</description>
+		<sheet>
+			<description>At 18th level, when you use your Action Surge ability, instead of taking an additional action yourself, one ally you can see can immediately take an additional tturn immediately after you finish your turn.</description>
+		</sheet>
+	</element>
+</elements>

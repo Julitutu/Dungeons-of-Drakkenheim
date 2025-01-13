@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Warlock-Cosmic Patron.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+	<element name="Cosmic Patron" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_COSMIC_PATRON">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Some warlocks gain their eldritch power from the very cosmos, answering to entities of space, the constellations, planets, and moons. A warlock swearing fealty to a Cosmic patron typically believes they speak to gods, or god-like beings, but these entities are shrouded in mystery, their appearance incomprehensible and horrible, and their divine power is bestowed into the warlock from the stars and galaxies beyond.</p>
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_EXPANDED_SPELL_LIST" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_COSMIC_ATTRIBUTES" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_SHOOTING_STARS" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_COSMIC_GUIDANCE" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_ORBIT" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_METEORIC_IMPACT" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_SUPERNOVA" />
+		</description>
+		<sheet display="false">
+			<description>Some warlocks gain their eldritch power from the very cosmos, answering to entities of space, the constellations, planets, and moons. A warlock swearing fealty to a Cosmic patron typically believes they speak to gods, or god-like beings, but these entities are shrouded in mystery, their appearance incomprehensible and horrible, and their divine power is bestowed into the warlock from the stars and galaxies beyond.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_COSMIC_ATTRIBUTES" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_SHOOTING_STARS" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_COSMIC_GUIDANCE" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_ORBIT" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_METEORIC_IMPACT" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_SUPERNOVA" level="14" />
+		</rules>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Cosmos lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>Cosmic Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1st</td><td><i>magic missile, faerie fire</i></td></tr>
+					<tr><td>2nd</td><td><i>moonbeam, scorching ray</i></td></tr>
+					<tr><td>3rd</td><td><i>blink, spirit guardians</i></td></tr>
+					<tr><td>4th</td><td><i>fire shield, wall of fire</i></td></tr>
+					<tr><td>5th</td><td><i>flame strike, greater restoration</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Cosmos lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_MAGIC_MISSILE</extend> 
+			<extend>ID_PHB_SPELL_FAERIE_FIRE</extend> 
+			<extend>ID_PHB_SPELL_MOONBEAM</extend> 
+			<extend>ID_PHB_SPELL_SCORCHING_RAY</extend> 
+			<extend>ID_PHB_SPELL_BLINK</extend> 
+			<extend>ID_PHB_SPELL_SPIRIT_GUARDIANS</extend> 
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend> 
+			<extend>ID_PHB_SPELL_WALL_OF_FIRE</extend> 
+			<extend>ID_PHB_SPELL_FLAME_STRIKE</extend> 
+			<extend>ID_PHB_SPELL_GREATER_RESTORATION</extend> 
+		</spellcasting>
+	</element>
+
+	<element name="Cosmic Attributes" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_COSMIC_ATTRIBUTES">
+		<description>
+			<p>You take on an otherworldly cosmic appearance or essence. Choose one or more of the attributes listed below, decide your own, or roll randomly to determine how the cosmic powers bestowed into you take form.</p>
+			<ol>
+				<li>Your eyes become pools of inky black with small galaxies floating within them. To look into them is as if floating through the cosmos lost in the void of space.</li>
+				<li>Your touch becomes cold as ice and your skin becomes pale. Some might think you undead or sickly. You appear as if you had died in the cold of space.</li>
+				<li>Your voice has a slight echoing nature to it. As if there is more than one entity speaking through you. Your own voice is most prominent but when listening carefully one can make out a chorus of celestial voices speaking through you.</li>
+				<li>You give off a faint smell of ozone — acrid and sulfuric, as if lightning had just struck nearby. It seems unnatural and otherworldly.</li>
+				<li>You develop a third eye in the middle of your forehead that is unblinking, and seems to pierce into people’s minds as it stares upon them.</li>
+				<li>Your veins glow with a soft radiant light, giving you the appearance of a walking constellation of stars and cosmic energy.</li>
+			</ol>
+		</description>
+		<sheet>
+			<description>You take on an otherworldly cosmic appearance or essence. Choose one or more of the attributes listed below, decide your own, or roll randomly to determine how the cosmic powers bestowed into you take form.</description>
+		</sheet>
+	</element>
+
+	<element name="Shooting Stars" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_SHOOTING_STARS">
+		<description>
+			<p>Beginning at first level, you learn the eldritch blast cantrip if you don’t know it already. It doesn’t count against the number of warlock cantrips you know. When you cast eldritch blast, you can have it deal radiant damage instead of force damage.</p>
+		</description>
+		<sheet>
+			<description>Beginning at first level, you learn the eldritch blast cantrip if you don’t know it already. It doesn’t count against the number of warlock cantrips you know. When you cast eldritch blast, you can have it deal radiant damage instead of force damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" level="1" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Cosmic Guidance" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_COSMIC_GUIDANCE">
+		<description>
+			<p>You can speak, read, and write Celestial and Deep Speech. In addition, you learn the guidance cantrip. It doesn’t count against the number of warlock cantrips you know. Additionally, you may cast the spell augury once without expending a spell slot. You can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You can speak, read, and write Celestial and Deep Speech. In addition, you learn the guidance cantrip. It doesn’t count against the number of warlock cantrips you know. Additionally, you may cast the spell augury once without expending a spell slot. You can’t do so again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" level="1" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="1" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Orbit" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_ORBIT">
+		<description>
+			<p>Once per turn when you miss a creature with eldritch blast, the beam returns to you as an orbiting comet around your head. While you have an orbiting comet, you can absorb its energy to do the following:</p>
+			<ul>
+				<li><b>Cosmic Power.</b> Once on your turn when you cast eldritch blast, you can consume one orbiting comet to fire an additional beam.</li>
+				<li><b>Interception.</b> You can use your reaction to intercept a melee or ranged attack, gaining resistance to the damage from that attack.</li>
+				<li><b>Lightspeed.</b> As a bonus action, you can consume a comet to teleport 30 feet to an unoccupied space you can see.</li>
+			</ul>
+			<p>You can have a maximum number of orbiting comets equal to your proficiency bonus. As long as you have comets, you glow with bright light out to 20 feet, and dim light for an additional 10 feet. The comets last until you finish a short or long rest, or until you dismiss them (no action required).</p>
+		</description>
+		<sheet>
+			<description>Once per turn when you miss a creature with eldritch blast, the beam returns to you as an orbiting comet around your head. While you have an orbiting comet, you can absorb its energy to do the following:</description>
+			<description>Cosmic Power. Once on your turn when you cast eldritch blast, you can consume one orbiting comet to fire an additional beam.</description>
+			<description>Interception. You can use your reaction to intercept a melee or ranged attack, gaining resistance to the damage from that attack.</description>
+			<description>Lightspeed. As a bonus action, you can consume a comet to teleport 30 feet to an unoccupied space you can see.</description>
+			<description>You can have a maximum number of orbiting comets equal to your proficiency bonus. As long as you have comets, you glow with bright light out to 20 feet, and dim light for an additional 10 feet. The comets last until you finish a short or long rest, or until you dismiss them (no action required).</description>
+		</sheet>
+	</element>
+
+	<element name="Meteoric Impact" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_METEORIC_IMPACT">
+		<description>
+			<p>Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a Dexterity saving throw or take 3d6 fire damage.</p>
+			<p>The damage increases to 4d6 damage at 14th level, and to 5d6 damage at 17th level.</p>
+		</description>
+		<sheet>
+			<description>Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a Dexterity saving throw or take 3d6 fire damage.</description>
+			<description level="14">Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a Dexterity saving throw or take 4d6 fire damage.</description>
+			<description level="17">Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a Dexterity saving throw or take 5d6 fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Supernova" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_SUPERNOVA">
+		<description>
+			<p>Charged by the energy of the stars, you gain additional benefits from the otherworldly entities lurking in the deep void of space.</p>
+			<ul>
+				<li>When you cast eldritch blast, you can fire one additional beam.</li>
+				<li>Whenever you score a critical hit with eldritch blast, you can use your Meteoric Impact feature an additional time that turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Charged by the energy of the stars, you gain additional benefits from the otherworldly entities lurking in the deep void of space.</description>
+			<description>When you cast eldritch blast, you can fire one additional beam.</description>
+			<description>Whenever you score a critical hit with eldritch blast, you can use your Meteoric Impact feature an additional time that turn.</description>
+		</sheet>
+	</element>
+</elements>

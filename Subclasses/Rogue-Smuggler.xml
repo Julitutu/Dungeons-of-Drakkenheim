@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Rogue-Smuggler.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+	<element name="Smuggler" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_SMUGGLER">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>Whenever someone has something of value, usually illegal, that they need delivered discreetly, they call a smuggler. These rogues are experts at concealing, stealing, and blending in unnoticed to the common folk. They are also uniquely skilled at turning opportunities around when things are not going their way, and using whatever means necessary to achieve their goals. These slippery rogues are crafty and cunning and should not be underestimated.</p>
+			<div element="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_PACK_RAT" />
+			<div element="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_TRICKS_OF_THE_TRADE" />
+			<div element="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_BLEND_INTO_THE_CROWD" />
+			<div element="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_SLIP_PAST" />
+			<div element="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_NEVER_TELL_ME_THE_ODDS" />
+			<div element="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_SMUGGLED_SPELLS" />
+		</description>
+		<sheet display="false">
+			<description>Whenever someone has something of value, usually illegal, that they need delivered discreetly, they call a smuggler. These rogues are experts at concealing, stealing, and blending in unnoticed to the common folk. They are also uniquely skilled at turning opportunities around when things are not going their way, and using whatever means necessary to achieve their goals.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_PACK_RAT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_TRICKS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_BLEND_INTO_THE_CROWD" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_SLIP_PAST" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_NEVER_TELL_ME_THE_ODDS" level="13" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_SMUGGLED_SPELLS" level="17" />
+		</rules>
+	</element>
+
+	<element name="Pack Rat" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_PACK_RAT">
+		<description>
+			<p>Provided you have your hands free, you can retrieve and stow handheld items or weapons on your person as part of the action you use them (including the Attack action).</p>
+			<p>You have accumulated a collection of miscellaneous gear, which you conceal on your person for emergencies. This gear is kept in a bag, jacket, or backpack that you carry with you. You can retrieve any nonmagical, inanimate item detailed in the Adventuring Gear section of the Core Rules with a value of 25 gp or less and weighing less than 10 pounds. You may use this feature to retrieve a number of items equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</p>
+			<p>Though otherwise functional, objects retrieved using this feature are visibly worthless junk.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Provided you have your hands free, you can retrieve and stow handheld items or weapons on your person as part of the action you use them (including the Attack action).</description>
+			<description>You have accumulated a collection of miscellaneous gear, which you conceal on your person for emergencies. This gear is kept in a bag, jacket, or backpack that you carry with you. You can retrieve any nonmagical, inanimate item detailed in the Adventuring Gear section of the Core Rules with a value of 25 gp or less and weighing less than 10 pounds. You may use this feature to retrieve a number of items equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</description>
+			<description>Though otherwise functional, objects retrieved using this feature are visibly worthless junk.</description>
+		</sheet>
+	</element>
+
+	<element name="Tricks of the Trade" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_TRICKS_OF_THE_TRADE">
+		<description>
+			<p>You gain proficiency with the disguise kit, land vehicles, and water vehicles.</p>
+			<p>Whenever you make an ability check related to smuggling or concealing objects you add double your proficiency bonus to the check.</p>
+			<p>If you are driving a wagon, boat, or other vehicle with which you are proficient, you know tricks and modifications that you can make to build simple smuggler compartments in almost any vehicle. After one hour of work, you can conceal up to one-quarter of the maximum carrying capacity of the vehicle at the Game Master’s discretion. It takes one hour of work to modify a Large or smaller vehicle, eight hours to modify a huge vehicle, and two days to modify a Gargantuan or larger vehicle.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with the disguise kit, land vehicles, and water vehicles.</description>
+			<description>Whenever you make an ability check related to smuggling or concealing objects you add double your proficiency bonus to the check.</description>
+			<description>If you are driving a wagon, boat, or other vehicle with which you are proficient, you know tricks and modifications that you can make to build simple smuggler compartments in almost any vehicle. After one hour of work, you can conceal up to one-quarter of the maximum carrying capacity of the vehicle at the Game Master’s discretion. It takes one hour of work to modify a Large or smaller vehicle, eight hours to modify a huge vehicle, and two days to modify a Gargantuan or larger vehicle.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LAND_VEHICLES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WATER_VEHICLES" />
+		</rules>
+	</element>
+
+	<element name="Blend Into the Crowd" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_BLEND_INTO_THE_CROWD">
+		<description>
+			<p>You can attempt to hide even when you are obscured only by two or more creatures that aren’t hostile to you. Those creatures must be within 5 feet of each other and at least your size or larger.</p>
+		</description>
+		<sheet>
+			<description>You can attempt to hide even when you are obscured only by two or more creatures that aren’t hostile to you. Those creatures must be within 5 feet of each other and at least your size or larger.</description>
+		</sheet>
+	</element>
+
+	<element name="Slip Past" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_SLIP_PAST">
+		<description>
+			<p>You can move through another creature’s space, including hostile creatures, without penalty when you take the Dash or Disengage action on your turn.</p>
+			<p>When you do so, you gain advantage on attack rolls against any creature whose space you moved through this turn.</p>
+		</description>
+		<sheet>
+			<description>You can move through another creature’s space, including hostile creatures, without penalty when you take the Dash or Disengage action on your turn.</description>
+			<description>When you do so, you gain advantage on attack rolls against any creature whose space you moved through this turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Never Tell Me the Odds" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_NEVER_TELL_ME_THE_ODDS">
+		<description>
+			<p>Sometimes when the odds seem against you is the exact right moment to pull a fast one on your foes, using the chaos to get in a vital strike.</p>
+			<p>You can still apply your Sneak Attack even when you have disadvantage on the attack roll, so long as you meet the other conditions for making a Sneak Attack.</p>
+		</description>
+		<sheet>
+			<description>Sometimes when the odds seem against you is the exact right moment to pull a fast one on your foes, using the chaos to get in a vital strike.</description>
+			<description>You can still apply your Sneak Attack even when you have disadvantage on the attack roll, so long as you meet the other conditions for making a Sneak Attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Smuggled Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_FEATURE_SMUGGLER_SMUGGLED_SPELLS">
+		<description>
+			<p>Beginning at 17th level, you can store spells cast by other creatures in your bag. Your bag can store up to 6 levels worth of spells at a time.</p>
+			<p>Any creature can cast a spell of 1st through 5th level into your bag by touching the bag as the spell is cast. The spell has no effect, other than to be stored in your bag. If your bag can’t hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.</p>
+			<p>Alternatively, you can place a spell scroll in the bag. The spell is cast and stored in your bag and the spell scroll is destroyed.</p>
+			<p>You can cast any spell stored in your bag. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the bag is no longer stored in it, freeing up space.</p>
+		</description>
+		<sheet>
+			<description>Beginning at 17th level, you can store spells cast by other creatures in your bag. Your bag can store up to 6 levels worth of spells at a time.</description>
+			<description>Any creature can cast a spell of 1st through 5th level into your bag by touching the bag as the spell is cast. The spell has no effect, other than to be stored in your bag. If your bag can’t hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.</description>
+			<description>Alternatively, you can place a spell scroll in the bag. The spell is cast and stored in your bag and the spell scroll is destroyed.</description>
+			<description>You can cast any spell stored in your bag. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the bag is no longer stored in it, freeing up space.</description>
+		</sheet>
+	</element>
+</elements>

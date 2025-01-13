@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Warlock-Flesh Patron.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+	<element name="Flesh Patron" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FLESH_PATRON">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>A Warlock of the Flesh has made a pact with an entity so alien and unknown that its mere existence is enough to cause madness in most people. These warlocks have allowed an alien entity to inhabit their bodies, answering to some ancient and eldritch thing from beyond comprehension. This entity creates a symbiotic relationship with the host, granting them powers while reshaping and twisting their form.</p>
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_EXPANDED_SPELL_LIST" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_UNARMORED_DEFENSE" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_RESHAPE_FLESH" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_BODY_MODIFICATION" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_PHYSIOLOGICAL_MASTERY" />
+			<div element="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_UNFATHOMABLE_HORROR" />
+		</description>
+		<sheet display="false">
+			<description>A Warlock of the Flesh has made a pact with an entity so alien and unknown that its mere existence is enough to cause madness in most people. These warlocks have allowed an alien entity to inhabit their bodies, answering to some ancient and eldritch thing from beyond comprehension. This entity creates a symbiotic relationship with the host, granting them powers while reshaping and twisting their form.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_UNARMORED_DEFENSE" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_RESHAPE_FLESH" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_BODY_MODIFICATION" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_PHYSIOLOGICAL_MASTERY" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_UNFATHOMABLE_HORROR" level="14" />
+		</rules>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Flesh lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>Flesh Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1st</td><td><i>jump, shield</i></td></tr>
+					<tr><td>2nd</td><td><i>enhance ability, enlarge/reduce</i></td></tr>
+					<tr><td>3rd</td><td><i>haste, slow</i></td></tr>
+					<tr><td>4th</td><td><i>black tentacles, polymorph</i></td></tr>
+					<tr><td>5th</td><td><i>greater restoration, reincarnate</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Flesh lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_JUMP</extend> 
+			<extend>ID_PHB_SPELL_SHIELD</extend> 
+			<extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend> 
+			<extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend> 
+			<extend>ID_PHB_SPELL_HASTE</extend> 
+			<extend>ID_PHB_SPELL_SLOW</extend> 
+			<extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend> 
+			<extend>ID_PHB_SPELL_POLYMORPH</extend> 
+			<extend>ID_PHB_SPELL_GREATER_RESTORATION</extend> 
+			<extend>ID_PHB_SPELL_REINCARNATE</extend> 
+		</spellcasting>
+	</element>
+
+	<element name="Unarmored Defense" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_UNARMORED_DEFENSE">
+		<description>
+			<p>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Constitution modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored" value="10" bonus="base" />
+			<stat name="ac:unarmored" value="dexterity:modifier" bonus="dexterity" />
+			<stat name="ac:unarmored" value="constitution:modifier" bonus="constitution" />
+		</rules>
+	</element>
+
+	<element name="Reshape Flesh" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_RESHAPE_FLESH">
+		<description>
+			<p>As an action, you can take on a reshaped form, which lasts until you become incapacitated, use an action to change back, or use this feature again. When you do, choose from one of the reshaped forms below:</p>
+			<p class="indent"><b><i>Inverse Kneecaps.</i></b> Your legs become more powerful, and your knees now bend the opposite direction. While in this form, you increase your walking speed by 10 feet, and you can double your long and high jump distance.</p>
+			<p class="indent"><b><i>Aquatic Attributes.</i></b> You grow gills and your skin becomes slimy, the flesh between your fingers and toes becomes webbed. While in this form, you can breathe underwater, and gain a swimming speed equal to your walking speed.</p>
+			<p class="indent"><b><i>Natural Weapons.</i></b> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. You can use your Charisma modifier for attack and damage rolls.</p>
+			<p class="indent">The damage of your unarmed strikes increases as you gain levels in this class: 2d6 damage beginning at 10th level, and 3d6 damage at 14th level.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action, you can take on a reshaped form, which lasts until you become incapacitated, use an action to change back, or use this feature again. When you do, choose from one of the reshaped forms below:</description>
+			<description>Inverse Kneecaps. Your legs become more powerful, and your knees now bend the opposite direction. While in this form, you increase your walking speed by 10 feet, and you can double your long and high jump distance.</description>
+			<description>Aquatic Attributes. You grow gills and your skin becomes slimy, the flesh between your fingers and toes becomes webbed. While in this form, you can breathe underwater, and gain a swimming speed equal to your walking speed.</description>
+			<description>Natural Weapons. You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. You can use your Charisma modifier for attack and damage rolls.</description>
+			<description level="10">Natural Weapons. You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 2d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. You can use your Charisma modifier for attack and damage rolls.</description>
+			<description level="14">Natural Weapons. You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 3d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. You can use your Charisma modifier for attack and damage rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Body Modification" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_BODY_MODIFICATION">
+		<description>
+			<p>When you choose your reshaped form, you can choose any two options available to you.</p>
+			<p>You gain the following additional options when you take on a reshaped form.</p>
+			<p class="indent"><b><i>Gelatin Bones.</i></b> Your skin looks loose and saggy as you struggle to maintain your structure. You can now fit into spaces as small as one inch in diameter and gain advantage on Stealth checks.</p>
+			<p class="indent"><b><i>Change Appearance.</i></b> You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You can’t appear as a creature of a different size than you, and your basic shape stays the same. For example, if you’re bipedal, you can’t use this spell to become quadrupedal.</p>
+			<p class="indent"><b><i>Combat Instincts.</i></b> You can attack twice, instead of once, when you take the Attack action on your turn. In addition, your natural weapons and unarmed strikes are considered magical for the purposes of overcoming resistance to bludgeoning, piercing, and slashing damage.</p>
+			<p class="indent"><b><i>Spider Claws.</i></b> Your hands and feet grow strange mucusslicked insectoid features that allow you to climb surfaces. You gain a climb speed equal to your walk speed and can stick to ceilings as well without needing to make an ability check.</p>
+		</description>
+		<sheet>
+			<description>When you choose your reshaped form, you can choose any two options available to you.</description>
+			<description>Gelatin Bones. Your skin looks loose and saggy as you struggle to maintain your structure. You can now fit into spaces as small as one inch in diameter and gain advantage on Stealth checks.</description>
+			<description>Change Appearance. You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You can’t appear as a creature of a different size than you, and your basic shape stays the same. For example, if you’re bipedal, you can’t use this spell to become quadrupedal.</description>
+			<description>Combat Instincts. You can attack twice, instead of once, when you take the Attack action on your turn. In addition, your natural weapons and unarmed strikes are considered magical for the purposes of overcoming resistance to bludgeoning, piercing, and slashing damage.</description>
+			<description>Spider Claws. Your hands and feet grow strange mucusslicked insectoid features that allow you to climb surfaces. You gain a climb speed equal to your walk speed and can stick to ceilings as well without needing to make an ability check.</description>
+		</sheet>
+	</element>
+
+	<element name="Physiological Mastery" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_PHYSIOLOGICAL_MASTERY">
+		<description>
+			<p>You gain the following additional options when you take on a reshaped form.</p>
+			<p class="indent"><b><i>Aerial Adaptation.</i></b> Feathered or batlike wings rip out of your back, you gain a flying speed equal to your walking speed.</p>
+			<p class="indent"><b><i>Toxic Fumes.</i></b> A cloud of noxious gas seeps from your pores, you appear sickly, and green slime oozes from your pores. You have disadvantage on Charisma checks while in this form, but any creature that starts its turn within 10 feet of you takes 2d6 poison damage and has disadvantage on attack rolls against you.</p>
+			<p class="indent"><b><i>Hardened Skin.</i></b> You gain resistance to bludgeoning, piercing, and slashing damage from non-magical weapons.</p>
+		</description>
+		<sheet>
+			<description>You gain the following additional options when you take on a reshaped form.</description>
+			<description>Aerial Adaptation. Feathered or batlike wings rip out of your back, you gain a flying speed equal to your walking speed.</description>
+			<description>Toxic Fumes. A cloud of noxious gas seeps from your pores, you appear sickly, and green slime oozes from your pores. You have disadvantage on Charisma checks while in this form, but any creature that starts its turn within 10 feet of you takes 2d6 poison damage and has disadvantage on attack rolls against you.</description>
+			<description>Hardened Skin. You gain resistance to bludgeoning, piercing, and slashing damage from non-magical weapons.</description>
+		</sheet>
+	</element>
+
+	<element name="Unfathomable Horror" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_FLESH_UNFATHOMABLE_HORROR">
+		<description>
+			<p>You can choose any three available options when you transform using your Reshape Flesh feature. Additionally, you are immune to any spell or effect that would alter your form against your will.</p>
+		</description>
+		<sheet>
+			<description>You can choose any three available options when you transform using your Reshape Flesh feature. Additionally, you are immune to any spell or effect that would alter your form against your will.</description>
+		</sheet>
+	</element>
+</elements>

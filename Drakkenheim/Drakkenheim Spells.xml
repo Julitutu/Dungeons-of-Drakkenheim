@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.5.5">
+			<file name="Drakkenheim Spells.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Acid Burn" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_ACID_BURN">
+		<supports>Sorcerer, Wizard, Apothecary, Spell Saving Throw</supports>
+		<description>
+			<p>You magically produce a spray of acidic formula in a 15-foot cone in front of you. All creatures in the cone must succeed on a Dexterity saving throw or take 1d6 acid damage.</p>
+			<p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">acid</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (15-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Bacterial Barrage" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_BACTERIAL_BARRAGE">
+		<supports>Apothecary, Druid, Sorcerer, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p>You attack a creature in range with a quick spreading infection that takes advantage of existing conditions. Make a ranged spell attack against a target, on a hit the infection does 1d8 necrotic damage to the target. If the target is suffering from the poisoned condition or a disease, it instead takes 1d12 necrotic damage.</p>
+			<p class="indent">The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Poison Needle" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_POISON_NEEDLE">
+		<supports>Apothecary, Druid, Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p>You launch a conjured dart coated with lethal poison at a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 poison damage.</p>
+			<p class="indent">If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.</p>
+			<p class="indent">This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Acrid Orb" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_ACRID_ORB">
+		<supports>Apothecary, Ranger, Sorcerer, Warlock, Wizard, Ranged, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>You create an orb of acid gel and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d6 acid damage. Whether the attack hits or misses, the orb explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 acid damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the exploding acid damage increases by 1d6 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of stomach acid and a pinch of sulfate</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Envenom" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_ENVENOM">
+		<supports>Apothecary, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a creature you can see within range to inflict with a magical poison. The target takes 2d4 poison damage and must make a Constitution saving throw. On a failed saving throw, it becomes poisoned for the spell’s duration.</p>
+			<p class="indent">While poisoned in this way, the target must make a Constitution saving throw at the end of each of its turns. It takes 2d4 poison damage on a failed saving throw. On a success, the spell ends on that target.</p>
+			<p class="indent">A lesser restoration spell cast on the target ends this spell early.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of basic poison</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Infect" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_INFECT">
+		<supports>Apothecary, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You inflict a creature you can see within range with a magical disease. At the start of each of the target’s turns, it must make a Constitution saving throw. The creature takes 1d12 necrotic damage on a failed saving throw, or half as much on a successful one. If a target succeeds on three of these saves, the spell ends.</p>
+			<p class="indent">A lesser restoration spell cast on the target ends this spell early.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for every two slot levels above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a petri dish</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Stream of Consumption" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_STREAM_OF_CONSUMPTION">
+		<supports>Apothecary, Cleric, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>For the spell’s duration, your tongue becomes an elongated tether of necrotic green energy you can use to drink the vitality of other creatures. One creature of your choice within 60 feet of you that you can see must make a Constitution saving throw. On a failed save, the target gains 1 level of exhaustion, and you regain hit points equal to 1d4 + your spellcasting ability modifier.</p>
+			<p class="indent">On each of your turns until the spell ends, you can use your action to target the same creature or a different one, but can’t target a creature again if it has succeeded on a saving throw against this casting of stream of consumption.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Toxic Shield" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_TOXIC_SHIELD">
+		<supports>Apothecary, Bard, Paladin, Warlock</supports>
+		<description>
+			<p>You gain resistance to poison damage and advantage on saves against being poisoned for the duration. In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield sprays them with poison, dealing 1d8 poison damage to the attacker.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the poison damage increases by 1d8 for every 2 slot levels above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of dwarven blood</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Biohazard" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_BIOHAZARD">
+		<supports>Apothecary, Druid, Ranger, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You coat a 15-foot-wide cube with toxic sludge for the spell’s duration. The area is difficult terrain and filled with dangerous fumes. A creature that enters the area or starts its turn there must make a Constitution saving throw. On a failed saving throw, the creature takes 1d8 poison damage and is poisoned until the start of its next turn. Creatures are affected even if they hold their breath or don’t need to breathe.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">120 feet (15-foot cube)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a withered root and a drop of vinegar</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Caustic Grip" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_CAUSTIC_GRIP">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard, Melee, Spell Attack</supports>
+		<description>
+			<p>For the spell’s duration, your hand secretes sticky burning acid which you can use to hold a creature in a painful clutch. When you cast this spell, and as an action on your turn until the spell ends, you can make a melee spell attack against one creature within 5 feet of you. On a hit, you deal 4d4 acid damage to the target, and the creature is restrained in your acidic grip until the end of your next turn. You can attack the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.</p>
+			<p class="indent">A creature restrained by your grip can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained. Each time a creature ends its turn restrained by this spell, it takes an additional 4d4 acid damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Grasping Ghost" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_GRASPING_GHOST">
+		<supports>Apothecary, Bard, Cleric, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>A flock of floating spectral hands appear and grasp a target you can see within range. The target must succeed on a Strength saving throw. A target takes 3d8 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">In addition, on a failed saving throw the ghostly hands grapple the target until the end of your next turn, and immediately move the target up to 30 feet in a direction of your choice (but not upward). On its turn, the creature can use an action to attempt to escape the grapple by making a Strength or Dexterity check (its choice) against your spell save DC. If it succeeds, the grapple ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 3rd level or higher, the grasping ghost can target one additional creature within range for each spell level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a finger bone and a scrap of fabric</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Invigorate" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_INVIGORATE">
+		<supports>Apothecary, Cleric, Druid, Paladin, Wizard</supports>
+		<description>
+			<p>Choose up to three creatures within range. Each target gains 10 temporary hit points.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points increase by 5 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a syringe and a blood sample</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ocular Necrosis" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_OCULAR_NECROSIS">
+		<supports>Apothecary, Sorcerer, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p>Make a ranged spell attack against a creature you can see in range. If you hit, you wrack the creature with a deadly toxin that causes their eyes to bleed. The creature takes 2d6 necrotic damage and is blinded until the end of your next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the necrotic damage increases by 1d6 for each slot above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Corrosive Blast" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_CORROSIVE_BLAST">
+		<supports>Apothecary, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A spew of acrid chemicals erupts from your hands. Each creature in a 30-foot cone must make a Dexterity saving throw. A creature takes 10d4 acid damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">The acid destroys any objects made of organic materials in the spell’s area. A creature killed by this spell has its flesh entirely dissolved, leaving behind only a corroded skeleton.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by 2d4 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (30-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of acid</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Fetid Blade" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_FETID_BLADE">
+		<supports>Apothecary, Ranger, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You coat a weapon you touch in an acidic substance. Until the spell ends, weapon attacks made with it deal an extra 2d4 acid damage on a hit. If the weapon isn’t already a magic weapon, it becomes one for the duration.</p>
+			<p class="indent">In addition, a creature hit with a melee attack using the weapon must make a Constitution saving throw. On a failed save, it becomes poisoned until the end of the attacker’s next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by 1d4 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of acid and a pinch of iron dust</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Pestilence" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_PESTILENCE">
+		<supports>Apothecary, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You inflict up to three creatures you can see within range with a magical disease. At the start of each of the target’s turns, it must make a Constitution saving throw. On a failed saving throw, the creature takes 3d6 necrotic damage and gains 1 level of exhaustion. If a target succeeds on three of these saves, the spell ends for that creature.</p>
+			<p class="indent">A lesser restoration spell cast on a target ends this spell early for that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a withered flower</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Purge Contamination" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_PURGE_CONTAMINATION">
+		<supports>Apothecary, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You apply alchemical fluids or holy water to a contaminated humanoid creature while reciting an exacting magical chant which expels eldritch contaminants from its body. When you finish casting the spell, all contamination levels and mutations are removed from the creature. It then gains 1 level of exhaustion for each contamination level removed with this spell.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">100 gp of alchemical fluids or holy water, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Tranquilizing Toxin" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_TRANQUILIZING_TOXIN">
+		<supports>Apothecary, Spell Saving Throw</supports>
+		<description>
+			<p>One target you choose within range must make a Constitution saving throw or take 8d6 poison damage and become poisoned until the end of your next turn. While poisoned in this way, the target is also stunned. On a successful saving throw, the target takes half damage and is not poisoned.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the poison damage increases by 1d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Venomous Aura" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_VENOMOUS_AURA">
+		<supports>Apothecary, Druid</supports>
+		<description>
+			<p>You emit a baleful aura which disorients creatures who approach you. Any creatures that start their turn within 10 feet of you are poisoned until the start of their next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self (10-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">scales or fangs of a venomous snake</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Blood Worm" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_BLOOD_WORM">
+		<supports>Apothecary, Bard, Druid, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You infect a creature you can see within range with a magical disease in the form of a malignant parasite. Once per turn when a creature hits the infected target with a weapon attack, that attack deals an additional 4d6 necrotic damage, and the attacker regains hit points equal to the necrotic damage dealt. Each time the infected target takes this necrotic damage, it makes a Constitution saving throw against the spell. If the saving throw succeeds, the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the necrotic damage increases by 1d6 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic, disease</set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a jar full of leeches</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Corpse Explosion" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_CORPSE_EXPLOSION">
+		<supports>Apothecary, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You cause the triggering creature’s body to explode in a violent shower of gore and infected flesh. Creatures within 10 feet of a point centered on the triggering creature’s body take 4d8 necrotic damage and 4d8 acid damage, or half as much damage on a successful Dexterity saving throw.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 acid damage for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic, acid</set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reaction, which you take when a creature you can see dies within 120 feet of you.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Corrupting Spores" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_CORRUPTING_SPORES">
+		<supports>Apothecary, Druid, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>A small patch of three poison mushrooms magically sprout in a 5-foot square that you can see within range. The mushrooms emit toxic spores, and any creature that starts its turn within 10 feet of the mushroom patch must make a Constitution saving throw. On a failed save, the creature takes 1d8 poison damage for each mushroom in the patch and is poisoned until the start of its next turn.</p>
+			<p class="indent">Until the spell ends, you can use a bonus action on your turn to cause an additional mushroom to sprout within the patch.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, one additional mushroom sprouts with the initial patch for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dried mushroom</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Last Rites" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_LAST_RITES">
+		<supports>Apothecary, Cleric, Paladin, Spell Saving Throw</supports>
+		<description>
+			<p>You target a creature you can see within range with a beam of holy light that shines down upon them. The target must make a Wisdom saving throw. The target takes 8d8 radiant damage on a failed save, or half as much damage on a successful one. This spell has no effect on celestials or constructs.</p>
+			<p class="indent">If you target an undead or fiend, it makes the saving throw with disadvantage, and the spell deals maximum damage to it. If an undead or fiend is reduced to 0 hit points by this spell, it dies and its body is reduced to ash.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you may target an additional creature within 30 feet of each other for each spell level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small piece of brass, a rose petal, and a drop of holy water</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Poison Wave" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_POISON_WAVE">
+		<supports>Apothecary, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A wave of poisonous fumes emanates from you. Creatures within 30 feet of you must make a Constitution saving throw. On a failed save, each creature takes 4d12 poison damage and is poisoned until the end of your next turn. On a successful saving throw, a creature takes half as much damage and does not become poisoned.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d12 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (30-foot sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a withered root and a drop of vinegar</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Summon the Thing with the Writhing Tail" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_SUMMON_THE_THING_WITH_THE_WRITHING_TAIL">
+		<supports>Apothecary, Druid, Warlock, Wizard</supports>
+		<description>
+			<p>You call forth The Thing with the Writhing Tail. It manifests in an unoccupied space that you can see within range. This corporeal form uses the stat block below. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell’s level appears in the stat block.</p>
+			<div class="reference">
+				<div element="ID_GFG_SCGTD_INFORMATION_THE_THING_WITH_THE_WRITHING_TAIL" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">summon</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tuft of cat hair and a dead rat</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Vitriol Ichor" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_VITRIOL_ICHOR">
+		<supports>Apothecary, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a creature within range that has natural armor or is wearing armor. You magically cause the creature’s natural or manufactured armor to become corroded and brittle for the spell’s duration. While its armor is corroded, the creature’s AC becomes 10 + the creature’s Dexterity modifier.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you may target one additional creature for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of nitric acid and a flask of water</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Acid Rain" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_ACID_RAIN">
+		<supports>Apothecary, Druid, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Until the spell ends, acid rain falls in a 40-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is lightly obscured, and exposed flames in the area are doused.</p>
+			<p class="indent">Chemical pools accumulate on the ground in the area, making it difficult terrain. When a creature enters the spell’s area for the first time on a turn or starts its turn there, it takes 3d6 acid damage and must make a Dexterity saving throw. On a failed save, it falls prone in the pools, taking an additional 3d6 acid damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the acid damage increases by 1d6 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sulfur and ground coal</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Nerve Gas" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_NERVE_GAS">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a 10-foot-radius sphere of toxic fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. The fog’s area is heavily obscured.</p>
+			<p class="indent">When a creature enters the spell’s area for the first time on a turn or starts its turn there, that creature must make an Intelligence saving throw. On a failed saving throw, the creature takes 3d6 psychic damage and becomes stunned until the start of its next turn. On a successful saving throw, the creature takes half as much damage and is not stunned. Creatures are affected even if they hold their breath or don’t need to breathe.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 psychic damage for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">samples of phosphate and chlorine mixed with a drop of pure alcohol</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Neutralizing Field" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_NEUTRALIZING_FIELD">
+		<supports>Apothecary, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You negate contaminated magical energies in a 10-foot-radius sphere. Until the spell ends, the sphere moves with you, centered on you. Creatures in the sphere (including you) can’t gain Contamination Levels and have resistance to necrotic damage. Contaminated spells can’t be cast by creatures in the area.</p>
+			<p class="indent"><b>Researching the Spell:</b> A character who can cast 5th level spells, knows the purge contamination spell, and has created at least 1 dose of aqua expurgo may research neutralizing field.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Self (10-foot radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium crystal or holy relic worth 1,000 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Septic Shock" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_SEPTIC_SHOCK">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a creature you can see within range that doesn’t have all its hit points. You infect the target’s wounds with putrefying bacteria. The target must make a Constitution saving throw. If it has less than half its maximum hit points remaining, it makes the saving throw with disadvantage. On a failed save, the target takes 10d8 necrotic damage and gains 1 level of exhaustion. On a successful save, it takes half as much damage and does not gain any exhaustion levels.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of a rotten liver</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Toxic Barrage" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_TOXIC_BARRAGE">
+		<supports>Apothecary, Ranger, Sorcerer, Wizard, Ranged, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>You create four rays of pure poison and hurl them at targets within range. You can hurl them at one target or several.</p>
+			<p class="indent">Make a ranged spell attack for each ray. On a hit, the target takes 3d6 poison damage. If a target is hit by one or more of these rays, it must make a Constitution saving throw. On a failed save, the target is poisoned for 1 minute. While poisoned in this way, the target can repeat the saving throw at the end of each of its turns. On a success, it is no longer poisoned.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you create one additional ray for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">four death cap mushrooms</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Mephitic Vapors" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_MEPHITIC_VAPORS">
+		<supports>Apothecary, Druid, Sorcerer, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You douse a 20-foot radius area centered on a point you can see within range with acrid slime, which remains for the spell’s duration. The area becomes difficult terrain, and any creature wholly within the area is blinded and can’t take reactions.</p>
+			<p class="indent">A creature who starts its turn in the area must succeed on a Constitution saving throw or take 2d8 poison damage and 2d8 acid damage and gain one level of exhaustion.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d8 poison damage and 1d8 acid damage for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison, acid</set>
+			<set name="level">6</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of chlorine</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Vile Necrosis" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_VILE_NECROSIS">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p>You point your finger towards a creature within range, projecting a pale green beam of debilitating energy at them. Make a ranged spell attack against the target. On a hit, the target takes 12d6 necrotic damage, and it becomes weakened. While weakened by this spell, a target deals half damage with weapon attacks and spells.</p>
+			<p class="indent">A weakened target can make a Constitution saving throw at the end of each of its turns. On a successful save, the weakness ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of coagulated blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Contamination Immunity" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_CONTAMINATION_IMMUNITY">
+		<supports>Apothecary, Bard, Cleric, Druid, Sorcerer, Warlock, Wizard </supports>
+		<description>
+			<p>Until the spell ends, one willing creature you touch is immune to necrotic damage and cannot gain Contamination Levels. The affected creature may rest normally within the Haze.</p>
+			<p class="indent">This spell ends immediately if the creature casts a contaminated spell.</p>
+			<p class="indent"><b>Researching the Spell:</b> A character who can cast 7th level spells, knows the neutralizing field spell, and who has visited the Delerium Heart can research contamination immunity.</p>
+		</description>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">24 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an eldritch lily mixed into 250 gp worth of purified fluids per target, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Grievous Wounds" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_GRIEVOUS_WOUNDS">
+		<supports>Apothecary, Cleric, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a creature you can see within range. You momentarily strip the target’s physiology of all resilience, enough that a mere scratch can become a terrible injury. Until the end of your next turn, the target loses any damage resistances or immunities, becomes vulnerable to all damage, and makes all its saving throws with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a needle and several stitches</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Miasma" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_MIASMA">
+		<supports>Apothecary, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a wall of sickly, yellowish green, toxic fumes on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.</p>
+			<p class="indent">When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 acid damage, or half as much damage on a successful save.</p>
+			<p class="indent">One side of the wall, selected by you when you cast this spell, emits toxic fumes. It deals 8d8 poison damage to each creature that ends its turn within 30 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn. The other side of the wall deals no damage.</p>
+			<p class="indent">A creature who takes poison damage from the wall must make a Constitution saving throw or become poisoned for the duration of the spell</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, the damage increases by 2d8 for each slot level above 7th.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison, acid</set>
+			<set name="level">7</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a freshly harvested corpse lily</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Breath of Nightshade" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_BREATH_OF_NIGHTSHADE">
+		<supports>Apothecary, Bard, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You exhale a 60-foot-cone of lethal poison. Each creature in the area when you cast the spell must make a Constitution saving throw. On a failed save, the creature becomes poisoned for 1 hour. While poisoned by this spell, the creature is paralyzed. The spell ends for an affected creature if it takes any damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">8</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (60-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pair of deadly nightshade flowers</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Plague Wind" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_PLAGUE_WIND">
+		<supports>Apothecary, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You summon a roiling wind of flesh devouring disease and excruciating blood boiling fumes that sweeps over the area emanating from you in a 120-foot cone. Creatures in the area must make a Constitution saving throw. On a failed saving throw a creature takes 5d8 poison damage and 5d8 necrotic damage or half as much damage on a success. After taking this damage, any affected creature with 25 hit points or fewer remaining immediately dies and is reduced to a weathered skeleton as their flesh and soft tissue blows off like ash.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison, necrotic</set>
+			<set name="level">8</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (120-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">mucus from a ghoul</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Pandemic" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_PANDEMIC">
+		<supports>Apothecary, Druid, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You infect one creature you can see within range with a deadly and highly infectious disease which lasts until it is cured by greater restoration, heal or wish. Other spells and magical effects which remove diseases fail to cure the infection caused by this spell.</p>
+			<p class="indent">While infected, a creature must make a Constitution saving throw at the start of each of its turns. On a failed saving throw, it takes 10d8 necrotic damage and becomes incapacitated until the start of its next turn. On a successful save, it takes half as much damage and is not incapacitated. An infected creature must make the saving throw at the start of each of its turns until it dies or is cured.</p>
+			<p class="indent">A creature who starts its turn within 10 feet of a creature infected by this spell must make a Constitution saving throw. On a failed saving throw, that creature contracts the infection.</p>
+			<p class="indent">When you cast the spell, you can choose yourself and up to eight other creatures to be unaffected by the infection caused by this casting of the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">disease, necrotic</set>
+			<set name="level">9</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the fetid corpse of a plague rat</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Touch of Death" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_TOUCH_OF_DEATH">
+		<supports>Apothecary, Cleric, Sorcerer, Warlock, Wizard, Melee, Spell Attack</supports>
+		<description>
+			<p>Make a melee spell attack against a target within 5 feet of you. On a hit, the target takes 200 poison damage. This damage ignores any resistance or immunity the creature has to poison damage, and can’t be reduced or prevented in any way.</p>
+			<p class="indent">The potent poison lingers in the targets body and pulls it towards death. A target reduced to zero hit points by this poison damage automatically fails death saving throws until it finishes a long rest. A heal or greater restoration spell cast on the target also ends this effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">9</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the finger of a hag</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Forced Evolution" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_FORCED_EVOLUTION">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>By means of this spell, you transform a mutation gained from contamination. One of the target’s existing mutations is removed and is replaced by a different one. This mutation may be chosen by the Game Master or determined randomly.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">8 hours</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">An alchemical cocktail made from rare components and delerium dust worth 250 gold, which the target consumes as part of the spell</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Sacrament of the Falling Fire" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_SACRAMENT_OF_THE_FALLING_FIRE">
+		<supports>Apothecary, Bard, Cleric, Druid, Warlock</supports>
+		<description>
+			<p>This spell may only be cast in an area covered by the Deep Haze.</p>
+			<p>You perform a holy ceremony involving up to 12 faithful and willing humanoid creatures that ends when each participating creature drives a delerium shard into their chest. Those creatures become sanctified (see the Followers of the Falling Fire dossier in chapter 3).</p>
+			<p class="indent">When you finish casting this spell, a hostile shadow appears and attacks each participant, as a manifestation of that character’s inner darkness. The GM may determine that a character who carries great anger, fear, or hate in their heart causes a wraith to manifest instead.</p>
+		</description>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp for each participating creature, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Siphon Contamination" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_SIPHON_CONTAMINATION">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>This demanding spell transfers contamination from one creature to another. When you cast this spell, you must first touch either a willing humanoid creature with one or more levels of contamination, or a former humanoid creature whose current form is the result of a monstrous transformation. You then touch a different willing humanoid creature.</p>
+			<p class="indent">If both creatures touched were willing humanoid creatures, you remove all contamination levels and mutations from the first creature, then the second creature you touch gains a number of contamination levels equal to the number of levels removed from the first creature.</p>
+			<p class="indent">If the first creature you touch is a former humanoid who suffered a monstrous contamination, and the second creature is a willing humanoid creature with a character level or challenge rating equal to or higher than the challenge rating of the transformed creature, you restore the fully contaminated creature to its original form, then the humanoid creature immediately undergoes a monstrous transformation as if it had gained six contamination levels.</p>
+			<p class="indent">The second creature touched cannot prevent or negate these contamination levels or an ensuing transformation in any way, or else the spell fails with no effect.</p>
+			<p class="indent"><b>Researching the Spell:</b> A character who can cast 6th level spells who knows the spells forced evolution and neutralizing field, and has witnessed another creature undergo a monstrous transformation may research siphon contamination.</p>
+		</description>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">500 gp worth of specially-prepared alchemical fluids and a delerium geode worth 5,000 gp, all of which are consumed by the spell</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- Contaminated Spells -->
+
+	<element name="Comet Shards" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_COMET_SHARDS">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p><em>When you cast this spell, you gain 1 Contamination Level.</em></p>
+			<p>You shatter the delerium fragment in your hand into three glowing comet-like motes of magical force which you hurl at your foes. Each comet hits a creature of your choice that you can see within range. A comet deals 2d4 + your spellcasting ability modifier force damage to its target and pushes it 10 feet away from you. The comets all strike simultaneously, and you can direct them to hit one creature or several.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more comet for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">force, contaminated</set>
+			<set name="level">1</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium chip worth 10 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Corrupted Cure" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_CORRUPTED_CURE">
+		<supports>Apothecary, Bard, Cleric, Paladin, Ranger, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+		<p><em>When you cast this spell, you gain 1 Contamination Level.</em></p>
+			<p>A creature of your choice that you can see within range regains hit points equal to 4d6 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+			<p class="indent">When you cast this spell, the target can choose to gain a Contamination Level as well. If it does, it instead regains hit points equal to 8d6 + your spellcasting ability modifier.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 2d6 for each slot level above 1st, or 4d6 if the target chooses to gain a Contamination Level.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated</set>
+			<set name="level">1</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium chip worth 10 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Controlled Mutation" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_CONTROLLED_MUTATION">
+		<supports>Apothecary, Bard, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p><em>When you cast this spell, you gain 1 Contamination Level.</em></p>
+			<p>You weave contaminated energy to temporarily imbue a creature within range with a beneficial mutation. Choose one of the following effects; the target gains that effect until the spell ends.</p>
+			<p class="indent"><b><i>Strength.</i></b> The target has advantage on Strength attack rolls, ability checks, and saving throws. The target can choose to gain a Contamination Level. If it does, its melee weapon attacks deal an additional 2d6 necrotic damage for the spell’s duration.</p>
+			<p class="indent"><b><i>Constitution.</i></b> The target has advantage on Constitution checks and saving throws. The target can choose to gain a Contamination Level. If it does, it gains resistance to bludgeoning, piercing, and slashing damage for the spell’s duration.</p>
+			<p class="indent"><b><i>Dexterity.</i></b> The target has advantage on Dexterity attack rolls, ability checks, and saving throws. The target can choose to gain a Contamination Level. If it does, its attacks with ranged and finesse weapons score a critical hit on an 18–20 for the spell’s duration.</p>
+			<p class="indent"><b><i>Intelligence.</i></b> The target has advantage on Intelligence ability checks and saving throws, as well as spell attack rolls. The target can also choose to gain a Contamination Level. If it does, for the duration of this spell, while the target is concentrating on a spell it has cast, it’s concentration can’t be broken as a result of taking damage.</p>
+			<p class="indent"><b><i>Wisdom.</i></b> The target has advantage on Wisdom ability checks and saving throws, as well as spell attack rolls. The target can also choose to gain a Contamination Level. If it does, for the duration of this spell, it gains blindsight to a range of 60 feet and can’t be surprised while it is conscious.</p>
+			<p class="indent"><b><i>Charisma.</i></b> The target has advantage on Charisma ability checks and saving throws, as well as spell attack rolls. In addition, the target can choose to gain a Contamination Level. If it does, for the duration of this spell, when the target makes a Charisma (Persuasion) or Charisma (Deception) check, it can treat a d20 roll of 9 or lower as a 10.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can choose one additional effect for every two slot levels above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated</set>
+			<set name="level">2</set>
+			<set name="school">Contaminated Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium chip worth 100 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Vanish to the Space Between Worlds" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_VANISH_TO_THE_SPACE_BETWEEN_WORLDS">
+		<supports>Apothecary, Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>When you cast this spell, you vanish from your current plane of existence and appear in the Space Between Worlds (avoiding the triggering damage). At the start of your next turn, you return to an unoccupied space of your choice within 30 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near).</p>
+			<p class="indent">While within the Space Between Worlds, you can see and hear the plane you originated from, which is cast as a roiling blur, and you can’t see anything there more than 60 feet away. You can only affect and be affected by other creatures in the Space Between Worlds. Creatures that aren’t there can’t perceive you or interact with you, unless they have the ability to do so.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated</set>
+			<set name="level">3</set>
+			<set name="school">Contaminated Abjuration</set>
+			<set name="time">1 reaction, which you take when you take damage</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium chip worth 10 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Weave the Elder Sign" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_WEAVE_THE_ELDER_SIGN">
+		<supports>Apothecary, Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>You weave an impossible sign from an inscrutable reality in the air inside a 30-foot cube within range. It appears for only a moment before vanishing. Each creature in the area who sees the sign must make an Intelligence saving throw. On a failed save, the creature becomes blinded and stunned for the spell’s duration. On a successful save, a creature is blinded until the end of your next turn.</p>
+			<p class="indent">The spell ends for a stunned creature if it takes any damage, or if someone else uses an action to shake the creature out of its stupor. When the spell ends for a stunned creature, it takes 3d6 psychic damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, psychic</set>
+			<set name="level">3</set>
+			<set name="school">Contaminated Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium chip worth 10gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Horrific Transformation" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_HORRIFIC_TRANSFORMATION">
+		<supports>Apothecary, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>This spell transforms a willing creature that you touch into a horrific monstrosity. The spell has no effect on a shapechanger or a creature with 0 hit points. The transformation lasts for the duration, or until the target drops to 0 hit points or dies.</p>
+			<p class="indent">The new form can be an aberration with a Challenge Rating of 4 or lower.</p>
+			<p class="indent">The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen aberration. It retains its alignment and personality.</p>
+			<p class="indent">The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious.</p>
+			<p class="indent">The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech.</p>
+			<p class="indent">The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment.</p>
+			<p class="indent">In addition to a delerium fragment worth 100gp, you must provide either the heart or brain (or equivalent organ in the case of aberrations with a truly alien physiology) taken from a creature of the same type: the organ must either be recently harvested or magically preserved via gentle repose or similar magic. As part of casting the spell, you drive the delerium fragment into the organ, and both are consumed by the spell. The Game Master determines if an aberration’s physiology makes its organs suitable for use with this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated</set>
+			<set name="level">4</set>
+			<set name="school">Contaminated Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Siphon Time" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_SIPHON_TIME">
+		<supports>Apothecary, Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>You seize upon the flow of time around up to three creatures of your choice within range, drawing seconds from them to use them yourself. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.</p>
+			<p class="indent">An affected target can’t take reactions. On its turn, it must choose to either move, take an action, or a bonus action: a target can do only one of the three.</p>
+			<p class="indent">A creature affected by this spell can spend its action to try to pull back the threads of time. If it does, it can make another Wisdom saving throw. On a successful save, the effect ends for it.</p>
+			<p class="indent">While at least one other creature is affected by this spell, you gain an additional action on each of your turns. That action can be used only to take the Attack (one weapon attack only), Cast a Spell, Dash, Disengage, Hide, or Use an Object action. If you use this action to cast a spell, that spell must be a cantrip with a casting time of one action.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated</set>
+			<set name="level">4</set>
+			<set name="school">Contaminated Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a broken clock, and a delerium fragment worth 100gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Summon Delerium Elemental" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_SUMMON_DELERIUM_ELEMENTAL">
+		<supports>Apothecary, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>You call forth a contaminated elemental to do your bidding. Choose air, earth, fire, or water. Eldritch energy conjures a contaminated elemental of the chosen type, which appears in an unoccupied space within range: either an animated sludge (water), entropic flame (fire), living haze (air), or walking geode (earth). Each uses the summoned delerium elemental stat block below, but gains different traits based on the chosen element used to conjure the elemental. The elemental disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The elemental is friendly to you and your companions for the duration of the spell. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys any verbal command you give it (no action required by you). If you don’t give any commands, it attacks the closest hostile creature it can see, moving towards it by the most direct route.</p>
+			<p class="indent">The elemental doesn’t disappear if you lose concentration on this spell. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it attacks you. An uncontrolled elemental can’t be dismissed by you, and it remains until it is destroyed.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell’s level appears in the stat block.</p>
+				<div class="reference">
+					<div element="ID_GFG_SCGTD_INFORMATION_DELERIUM_ELEMENTAL" />
+				</div>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, summon</set>
+			<set name="level">4</set>
+			<set name="school">Contaminated Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Contaminated Hands" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_CONTAMINATED_HANDS">
+		<supports>Apothecary,Sorcerer, Warlock, Wizard, Melee, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>You create two Large hands of shimmering, octarine force in an unoccupied space that you can see within range. The hands last for the spell’s duration. Both hands move at your command, mimicking the movements of your own hands.</p>
+			<p class="indent">Each hand is an object that has AC 20 and hit points equal to your hit point maximum. If one or both of the hands drop to 0 hit points, the spell ends. Each hand has a Strength of 26 (+8) and a Dexterity of 10 (+0) and occupies its space.</p>
+			<p class="indent">When you cast the spell, and as an action on your subsequent turns, you can move the hands up to 60 feet and then cause one of the following effects with each. Both hands can perform the same action, or different ones. The two hands must move to remain within 30 feet of each other.</p>
+			<p class="indent"><b><i>Arcane Slam.</i></b> The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes 4d12 necrotic damage. If you direct both hands to attack the same target, they gain advantage on the attack roll.</p>
+			<p class="indent"><b><i>Forceful Throw.</i></b> The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand’s Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it. If both hands are used against the same target, you can throw them ten times your spellcasting ability modifier, and gain advantage on the check against a Large or smaller target.</p>
+			<p class="indent"><b><i>Eldritch Grip.</i></b> The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand’s Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. If both the hands are used against the same target, they can grapple a creature regardless of its size, and you have advantage on the grapple check against a Large or smaller target.</p>
+			<p class="indent"><b><i>Contaminated Crush.</i></b> You can have a hand crush a target it is grappling. When you do so, the target takes bludgeoning damage equal to 2d12 + your spellcasting ability modifier. In addition, the target must make a Constitution saving throw or gain 1 Contamination Level.</p>
+			<p class="indent">If both the hands are grappling the same target, you can have them rip the grappled target limb from limb. They deal an extra 4d12 necrotic damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage from the arcane slam and contaminated crush options increases by 2d12 and the damage from the eldritch grip increases by 2d6 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, necrotic, force</set>
+			<set name="level">5</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Storm of Contamination" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_STORM_OF_CONTAMINATION">
+		<supports>Apothecary, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>You create an arcing bolt of eldritch lightning that strikes a target of your choice that you can see within range. Multiple bolts then leap from that target to up to five other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.</p>
+			<p class="indent">A target must make a Dexterity saving throw. The target takes 10d12 lightning damage on a failed save, or half as much damage on a successful one. In addition, a target which fails the saving throw gains 1 Contamination Level.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning, contaminated</set>
+			<set name="level">6</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Octarine Sword" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_OCTARINE_SWORD">
+		<supports>Apothecary, Bard, Sorcerer, Warlock, Wizard, Melee, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>You create a sword-shaped plane of contaminated energy that hovers within range. It lasts for the duration or until you cast this spell again.</p>
+			<p class="indent">When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 4d10 force damage, and the target must make a Constitution saving throw. On a failed save, the target takes an additional 4d6 necrotic damage and gains 1 Contamination Level.</p>
+			<p class="indent">Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, the force damage increases by 1d10 and the necrotic damage increases by 1d6 for each slot level above 7th.</p>
+		</description>
+		<setters>
+			<set name="keywords">force, necrotic, contaminated</set>
+			<set name="level">7</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100gp, and a dagger</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Unbind Gravity" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_UNBIND_GRAVITY">
+		<supports>Apothecary, Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>This spell allows you to control gravity in a 100-foot-cube centered on a point within range. When you cast this spell and at the start of each of your turns for the spell’s duration, you decide which direction gravity pulls within the area. All creatures and objects that aren’t somehow anchored to the ground in the area fall in the direction you choose until they reach the edge of the area. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall.</p>
+			<p class="indent">If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall. If an object or creature reaches the edge of the area without striking anything, it remains there, oscillating slightly, for the duration.</p>
+			<p class="indent">Alternatively, you can decide to prevent gravity from acting within the area. When you do, creatures within the area levitate in midair, and must move by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows them to move as if they were climbing. Unattended objects float around randomly.</p>
+			<p class="indent">At the end of the duration, affected objects and creatures fall back down.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated</set>
+			<set name="level">7</set>
+			<set name="school">Contaminated Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">100 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Banish to the Space Between Worlds" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_BANISH_TO_THE_SPACE_BETWEEN_WORLDS">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>You banish a creature that you can see within range into the Space Between Worlds. Upon this roiling plane of chaotic potential, the target wanders incomprehensible vistas searching for a way back via strange and absurd exits. The target remains there for the duration or until it escapes.</p>
+			<p class="indent">The target can use its action to attempt to escape. When it does so, it makes an Intelligence check against your spell save DC. If it succeeds, it escapes, and the spell ends. On a failed check, the target takes 4d6 psychic damage.</p>
+			<p class="indent">When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space.</p>
+			<p class="indent">Time passes differently for the target within the Space Between Worlds, and it perceives its time spent there as having lasted hundreds or perhaps thousands of years, even if it was only gone for rounds or minutes in the mortal world.</p>
+			<p class="indent">A creature which dies in the Space Between Worlds does not return.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, psychic</set>
+			<set name="level">8</set>
+			<set name="school">Contaminated Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Delerium Meteor Swarm" type="Spell" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_SPELL_DELERIUM_METEOR_SWARM">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain 1 Contamination Level.</i></p>
+			<p>You call down eldritch falling stars that crash into the earth at four points you can see within range. Each creature within a 40-foot-radius sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 10d6 radiant damage, 10d6 necrotic damage, 10d6 thunder damage, 10d6 psychic damage, and 10d6 force damage on a failed saving throw, or half as much damage on a successful one. A creature in the area of more than one burst is affected only once.</p>
+			<p class="indent">The falling stars leave lasting contamination in the areas they affect, which lasts for one hour. A creature that starts its turn within the affected area must make a Constitution saving throw. On a failed saving throw, the creature takes 5d6 necrotic damage and gains 1 Contamination Level. It takes half as much damage and does not gain any Contamination Levels on a successful save. A creature reduced to 0 hit points by this damage immediately undergoes a Monstrous Transformation as if they had gained 6 Contamination Levels.</p>
+			<p class="indent">The spell damages structures and objects in the area that aren’t being worn or carried.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, radiant, necrotic, thunder, psychic, force</set>
+			<set name="level">9</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">1 mile</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an igneous rock and a delerium fragment worth 100gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Conjure the Deep Haze" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_CONJURE_THE_DEEP_HAZE">
+		<supports>Apothecary, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain one level of contamination.</i></p>
+			<p>You create a 20-foot-radius sphere of the Deep Haze on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.</p>
+			<p class="indent">When a creature enters the spell’s area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw. On a failed saving throw, it suffers 8d6 necrotic damage and gains one level of contamination. On a successful save, the creature takes half as much damage and does not gain any contamination levels. Creatures are affected even if they hold their breath or don’t need to breathe.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, necrotic</set>
+			<set name="level">5</set>
+			<set name="school">Contaminated Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Contaminated Power" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_CONTAMINATED_POWER">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p><i>When you cast this spell, you gain one level of contamination.</i></p>
+			<p>You draw unrestrained arcane magic from the delerium shard you hold in your hand. Until the spell ends, you gain the following benefits:</p>
+			<ul>
+				<li>When you cast a spell that deals acid, fire, cold, lightning, or poison damage, you can change the damage type to force, necrotic, psychic, or radiant damage.</li>
+				<li>Once per turn when you deal damage with a spell, you can deal an extra 1d12 necrotic damage for each contamination level you have gained to one target of that spell.</li>
+				<li>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can choose to gain one level of contamination. If you do, one target of the spell has disadvantage on its first saving throw made against that spell.</li>
+			</ul>
+			<p>This spell can’t be dispelled by <i>dispel magic</i>.</p>
+			<p class="indent"><b>Discovering the Spell:</b> A character who can cast 8th level spells, knows every other contaminated spell, and has cast each of them at least once can research contaminated power.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated</set>
+			<set name="level">8</set>
+			<set name="school">Contaminated Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium shard worth 500 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Delerium Blast" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_DELERIUM_BLAST">
+		<supports>Apothecary, Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain one level of contamination.</i></p>
+			<p>You ignite arcane energies stored inside a delerium fragment held in your hand, and hurl it towards a space you can see within range. It explodes in a 20-foot-radius sphere of erratic psychic energy that overwhelms the minds and senses of those within. Each creature in the sphere must succeed on an Intelligence saving throw. On a failed save, a creature takes 10d6 psychic damage and becomes incapacitated until the end of their next turn. On a successful save, a target takes half as much damage and suffers none of the spell’s other effects.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 2d6 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, psychic</set>
+			<set name="level">4</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Delerium Orb" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_DELERIUM_ORB">
+		<supports>Apothecary, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain one level of contamination.</i></p>
+			<p>You draw chaotic magical power from the delerium chip held in your hand, and blast a creature you can see within range with paradoxical power. Choose one ability score, then choose cold, fire, lightning, necrotic, psychic, or radiant damage. The target must succeed on a saving throw using the chosen ability score; it takes 6d6 damage of the chosen type on a failed saving throw, or half as much on a successful one.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 2d6 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated</set>
+			<set name="level">1</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Octarine Spray" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_OCTARINE_SPRAY">
+		<supports>Apothecary, Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain one level of contamination.</i></p>
+			<p>Octarine rays of light flash from your hand. Each ray is a different colour and has a different power and purpose, see the table below. Each creature in a 60-foot cone must succeed on a Constitution saving throw. For each target, roll a d8 to determine which colour ray affects it.</p>
+			<table>
+				<thead>
+					<tr><td>d8</td><td class="left">Effect</td></tr>
+				</thead>
+					<tr><td>1</td><td class="left">The target takes 20d6 psychic damage on a failed save, or half as much damage on a success.</td></tr>
+					<tr><td>2</td><td class="left">The target takes 20d6 necrotic damage on a failed save, or half as much damage on a success.</td></tr>
+					<tr><td>3</td><td class="left">The target takes 20d6 force damage on a failed save, or half as much damage on a success.</td></tr>
+					<tr><td>4</td><td class="left">The target takes 20d6 radiant damage on a failed save, or half as much damage on a success.</td></tr>
+					<tr><td>5</td><td class="left">The target takes 20d6 thunder damage on a failed save, or half as much damage on a success.</td></tr>
+					<tr><td>6</td><td class="left">At the start of each of its turns, the affected target uses all its movement to move directly towards the closest creature it can see. Then, the affected target uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the affected target does nothing this turn. At the end of each of its turns, the affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.</td></tr>
+					<tr><td>7</td><td class="left">At the start of each of its turns, the affected target gains one level of contamination. At the end of each of its turns, an affected target can make a Constitution saving throw. If it succeeds, this effect ends for that target, but any contamination levels gained remain.</td></tr>
+					<tr><td>8</td><td class="left">Special. The target is struck by an additional ray. Roll again twice. There’s no limit to how many additional rays can strike a single creature in this manner.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, psychic, necrotic, force, radiant, thunder</set>
+			<set name="level">7</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (60-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ride the Rifts" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_RIDE_THE_RIFTS">
+		<supports>Apothecary, Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p><i>When you cast this spell, you gain one level of contamination.</i></p>
+			<p>A stroke of eldritch lightning forming a line 60 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw. A creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. You then teleport to an unoccupied space you can see within the line’s area.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 2d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, lightning, teleport</set>
+			<set name="level">3</set>
+			<set name="school">Contaminated Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (60-foot line)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ray of Contamination" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_RAY_OF_CONTAMINATION">
+		<supports>Apothecary, Druid, Sorcerer, Warlock, Wizard, Ranged, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p><i>When you cast this spell, you gain one level of contamination.</i></p>
+			<p>An octarine ray springs from your pointing finger to a creature that you can see within range. The target must succeed on a Constitution saving throw. On a failed save, a creature takes 16d6 necrotic damage and gains 1d4 levels of Contamination. On a successful save, a target takes half as much damage and does not gain any contamination levels.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, you can target one additional creature for each slot level above 6th. The creatures must be within 30 feet of each other when you target them.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, necrotic</set>
+			<set name="level">6</set>
+			<set name="school">Contaminated Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Warp Bolt" type="Spell" source="Dungeons of Drakkenheim" id="ID_DOD_SPELL_WARP_BOLT">
+		<supports>Apothecary, Ranged, Spell Attack</supports>
+		<description>
+			<p><i>When you cast this spell, you gain one level of contamination.</i></p>
+			<p>An arcing bolt of octarine lightning strikes a creature within range. If the target has one or more contamination levels, it is hit automatically. Otherwise, make a ranged spell attack against that creature. On a hit, the target takes 6d6 necrotic damage and gains one level of contamination.</p>
+			<p class="indent">You can create a new bolt of lightning as your action on any turn until the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target 1 additional creature for each spell level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">contaminated, necrotic</set>
+			<set name="level">2</set>
+			<set name="school">Contaminated Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a delerium fragment worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+
+<!-- Summons Statblocks -->
+	<element name="The Thing with the Writhing Tail" type="Information" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_INFORMATION_THE_THING_WITH_THE_WRITHING_TAIL">
+		<description>
+			<p><em>Medium aberration</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 12 + the level of the spell</li>
+			<li><strong>Hit Points</strong>50 + 10 for each spell level above 4th</li>
+			<li><strong>Speed</strong> 40 ft., climb 30 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>13 (+1)</td><td>19 (+4)</td><td>12 (+1)</td><td>19 (+4)</td><td>15 (+3)</td><td>19 (+4)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> psychic</li>
+				<li><strong>Condition Immunities</strong> charmed, frightened</li>
+				<li><strong>Senses</strong> darkvision 120 ft., passive Perception 12</li>
+				<li><strong>Languages</strong> Deep Speech, telepathy 120 ft</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Ethereal Sight.</em></strong> The thing sees invisible creatures and can see into the Ethereal Plane.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiattack.</em></strong> The thing makes a number of claw attacks equal to half this spell’s level (rounded down).</p>
+			<p><strong><em>Claw.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d6 + 4 + the spell’s level slashing damage plus 2d6 cold damage.</p>
+			<p><strong><em>Eldritch Hiss.</em></strong>The thing whispers a terrible truth to one creature it can see within 5 feet. The target must make a Wisdom saving throw. On a failed save, it takes 4d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from the thing. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit.</p>
+			<p><strong><em>Thought Tendril.</em></strong> The thing psychically lashes out at one creature it can see within 5 feet. The target must make an Intelligence saving throw. On a failed save, the target takes 4d6 psychic damage, and it can’t take a reaction until the end of its next turn. Additionally, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three</p>
+		</description>
+	</element>
+	<element name="Delerium Elemental" type="Information" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_INFORMATION_DELERIUM_ELEMENTAL">
+		<description>
+			<p><em>Large elemental</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 12 + the level of the spell</li>
+			<li><strong>Hit Points</strong>60 + 10 for each spell level above 5th</li>
+			<li><strong>Speed</strong> 40 ft., burrow 40 ft. (walking geode only); fly 60 ft. (living haze only); swim 40 ft. (animated sludge only)</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>19 (+4)</td><td>14 (+2)</td><td>18 (+4)</td><td>5 (-3)</td><td>11 (+0)</td><td>7 (-2)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> necrotic, poison</li>
+				<li><strong>Condition Immunities</strong> contamination, exhaustion, paralyzed, poisoned, petrified, unconscious</li>
+				<li><strong>Senses</strong> darkvision 60 ft., passive Perception 12</li>
+				<li><strong>Languages</strong> understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Amorphous Form (Animated Sludge, Entropic Flame, and Living Haze).</em></strong> The delerium elemental can move through a space as narrow as 1 inch wide without squeezing.</p>
+			<p><strong><em>Deep Haze (Living Haze Only).</em></strong> The delerium elemental can enter a hostile creature’s space and stop there. A creature who enters or starts its turn in the same space as the delerium elemental must make a Constitution saving throw. It takes 2d6 necrotic damage on a failed saving throw.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiattack.</em></strong> The elemental makes a number of slam or hurl flame attacks equal to half this spell’s level (rounded down).</p>
+			<p><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d10 + 4 + the spell’s level bludgeoning damage.</p>
+			<p><strong><em>Hurl Flame (Entropic Flame Only).</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 120 ft., one target. <em>Hit:</em> 1d10 + 2 + the spell’s level fire damage. Before or after making this attack, the delerium elemental can teleport up to 10 feet to an unoccupied space it can see.</p>
+			<p><strong><em>Grasping Tide (Animated Sludge Only).</em></strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 2d8 + 4 + the spell’s level bludgeoning damage, and the target is grappled (escape DC 16).</p>
+			<p><strong><em>Shard Slam (Walking Geode Only).</em></strong> A creature hit by the delerium elemental’s melee attacks must make a Strength saving throw. On a failed saving throw, it is pushed 10 feet away from the delerium elemental.</p>
+		</description>
+	</element>
+</elements>

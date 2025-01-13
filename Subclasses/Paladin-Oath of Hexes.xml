@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Paladin-Oath of Hexes.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+	<element name="Oath of Hexes" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_OATH_OF_HEXES">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Those who swear an oath of hexes are sworn to witch covens, fey creatures, and occult deities of magic, fate, and death. In exchange, this sacred oath empowers paladins with fickle magic to curse those who would try to tempt fate or escape the ire of the Old Gods.</p>
+			<h5>Tenets of Hexes</h5>
+			<p>The tenets of the Oath of Hexes are often cryptic, and passed down as fables, riddles, and prophecies.</p>
+			<p class="indent"><b>Serve the Occult.</b> Deities with power over the future have infused you with occult magic. Through your oath, you are made a mortal vessel for their inscrutable will.</p>
+			<p class="indent"><b>Keeper of Secrets.</b> This world harbors dark secrets which are best kept long forgotten. You stand as the protectors of those secrets, preventing them from falling into the hands of weakwilled mortals who would misuse them to evil ends.</p>
+			<p class="indent"><b>Arbiter of Fate.</b> The strands of fate were woven long ago, and it is folly to fight them. Misfortune befalls all.</p>
+			<p class="indent"><b>Show No Mercy.</b> Though some think your strange powers are dark or corrupted, you vanquish evil with the very curses and magics that they would use against you. Show no mercy to those who resist their fate.</p>
+			<div element="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_SPELLS" />
+			<div element="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_CHANNEL_DIVINITY" />
+			<div element="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_BEWITCHING_AURA" />
+			<div element="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_REVERSAL_OF_FORTUNE" />
+			<div element="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_DEATH_HEX" />
+		</description>
+		<sheet display="false">
+			<description>Those who swear an oath of hexes are sworn to witch covens, fey creatures, and occult deities of magic, fate, and death. In exchange, this sacred oath empowers paladins with fickle magic to curse those who would try to tempt fate or escape the ire of the Old Gods.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_BEWITCHING_AURA" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_REVERSAL_OF_FORTUNE" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_DEATH_HEX" level="20" />
+		</rules>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed in the Oath of Hexes Spells table. See the Sacred Oath class feature for how oath spells work.</p>
+			<h5>Oath of Hexes Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>3rd</td><td><i>hellish rebuke, hideous laughter, eldritch blast</i></td></tr>
+					<tr><td>5th</td><td><i>invisibility, suggestion</i></td></tr>
+					<tr><td>9th</td><td><i>bestow curse, fear</i></td></tr>
+					<tr><td>13th</td><td><i>dimension door, polymorph</i></td></tr>
+					<tr><td>17th</td><td><i>dominate person, mislead</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain oath spells at the paladin levels listed in the Oath of Hexes Spells table.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_CHANNEL_DIVINITY">
+		<description>
+			<p>You gain the following Channel Divinity options:</p>
+			<p class="indent"><b><i>Curse of Hexes.</i></b> As an action, you curse one creature you can see within 30 feet of you. When you curse a target, choose an ability score. The chosen creature has disadvantage on attack rolls, saving throws, and ability checks using that ability score for one minute or until it drops to 0 hit points or falls unconscious. At the end of each of the cursed creature’s turns, it can make a Charisma saving throw against your spell save DC. On a successful save, the curse ends.</p>
+			<p class="indent"><b><i>Curse of Torment.</i></b> As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for one minute. While suffering this pain, it takes necrotic damage equal to your paladin level at the start of each of its turns. Each time it takes this damage, it can make a Wisdom saving throw against your spell save DC. On a successful save, the pain ends.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+			<description>Curse of Hexes. As an action, you curse one creature you can see within 30 feet of you. When you curse a target, choose an ability score. The chosen creature has disadvantage on attack rolls, saving throws, and ability checks using that ability score for one minute or until it drops to 0 hit points or falls unconscious. At the end of each of the cursed creature’s turns, it can make a Charisma saving throw against your spell save DC. On a successful save, the curse ends.</description>
+			<description>Curse of Torment. As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for one minute. While suffering this pain, it takes necrotic damage equal to your paladin level at the start of each of its turns. Each time it takes this damage, it can make a Wisdom saving throw against your spell save DC. On a successful save, the pain ends.</description>
+		</sheet>
+	</element>
+
+	<element name="Bewitching Aura" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_BEWITCHING_AURA">
+		<description>
+			<p>You emit an eldritch aura out to a range of 10 feet. When an enemy hits you or a creature within 10 feet of you with an attack, you can use your reaction to force that enemy to make a Charisma saving throw against your spell save DC. On a failed save, you can magically redirect the attack to another creature of your choice within 10 feet of you and within range of the attack. The new target is hit by the attack and suffers all damage and effects.</p>
+			<p>At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You emit an eldritch aura out to a range of 10 feet. When an enemy hits you or a creature within 10 feet of you with an attack, you can use your reaction to force that enemy to make a Charisma saving throw against your spell save DC. On a failed save, you can magically redirect the attack to another creature of your choice within 10 feet of you and within range of the attack. The new target is hit by the attack and suffers all damage and effects.</description>
+			<description level="18">You emit an eldritch aura out to a range of 30 feet. When an enemy hits you or a creature within 30 feet of you with an attack, you can use your reaction to force that enemy to make a Charisma saving throw against your spell save DC. On a failed save, you can magically redirect the attack to another creature of your choice within 30 feet of you and within range of the attack. The new target is hit by the attack and suffers all damage and effects.</description>
+		</sheet>
+	</element>
+
+	<element name="Reversal of Fortune" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_REVERSAL_OF_FORTUNE">
+		<description>
+			<p>Whenever a creature scores a critical hit against you, the next time you hit that creature with an attack, that attack automatically becomes a critical hit.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature scores a critical hit against you, the next time you hit that creature with an attack, that attack automatically becomes a critical hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Death Hex" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_DEATH_HEX">
+		<description>
+			<p>A creature afflicted by your Curse of Hexes or Curse of Torment becomes vulnerable to all damage.</p>
+		</description>
+		<sheet>
+			<description>A creature afflicted by your Curse of Hexes or Curse of Torment becomes vulnerable to all damage.</description>
+		</sheet>
+	</element>
+</elements>

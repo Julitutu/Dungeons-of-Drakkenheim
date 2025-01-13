@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Apothecary-Mutagenist.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+
+	<element name="Mutagenist" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_MUTAGENIST">
+		<supports>Occult Practices</supports>
+		<description>
+			<p>Mutagenists have has researched a serum that they inject to transform into a monstrous form. They use themselves as the conduit for this power and hurl themselves towards their enemies as a hulking abomination. They spend their lives researching and discovering new ways to improve and modify the serum in hopes of becoming the perfect form.</p>
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_NATURAL_PHILOSOPHY" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_SPELLS" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_TRANSMOGRIFYING_ELIXIR" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_EXTRA_ATTACK" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_POTENT_BIOLOGY" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_ADAPTIVE_GENETICS" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_UNNATURAL_EVOLUTION" />
+			<div element="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_THE_NEW_FLESH" />
+		</description>
+		<sheet display="false">
+			<description>Mutagenists have has researched a serum that they inject to transform into a monstrous form. They use themselves as the conduit for this power and hurl themselves towards their enemies as a hulking abomination.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_NATURAL_PHILOSOPHY" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_TRANSMOGRIFYING_ELIXIR" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_POTENT_BIOLOGY" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_ADAPTIVE_GENETICS" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_UNNATURAL_EVOLUTION" level="14" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_THE_NEW_FLESH" level="18" />
+		</rules>
+	</element>
+
+	<element name="Natural Philosophy" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_NATURAL_PHILOSOPHY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_NATURAL_PHILOSOPHY</requirements>
+		<description>
+			<p>You gain proficiency with alchemist’s supplies and either the herbalism kit or poisoner’s kit. You also gain proficiency in two additional languages and the Nature Skill. If you already have this proficiency, you gain proficiency with another skill of your choice.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with alchemist’s supplies and either the herbalism kit or poisoner’s kit. You also gain proficiency in two additional languages and the Nature Skill. If you already have this proficiency, you gain proficiency with another skill of your choice.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<select type="Proficiency" name="Tool Proficiency (Natural Philosophy)" supports="ID_WOTC_PHB_ITEM_TOOL_HERBALISM_KIT||ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT" />
+			<select type="Language" name="Language (Natural Philosophy)" number="2" supports="Standard||Exotic" />
+			<select type="Proficiency" name="Skill Proficiency (Natural Philosophy)" supports="Skill" default="ID_PROFICIENCY_SKILL_NATURE" />
+		</rules>
+	</element>
+
+	<element name="Mutagenist Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_SPELLS</requirements>
+		<description>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Mutagenist Spells table. These spells count as apothecary spells for you, but they don’t count against the number of apothecary spells you prepare.</p>
+			<h5>Mutagenist Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Apothecary Level</td><td>Spell</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1st</td><td><i>jump, toxic shield</i></td></tr>
+					<tr><td>3rd</td><td><i>alter self, enhance ability</i></td></tr>
+					<tr><td>5th</td><td><i>haste, water breathing</i></td></tr>
+					<tr><td>7th</td><td><i>polymorph, stoneskin</i></td></tr>
+					<tr><td>9th</td><td><i>reincarnate, septic shock</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class. These spells count as apothecary spells for you, but they don’t count against the number of apothecary spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_JUMP" level="1" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_TOXIC_SHIELD" level="1" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" level="5" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" level="7" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" level="9" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_SCGTD_SPELL_SEPTIC_SHOCK" level="9" spellcasting="Apothecary" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Transmogrifying Elixir" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_TRANSMOGRIFYING_ELIXIR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_TRANSMOGRIFYING_ELIXIR</requirements>
+		<description>
+			<p>As a bonus action, you may expend a spell slot to undergo a grotesque transformation. The transformation ends after one minute, or if you are reduced to 0 hit points or incapacitated. When you undergo this transformation you maintain your personality, alignment, and game statistics. However, several changes occur:</p>
+			<ul>
+				<li>Your Strength and Intelligence ability scores are swapped.</li>
+				<li>Your size becomes Large, your jump distance is doubled, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</li>
+				<li>Each of your hands transform into a big meaty fist, which you can use to make melee weapon attacks. It counts as a simple weapon for you. Your big meaty fists deal 1d10 + your Strength modifier + your Apothecary level bludgeoning damage on a hit.</li>
+				<li>You cannot cast or concentrate on spells.</li>
+				<li>You have darkvision out to a range of 120 feet.</li>
+				<li>You gain temporary hit points equal to five times your Apothecary level.</li>
+			</ul>
+			<p>You also amplify your abilities based on the potency of your concoction. This is related to the spell slot you used to undergo the transformation:</p>
+			<ul>
+				<li>Your speed increases by 5 feet per level of spell slot used.</li>
+				<li>Your AC is 13 + the level of spell slot used.</li>
+				<li>At the start of each of your turns and as long as you have at least 1 hit point remaining, you regain a number of hit points equal to the level of the spell slot used.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You may expend a spell slot to undergo a grotesque transformation. The transformation ends after one minute, or if you are reduced to 0 hit points or incapacitated. When you undergo this transformation you maintain your personality, alignment, and game statistics. However, several changes occur:</description>
+			<description>Your Strength and Intelligence ability scores are swapped.</description>
+			<description>Your size becomes Large, your jump distance is doubled, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+			<description>Each of your hands transform into a big meaty fist, which you can use to make melee weapon attacks. It counts as a simple weapon for you. Your big meaty fists deal 1d10 + {{intelligence:moodifier}} + {{apothecary:level}} bludgeoning damage on a hit.</description>
+			<description>You cannot cast or concentrate on spells.</description>
+			<description>You have darkvision out to a range of 120 feet.</description>
+			<description>You gain temporary hit points equal to five times your Apothecary level.</description>
+			<description>Your speed increases by 5 feet per level of spell slot used.</description>
+			<description>Your AC is 13 + the level of spell slot used.</description>
+			<description>At the start of each of your turns and as long as you have at least 1 hit point remaining, you regain a number of hit points equal to the level of the spell slot used.</description>
+		</sheet>
+	</element>
+
+	<element name="Extra Attack" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_EXTRA_ATTACK</requirements>
+		<description>
+			<p>Beginning at 6th level, you attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>Beginning at 6th level, you attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Potent Biology" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_POTENT_BIOLOGY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_POTENT_BIOLOGY</requirements>
+		<description>
+			<p>When you are in your transmogrified form, you have more powerful attacks capable of bypassing your enemy’s greatest defenses. Your big meaty fist attacks count as magical for overcoming resistance and immunity to non-magical attacks and damage.</p>
+			<p>When you hit with an attack using your big meaty fists, you can expend a spell slot to empower the force of your blow with unnatural energy. When you expend a spell slot in this way you deal an additional 1d8 force damage per level of spell slot used.</p>
+		</description>
+		<sheet>
+			<description>When you are in your transmogrified form, you have more powerful attacks capable of bypassing your enemy’s greatest defenses. Your big meaty fist attacks count as magical for overcoming resistance and immunity to non-magical attacks and damage.</description>
+			<description>When you hit with an attack using your big meaty fists, you can expend a spell slot to empower the force of your blow with unnatural energy. When you expend a spell slot in this way you deal an additional 1d8 force damage per level of spell slot used.</description>
+		</sheet>
+	</element>
+
+	<element name="Adaptive Genetics" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_ADAPTIVE_GENETICS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_ADAPTIVE_GENETICS</requirements>
+		<description>
+			<p>You are able to use your changed biology to protect yourself from the clutches of death. When you are reduced to 0 hit points in either your natural, or transmogrified state, your other self is ready to take over.</p>
+			<ul>
+				<li>When in your natural form and reduced to 0 hit points you can immediately transform using your Transmogrifying Elixir feature expending a spell slot as normal. You regain a number of hit points equal to your Apothecary level when you do (in addition to gaining temporary hit points from your transformation).</li>
+				<li>When you are reduced to 0 hit points in your transmogrified form, you revert to your natural form with 1 hit point remaining. If you do, you can’t assume your transmogrified form again until you finish a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You are able to use your changed biology to protect yourself from the clutches of death. When you are reduced to 0 hit points in either your natural, or transmogrified state, your other self is ready to take over.</description>
+			<description>When in your natural form and reduced to 0 hit points you can immediately transform using your Transmogrifying Elixir feature expending a spell slot as normal. You regain a {{apothecary:level}} of hit points when you do (in addition to gaining temporary hit points from your transformation).</description>
+			<description usage="1/Short Rest">When you are reduced to 0 hit points in your transmogrified form, you revert to your natural form with 1 hit point remaining. If you do, you can’t assume your transmogrified form again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Unnatural Evolution" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_UNNATURAL_EVOLUTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_UNNATURAL_EVOLUTION</requirements>
+		<description>
+			<p>You can use your Greater Formulas feature to transmogrify as if you had used a spell slot of that level. When you transform in this way you gain one of the additional genome mutations listed below.</p>
+			<ul>
+				<li><b>Draconic Genome.</b> You grow fleshy wings from your back and your skin takes on a scaly appearance. You gain a flying speed equal to your walking speed and as an action can spew bile in a 30-foot cone. All creatures in the area must succeed on a Constitution saving throw against your spell save DC or take 8d6 acid damage, or half as much on a successful save. Once you use this feature, you can not do so again until you finish a short or long rest.</li>
+				<li><b>Giant Genome.</b> You become a hulking mass of flesh and muscle, turning yourself into a living siege weapon. Your size becomes Huge and all damage dealt to objects and structures is now doubled. As an action, you can expend a spell slot on your turn to slam your fists into the ground, sending shockwaves and rubble crashing around you. All creatures in a 30-foot radius centered on you must succeed on a Dexterity saving throw against your spell save DC or they take 8d6 bludgeoning damage and are knocked prone. If they succeed on the saving throw, they take half damage and are not knocked prone.</li>
+				<li><b>Cerebellum Genome.</b> You maintain a fraction of your mind as you transform, allowing remnants of your studies to linger in your monstrous brain. You now have the ability to maintain concentration on spells while in your transmogrified form. While transmogrified, your concentration can’t be broken as a result of taking damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use your Greater Formulas feature to transmogrify as if you had used a spell slot of that level. When you transform in this way you gain one of the additional genome mutations listed below.</description>
+			<description>Draconic Genome. You grow fleshy wings from your back and your skin takes on a scaly appearance. You gain a flying speed equal to your walking speed and as an action can spew bile in a 30-foot cone. All creatures in the area must succeed on a Constitution saving throw against your spell save DC or take 8d6 acid damage, or half as much on a successful save. Once you use this feature, you can not do so again until you finish a short or long rest.</description>
+			<description>Giant Genome. You become a hulking mass of flesh and muscle, turning yourself into a living siege weapon. Your size becomes Huge and all damage dealt to objects and structures is now doubled. As an action, you can expend a spell slot on your turn to slam your fists into the ground, sending shockwaves and rubble crashing around you. All creatures in a 30-foot radius centered on you must succeed on a Dexterity saving throw against your spell save DC or they take 8d6 bludgeoning damage and are knocked prone. If they succeed on the saving throw, they take half damage and are not knocked prone.</description>
+			<description>Cerebellum Genome. You maintain a fraction of your mind as you transform, allowing remnants of your studies to linger in your monstrous brain. You now have the ability to maintain concentration on spells while in your transmogrified form. While transmogrified, your concentration can’t be broken as a result of taking damage.</description>
+		</sheet>
+	</element>
+
+	<element name="The New Flesh" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_MUTAGENIST_THE_NEW_FLESH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_THE_NEW_FLESH</requirements>
+		<description>
+			<p>You have perfected your Transmogrifying Elixir, breaking the confines of evolution and pushing your form to what you deem the apex of evolution. You gain the following benefits while transmogrified:</p>
+			<ul>
+				<li>As long as you have one or more hit points remaining, you can use a bonus action and expend a spell slot to regain hit points equal to ten times the level of the spell slot used.</li>
+				<li>If you fail a saving throw, as a reaction you can expend a spell slot to succeed instead.</li>
+				<li>Your Strength score becomes equal to your Intelligence score when transmogrified. Additionally, you can cast spells while in your transmogrified form.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have perfected your Transmogrifying Elixir, breaking the confines of evolution and pushing your form to what you deem the apex of evolution. You gain the following benefits while transmogrified:</description>
+			<description>As long as you have one or more hit points remaining, you can use a bonus action and expend a spell slot to regain hit points equal to ten times the level of the spell slot used.</description>
+			<description action="Reaction">If you fail a saving throw, as a reaction you can expend a spell slot to succeed instead.</description>
+			<description>Your Strength score becomes equal to your Intelligence score when transmogrified. Additionally, you can cast spells while in your transmogrified form.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Natural Philosophy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_NATURAL_PHILOSOPHY" />
+	<element name="Mutagenist Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_SPELLS" />
+	<element name="Transmogrifying Elixir Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_TRANSMOGRIFYING_ELIXIR" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_EXTRA_ATTACK" />
+	<element name="Potent Biology Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_POTENT_BIOLOGY" />
+	<element name="Adaptive Genetics Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_ADAPTIVE_GENETICS" />
+	<element name="Unnatural Evolution Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_UNNATURAL_EVOLUTION" />
+	<element name="The New Flesh Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MUTAGENIST_THE_NEW_FLESH" />
+</elements>

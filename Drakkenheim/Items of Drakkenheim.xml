@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items of Drakkenheim</name>
+		<update version="0.0.1">
+			<file name="Items of Drakkenheim.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/items/items-tools.xml" />
+		</update>
+	</info>
+	<!-- Tools -->
+	<element name="Investigator’s Kit" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_INVESTIGATORS_KIT">
+		<description>
+			<p>This small black satchel contains a spyglass, a notebook and a quill, pliers, tongs, a small blade, and a magnifying glass. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to investigate a crime scene, examine a dead body, or spy on someone from a distance.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_INVESTIGATORS_KIT</set>
+		</setters>
+	</element>
+	<element name="Vampire Hunter’s Case" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_VAMPIRE_HUNTERS_CASE">
+		<description>
+			<p>This small wooden briefcase is engraved with holy glyphs and contains 3 vials of holy water, a wooden stake, a mallet, a small book of prayers, a holy symbol, and prayer beads. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to track a vampire, or protect an area from a vampire.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_VAMPIRE_HUNTERS_CASE</set>
+		</setters>
+	</element>
+	<element name="Exorcist’s Kit" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_EXORCISTS_KIT">
+		<description>
+			<p>This leather bag contains various holy symbols of several different gods, prayer papers from several religions. A holy book of the prominent religion of your choice, a bottle of holy water, a jar of salts, three candles, a tinder box, a sachet filled with various dried herbs and flowers, and a few scraps of silver. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to investigate or track undead or fiends, to protect a location from such creatures, or to aid in removing possession.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_EXORCISTS_KIT</set>
+		</setters>
+	</element>
+	<element name="Occultist’s Tools" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_OCCULTISTS_TOOLS">
+		<description>
+			<p>This blood red case has three locks on it and a ring of keys. Inside is a sacrificial ornamental dagger, a shrunken head, a book of prayers in a dead language, a talisman representing an entity of unknown origin, a small statue of a bizarre being, three vials of blood, a set of incense and a censer, a chalice, a mortar and pestle and some dried herbs and flowers. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to determine the presence of celestials, fey, or fiends.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_OCCULTISTS_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Cosmologist’s Tools" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_CARTOGRAPHERS_TOOLS">
+		<description>
+			<p>This small lockbox contains a star map, a scroll of known constellations, an armillary sphere, sun dial, astrolabe, and a spyglass. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to determine time of day, location, or direction, as well as recalling any relevant information related to stars, cosmos, gods, or planes.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="6">6 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Doctor’s Bag" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_DOCTORS_BAG">
+		<description>
+			<p>This black leather medical bag contains a magnifying glass, pliers, a needle and thread, a jar of leeches, a bone saw, a pouch with 5 syringes and 3 scalpels, measuring cups, clamps, distilled alcohol, and various dried herbs. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to determine the symptoms of diseases, poisons, and debilitating conditions, as well as what is required to relieve them.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_DOCTORS_BAG</set>
+		</setters>
+	</element>
+	<!-- Wounderous Items -->	
+	<element name="Continental Crown" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_FGF_SCGTD_MAGIC_ITEM_CONTINENTAL_CROWN">
+		<description>
+			<p><i>Legendary wondrous item (requires attunement)</i></p>
+			<p>A character may only attune to the Continental Crown by performing a special 1-hour ceremony with six other characters who are each attuned to the corresponding Seals of the respective nation.</p>
+			<p class="indent">While attuned to the crown and wearing it, you are immune to any effect that would sense your emotions or read your thoughts, divination spells, and the charmed condition. The crown even foils <i>wish</i> spells and spells or effects of similar power used to affect your mind or to gain information about you.</p>
+			<p class="indent">The crown has 3 charges. While wearing it, you can use an action to expend 1 charge to cast the <i>wish</i> spell from it. The crown regains one expended charge every ten years.</p>
+			<table>
+				<thead>
+					<tr><td>Liquid</td><td>Max Amount</td></tr>
+				</thead>
+				<tr><td>Acid</td><td>8 ounces</td></tr>
+				<tr><td>Basic poison</td><td>½ ounce</td></tr>
+				<tr><td>Beer</td><td>4 gallons</td></tr>
+				<tr><td>Honey</td><td>1 gallon</td></tr>
+				<tr><td>Mayonnaise</td><td>2 gallons</td></tr>
+				<tr><td>Oil</td><td>1 quart</td></tr>
+				<tr><td>Vinegar</td><td>2 gallon</td></tr>
+				<tr><td>Water, fresh</td><td>8 gallon</td></tr>
+				<tr><td>Water, salt</td><td>12 gallon</td></tr>
+				<tr><td>Wine</td><td>1 gallon</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+	<element name="Master Commander's Mantle" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_FGF_SCGTD_MAGIC_ITEM_MASTER_COMMANDERS_MANTLE">
+		<description>
+			<p>
+			<i>Wondrous item, very rare (requires attunement)</i>
+			</p>
+			<p>This ornate mantle has a long flowing blue cape filigreed with gold trim. Two golden clasps designed with motifs of griffons and a golden chain support the mantle around the neck.</p>
+			<p class="indent">Once per day when you roll initiative, instead of rolling a die, you and up to five creatures who can see and hear you can treat the d20 result as 20. Affected creatures increase their speed by 30 feet for the first round.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Cardinal's Crest" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_FGF_SCGTD_MAGIC_ITEM_CARDINALS_CREST">
+		<description>
+			<p>
+			<i>Wondrous item, very rare (requires attunement by a spellcaster)</i>
+			</p>
+			<p>This garment of white silk is threaded with silver and emblazoned with iconography of the Sacred Flame. You can use it as a spellcasting focus for your cleric, druid, or paladin spells.</p>
+			<p class="indent">Additionally, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your cleric, druid, or paladin spells.</p>
+			<p class="indent">When you cast a spell with the ritual tag, you can cast that spell as a ritual without adding an extra 10 minutes to the casting time.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Lord Chamberlain's Amulet" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_FGF_SCGTD_MAGIC_ITEM_LORD_CHAMBERLAINS_AMULET">
+		<description>
+			<p>
+			<i>Wondrous item, very rare (requires attunement)</i>
+			</p>
+			<p>This jeweled locket bears the symbol of the Sacred Flame kept within a gilded lantern. The amulet has 3 charges. If you die while wearing the amulet, it immediately expends one charge to cast revivify upon you. The amulet regains all expended charges each time a new wearer attunes to it. If your attunement ends and you later attune to this item again, it does not gain any charges.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Orb of Nox" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_FGF_SCGTD_MAGIC_ITEM_ORB_OF_NOX">
+		<description>
+			<p>
+			<i>Wondrous item, legendary (requires attunement)</i>
+			</p>
+			<p>This 3-inch-diameter orb resembles a large marble with a glowing delerium crystal within. It is a mysterious relic from the days of the sorcerer-kings held as the symbol of the Archmage of Elyria. You can use it as a spellcasting focus for your sorcerer, warlock, and wizard spells, and you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your sorcerer, warlock, and wizard spells.</p>
+			<p class="indent">This orb has 5 charges. When you cast a contaminated spell, you can expend 1 charge from the orb. If you do, you don’t gain a Contamination Level from casting that spell (this does not cause casting the spell to fail).</p>
+			<p class="indent">The orb regains 1d6 expended charges each day at midnight.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="charges">5</set>
+		</setters>
+	</element>
+
+	<element name="Ambassador's Ring" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_FGF_SCGTD_MAGIC_ITEM_AMBASSADORS_RING">
+		<description>
+			<p>
+			<i>Wondrous item, very rare (requires attunement by a spellcaster)</i>
+			</p>
+			<p>This is a golden two finger ring worn on the second and third finger. The ring is set with a large diamond in the center and three smaller sapphires on either side.</p>
+			<p class="indent">The ring has 3 charges. You can use your action and expend one charge from the ring to try to make a humanoid creature forget the details of a conversation you’ve had with it in the past hour, replacing its memories with an alternative explanation you provide (limited to a short sentence or two).</p>
+			<p class="indent">The explanation must sound plausible, and immediately fails if you imply the target made any sort of agreement, choices, or decisions. The creature must succeed on a DC 18 Intelligence saving throw. On a failed save, it loses its memories of the conversation with you and accepts your explanation regarding what occurred. On a successful saving throw, the target isn’t aware you tried to affect its memories.</p>
+			<p class="indent">All expended charges are replenished each day at dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Secretary General's Quill" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_FGF_SCGTD_MAGIC_ITEM_SECRETARY_GENERALS_QUILL">
+		<description>
+			<p>
+			<i>Wondrous item, very rare (requires attunement)</i>
+			</p>
+			<p>This large feathered quill with is made from the plucked feather of an angel. While attuned to this quill, you can read, write, and speak all languages. You always know if you read or hear a lie, and immediately determine if a document is a forgery if you hold it in your hands. You have truesight out to a range of 30 feet.</p>
+			<p class="indent">You can fold a document written using this quill, then write the name of a creature familiar to you on the page or an envelope. Once you do, the document and envelope whisk away towards the creature, flying through the air and slipping through thin cracks to reach them. No matter where the creature is in the world, it reaches them within 1 hour.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Bottled Comet" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_BOTTLED_COMET">
+	<description>
+		<p>
+		<i>Wondrous item, rare</i>
+		</p>
+		<p>This spherical glass orb contains an ignited delerium shard hovering gently within. Electrical currents of yellow, green, and purple energy streak from the crystal and cascade along the glass, rendering it warm to the touch.</p>
+		<p class="indent">As an action you can throw the orb up to 30 feet. It shatters on impact, releasing a 20-foot-radius burst of contaminated energy. Creatures in the area must succeed on a DC 15 Constitution save or take 8d6 necrotic damage, and take one level of contamination. In addition, an arcane anomaly occurs, centred on the point of impact.</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="rarity">Rare</set>
+	</setters>
+	</element>
+
+	<element name="Delerium Crystal Focus" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_DELERIUM_CRYSTAL_FOCUS">
+	<description>
+		<p>
+		<i>Wondrous item, rare (requires attunement by a spellcaster)</i>
+		</p>
+		<p>This focus is made from a refined delerium crystal encased in a glass orb. While holding it, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your spells. In addition, you can use the crystal as a spellcasting focus.</p>
+		<p class="indent">Once per day when you cast a spell of 5th level or lower, you may draw on the energy stored within the crystal to do so without expending a spell slot. If you do, you trigger a random arcane anomaly.</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="attunement" addition="by a spellcaster">true</set>
+		<set name="rarity">Rare</set>
+	</setters>
+	</element>
+
+	<element name="Refined Delerium Dust" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_REFINED_DELERIUM_DUST">
+	<description>
+		<p>
+		<i>Wondrous item, rare</i>
+		</p>
+		<p>This pouch contains an ounce of purified and magically charged delerium dust. It may be ingested as an action. When you consume a full pouch, you gain advantage on spell attack rolls and saving throws against spells for one minute.</p>
+		<p class="indent">You gain one level of contamination when you consume refined delerium dust.</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="rarity">Rare</set>
+	</setters>
+	</element>
+
+	<element name="Chancellor's Crest" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_CHANCELLORS_CREST">
+	<description>
+		<p>
+		<i>Wondrous item, rare (requires attunement)</i>
+		</p>
+		<p>While wearing this amulet, you can read all writing, and speak and understand any language.</p>
+		<p class="indent">You can use an action to cast one of the following spells: <i>detect thoughts, sending,</i> or <i>telepathic bond</i>. Once the amulet has been used to cast one of these spells, it can’t be used to cast that spell again until the next dawn. You can choose your Intelligence, Wisdom, or Charisma score as the spellcasting ability for casting these spells, and use your proficiency bonus to determine their attack bonus and saving throw DC.</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="attunement">true</set>
+		<set name="rarity">Rare</set>
+	</setters>
+	</element>
+	<element name="Lord Commander's Badge" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_LORD_COMMANDERS_BADGE">
+	<description>
+		<p>
+		<i>Wondrous item, rare (requires attunement)</i>
+		</p>
+		<p class="indent">As an action while wearing this seal, you can invoke its power to issue a bellowing command clearly audible to all creatures within 300 feet of you. When you do, you may choose up to 12 allies you can see who can hear the command. Those allies each gain 20 temporary hit points. While these temporary hit points remain, those allies gain advantage on attack rolls and saving throws. Once you use this power, it can’t be used again until the next dawn.</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="attunement">true</set>
+		<set name="rarity">Rare</set>
+	</setters>
+	</element>
+	<element name="Saint Vitruvio's Phylactery" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_SAINT_VITRUVIOS_PHYLACTERY">
+	<description>
+		<p>
+		<i>Wondrous item, rare (requires attunement by a bard, cleric, druid, or paladin)</i>
+		</p>
+		<p>You can use an action to cast one of the following spells from the phylactery: <i>bless, death ward, greater restoration, prayer of healing,</i> or <i>revivify</i>. The spells use your spellcasting ability and spell save DC. Once the phylactery has been used to cast a spell, it can’t be used to cast that spell again until the next dawn.</p>
+		<p class="indent">Saint Vitruvio’s Phylactery is also one of the Relics of Saint Vitruvio (see below).</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="attunement" addition="by a bard, cleric, druid, or paladin">true</set>
+		<set name="rarity">Rare</set>
+	</setters>
+	</element>
+	<element name="Steward's Seal" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_STEWARDS_SEAL">
+	<description>
+		<p>
+		<i>Wondrous item, rare (requires attunement)</i>
+		</p>
+		<p>While wearing this badge, you can cast <i>mage hand, prestidigitation, purify food and drink,</i> and <i>unseen servant</i> at-will.</p>
+		<p class="indent">You can use an action to cast one of the following spells: <i>animate objects, create food and water, dispel magic,</i> or <i>telekinesis</i>. Once the badge has been used to cast one of these spells, it can’t be used to cast that spell again until the next dawn. You can choose your Intelligence, Wisdom, or Charisma score as the spellcasting ability for casting these spells, and use your proficiency bonus to determine their attack bonus and saving throw DC.</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="attunement">true</set>
+		<set name="rarity">Rare</set>
+	</setters>
+	</element>
+	<element name="Crown of Westemär" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_CROWN_OF_WESTEMAR">
+	<description>
+		<p>
+		<i>Wondrous item, legendary (requires attunement)</i>
+		</p>
+		<p>A character may only attune to the Crown of Westemär by performing a special one hour ceremony with six other characters who are each attuned to a different Seal of Drakkenheim. See the “Developments” section in Chapter 9: Castle Drakken for details on this ritual.</p>
+		<p class="indent">The crown has 3 charges. While wearing it, you can use an action to expend 1 charge to cast the <i>wish</i> spell from it. The crown regains one expended charge every ten years.</p>
+		<p class="indent">The ancient bronze dragon Minazorond, the tower dragons, and the wall gargoyles are under your control and obey your spoken commands while you wear the crown.</p>
+		<p class="indent">While wearing the crown and seated on the Throne of Drakkenheim in Castle Drakken, you may use an action to communicate telepathically with one dragon or twelve gargoyles so long as they are within 100 miles of Castle Drakken. When you do, you can issue commands to those creatures, see through one of the creature’s eyes, and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the creature has. During this time, you are deaf and blind with regard to your own senses.</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="attunement">true</set>
+		<set name="rarity">Legendary</set>
+	</setters>
+	</element>
+	<element name="Helm of Patron Saints" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_HELM_OF_PATRON_SAINTS">
+	<description>
+		<p>
+		<i>Wondrous item, rare (requires attunement by a spellcaster)</i>
+		</p>
+		<p>While wearing this helm, you can see invisible creatures and objects within 60 feet of you. In addition, you gain a +2 bonus to spell attack rolls, and increase your spell saving throw DC by 2.</p>
+	</description>
+	<setters>
+		<set name="category">Wondrous Items</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="0">0 lb.</set>
+		<set name="type">Wondrous Item</set>
+		<set name="attunement" addition="by a spellcaster">true</set>
+		<set name="rarity">Rare</set>
+	</setters>
+	</element>
+
+	<!-- Six Swords of Caspia -->
+	<element name="Jackson’s Longsword" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MAGIC_ITEM_JACKSONS_LONGSWORD">
+		<description>
+			<p><i>Legendary weapon, longsword (requires attunement)</i></p>
+			<p>This glimmering longsword has a blue ornate hilt set with a single sapphire upon the crossguard.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon you gain the following additional benefits:</p>
+			<ul>
+				<li>Your Strength score increases by 2 (to a maximum of 22).</li>
+				<li>When you hit with an attack using this sword, you can immediately take the shove action as part of the same action.</li>
+				<li>You may use the blade to grant you the benefits of the fighter’s Action Surge feature. Once you use this feature you can not do so again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="2" />
+			<stat name="strength:max" value="2" />
+		</rules>
+	</element>
+	<element name="John’s Scimitar" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MAGIC_ITEM_JOHNS_SCIMITAR">
+		<description>
+			<p><i>Legendary weapon, scimitar (requires attunement)</i></p>
+			<p>This curved blade has a jagged edge along the wider side with a purple hilt and a single amethyst placed upon the crossguard.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon you gain the following additional benefits:</p>
+			<ul>
+				<li>Your Intelligence score increases by 2 (to a maximum of 22).</li>
+				<li>You can use this weapon as a spellcasting focus for your sorcerer, warlock, and wizard spells. Additionally, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your sorcerer, warlock, and wizard spells.</li>
+				<li>This sword has 8 charges. You may use the charges to cast the following spells (save DC 18): <i>acid arrow</i>(2 charges), <i>lightning bolt</i> (3 charges), <i>fireball</i> (3 charges), <i>cone of cold</i> (5 charges). The blade gains all expended charges at dawn.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">scimitar</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="scimitar">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Scimitar</set>
+			<set name="charges">8</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="2" />
+			<stat name="intelligence:max" value="2" />
+		</rules>
+	</element>
+	<element name="Joplin’s Rapier" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MAGIC_ITEM_JOPLINS_RAPIER">
+		<description>
+			<p><i>Legendary weapon, rapier (requires attunement)</i></p>
+			<p>This long and narrow blade has a red hilt and three rubies placed upon the rounded crossguard.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon you gain the following additional benefits:</p>
+			<ul>
+				<li>Your Charisma score increases by 2 (to a maximum of 22).</li>
+				<li>The first time each day you touch the blade, it casts the mind blank spell upon you.</li>
+				<li>While carrying or wielding this weapon, whenever you make a Charisma (Deception) check, you may treat any roll of a 9 or lower as if you had rolled a 10 instead.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">rapier</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rapier">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Rapier</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="2" />
+			<stat name="charisma:max" value="2" />
+		</rules>
+	</element>
+
+	<element name="Joyce’s Shortsword" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MAGIC_ITEM_JOYCES_SHORTSWORD">
+		<description>
+			<p><i>Legendary weapon, shortsword (requires attunement)</i></p>
+			<p>This short blade is concealed within an ornate scabbard that doubles as a cane with spiraled gold and green designs. The blade has a green hilt and a single emerald placed upon the crossguard.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon you gain the following additional benefits:</p>
+			<ul>
+				<li>Your Wisdom score increases by 2 (to a maximum of 22).</li>
+				<li>When you draw this blade and speak its command word, it casts the bless spell on you and two other allies of your choice within 30 feet. No action is required by you to cast the spell, and the spell lasts 1 minute without requiring your concentration. Once the blade casts the spell in this way, it cannot do so again until the next dawn.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Shortsword</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="2" />
+			<stat name="wisdom:max" value="2" />
+		</rules>
+	</element>
+
+	<element name="Jones’s Greatsword" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MAGIC_ITEM_JONESS_GREATSWORD">
+		<description>
+			<p><i>Legendary weapon, greatsword (requires attunement)</i></p>
+			<p>This massive blade is over six feet long with a yellow hilt and a single topaz placed upon the crossguard.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon you gain the following additional benefits:</p>
+			<ul>
+				<li>Your Constitution score increases by 2 (to a maximum of 22).</li>
+				<li>If you have less than half your hit point maximum remaining, you regain 10 hit points at the start of each of your turns while you are conscious and wielding this greatsword.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Greatsword</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" />
+			<stat name="constitution:max" value="2" />
+		</rules>
+	</element>
+
+	<element name="Jagger’s Dagger" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MAGIC_ITEM_JAGGERS_DAGGER">
+	<description>
+		<p><i>Legendary weapon, dagger (requires attunement)</i></p>
+		<p>This large dagger is a black steel kukri blade with a matching hilt and a single onyx placed upon the crossguard.</p>
+		<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon you gain the following additional benefits:</p>
+		<ul>
+			<li>Your Dexterity score increases by 2 (to a maximum of 22).</li>
+			<li>You gain darkvision out to a range of 60 feet, and can see invisible creatures and objects within your darkvision.</li>
+			<li>This blade has 3 charges. When you hit with a weapon attack using this dagger, you can expend a charge and use a bonus action to teleport 30 feet and turn invisible. The invisibility lasts until the end of your next turn or when you make an attack. All charges replenish every night at midnight.</li>
+		</ul>
+	</description>
+	<setters>
+		<set name="keywords">dagger</set>
+		<set name="category">Magic Weapons</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="type" addition="dagger">Weapon</set>
+		<set name="attunement">true</set>
+		<set name="rarity">Legendary</set>
+		<set name="enhancement">3</set>
+		<set name="weapon">Dagger</set>
+		<set name="charges">3</set>
+	</setters>
+	<rules>
+		<stat name="dexterity" value="2" />
+		<stat name="dexterity:max" value="2" />
+		<grant type="Vision" id="ID_VISION_DARKVISION" />
+	</rules>
+	</element>
+
+	<!-- Magic Items -->
+
+	<element name="Comet Smasher" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_COMET_SMASHER">
+		<description>
+			<p>The head of this bludgeoning weapon is made from a massive delerium crystal that crackles with arcane energies. When you hit with an attack using this weapon, the target takes an extra 3d6 necrotic damage.</p>
+			<p class="indent">When you roll a 20 on an attack roll made with this weapon, it unleashes an arcane anomaly. You can roll twice on the table and choose either result.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any melee bludgeoning weapon">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE),ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</set>
+			<set name="name-format">Comet Smasher</set>
+		</setters>
+	</element>
+
+	<element name="Delerium-Forged Blade" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_DELERIUM_FORGED_BLADE">
+		<description>
+			<p>This sword has a small delerium sliver encased in glass and set in the hilt like a gemstone. The blade is made of meteoric iron infused with delerium dust, which causes it to softly glow with octarine light.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls 
+			made with this weapon.</p>
+			<p class="indent">When you make an attack with this weapon, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls. In addition, you can use this weapon as a spellcasting focus.</p>
+			<p class="indent">When you roll a 20 on an attack roll made with this weapon against a humanoid, the humanoid must succeed on a DC 15 Constitution saving throw or take an extra 3d6 necrotic damage and gain one level of contamination.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">{{parent}} Delerium-Forged Blade</set>
+		</setters>
+	</element>
+
+	<element name="Flame Lance" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_FGF_DOD_MAGIC_ITEM_FLAME_LANCE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE</supports>
+		<description>
+			<p>This weapon is a long metal lance with a small flame that burns at its end. It has a hose coming from the hilt that connects to a metal tank that you wear on your back.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls 
+			made with this weapon.</p>
+			<p class="indent">The tank has 5 charges. You can use an action and expend one or more charges from the tank to cast burning hands (Save DC 15). For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.</p>
+			<p class="indent">Once per day, you can pour a vial of alchemist’s fire into the tank. When you do, it regains all expended charges. It otherwise does not regain charges on its own.</p>
+		</description>
+		<setters>
+			<set name="keywords">lance</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="versatile">1d12</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE</set>
+			<set name="charges">5</set>
+		</setters>
+	</element>
+
+	<element name="Hardened Delerium-tipped Arrows" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_HARDENED_DELERIUM_TIPPED_ARROWS">
+		<description>
+			<p>This piece of ammunition has a refined delerium arrowtip. A creature hit by a ranged attack using one of these arrows takes an extra 3d6 necrotic damage and must succeed on a DC 15 Constitution saving throw or gain one level of contamination. Once it hits a target, the delerium tip crumbles to dust and the arrow becomes nonmagical.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Hazewalker Plate" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_HAZEWALKER_PLATE">
+		<description>
+			<p>This plate armour includes a helmet and is hermetically sealed when worn. You gain the following benefits when its worn and the helmet visor is closed:</p>
+			<ul>
+				<li>You are immune to diseases and the poisoned condition, and gain advantage on saving throws against any effect that causes contamination.</li>
+				<li>You have resistance to necrotic and poison damage.</li>
+				<li>You don’t need to breathe.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">plate, resistance</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Plate</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Purging Rod" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_PURGING_ROD">
+		<description>
+			<p>Once per day while holding this rod, you can use an action to cast <i>purge contamination</i>. After casting the spell, roll 1d20. On a 1, the rod melts into sludge.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Rods</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Rod</set>
+			<set name="slot">onehand</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Skymetal Shield" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_SKYMETAL_SHIELD">
+		<description>
+			<p>This shield is constructed from hammered meteoric iron and embossed with a delerium crystal. When you are hit with a melee or ranged attack while wielding this shield, you can use your reaction to absorb residual energy from the attack. You suffer damage and effects from the attack as normal, and the shield gains 1 charge. The shield can have a maximum of 5 charges. Unexpended charges are lost each day at dawn.</p>
+			<p>As an action while wielding the shield, you can expend all its charges to release a forceful blast. Creatures within 10 feet of you must succeed on a DC 15 Constitution saving throw. On a failed saving throw, creatures in the area take 1d6 force damage for each expended charge, and are flung back 10 feet and knocked prone.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="charges">5</set>
+		</setters>
+	</element>
+
+	<element name="Skymetal Staff" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_SKYMETAL_STAFF">
+		<description>
+			<p>This quarterstaff was built from refined meteoric iron and has a 
+			liquid delerium core.</p>
+			<p class="indent">Once on your turn, when you hit a creature with a melee attack using this weapon, you can force the target to make a DC 13 Intelligence saving throw. On a failed save, it takes an extra 3d6 psychic damage and can’t take reactions until the start of your next turn. In addition, on its next turn, the creature must choose to take an action, bonus action, or move: it may only do one of the three.</p>
+		</description>
+		<setters>
+			<set name="keywords">cleric, druid, warlock</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+		</setters>
+	</element>
+
+	<element name="Spellpiercing Wand" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_SPELLPIERCING_WAND">
+		<description>
+			<p>You can use this wand as a spellcasting focus. Creatures making a saving throw against a spell cast using this wand can’t gain benefit from advantage on their saving throws</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wand</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Staff of Contaminated Power" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_STAFF_OF_CONTAMINATED_POWER">
+		<description>
+			<p>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it.</p>
+			<p class="indent">The staff has 20 charges for the following properties. The staff regains 1 charge each hour it rests in the Deep Haze. You can also touch a delerium crystal to the staff, which causes it to regain 2d8 + 4 charges, then the crystal crumbles to dust. If you expend the last charge, you immediately gain 1d6 levels of contamination.</p>
+			<p class="indent"><b>Spells.</b> While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability:delerium orb (1 charge), warp bolt (2 charges), ride the rifts (3 charges), delerium blast (4 charges), conjure the deep haze (5 charges), and ray of contamination (6 charges). You don’t gain any contamination levels when you cast these spells using charges from this staff.</p>
+		</description>
+		<setters>
+			<set name="keywords">sorcerer, warlock, wizard</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+			<set name="charges">20</set>
+		</setters>
+	</element>
+
+	<element name="Starcrossed Bow" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_STARCROSSED_BOW">
+		<description>
+			<p>This magical bow or crossbow has an intricate arrangement of delerium shards and focusing lenses along the stock where a bolt would normally be loaded, and instead magically conjures its own projectiles. You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of piercing damage and ignores the ammunition and loading properties.</p>
+			<p class="indent">The weapon has 3 charges, which are regained each day at dawn. When you hit with a ranged attack using it, you can cause the bolt to explode in a brilliant flash of light. The target you hit and any creatures within 10 feet of it must succeed on a DC 15 Constitution saving throw or become blinded until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">bow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any bow or crossbow">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+			<set name="name-format">Starcrossed {{parent}}</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>	
+
+	<element name="Inscrutable Staff" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_INESCRUTABLE_STAFF">
+		<description>
+			<p>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to spell attack rolls and your spell save DC.</p>
+			<p class="indent">The staff has 20 charges, and regains 2d10 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff triggers a random arcane anomaly. On a 20, the staff regains 1d10 charges.</p>
+			<p class="indent">While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: haste (3 charges), slow (3 charges), arcane eye (4 charges), dimension door (4 charges), arcane hand (5 charges), wall of force (5 charges), disintegrate (6 charges), reverse gravity (7 charges), or maze (8 charges)</p>
+			<p class="indent">You can also use an action to cast one of the following spells from the staff without using any charges: detect magic, floating disk, mage armour, mending, message, or misty step.</p>
+		</description>
+		<setters>
+			<set name="keywords">sorcerer, warlock, wizard</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+			<set name="charges">20</set>
+		</setters>
+	</element>
+
+	<element name="Ignacious, the Sword of Burning Truth" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_IGNACIOUS_BURNING_TRUTH">
+		<description>
+			<p>This sacred weapon was forged to burn away deception and darkness. Blazing embers gently fall from the silver blade, first ignited by the brazier in the Temple of Lumen.</p>
+			<ul>
+				<li>You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the following additional properties:</li>
+				<li>You can use a bonus action to speak the sword’s name, causing radiant flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 4d6 radiant damage to any target it hits. The flames last until you use a bonus action to douse the blade, or until you drop or sheathe the sword.</li>
+				<li>1 minor detrimental property</li>
+				<li>1 major detrimental property</li>
+			</ul>
+			<p class="indent"><i><b>Sentience.</b></i> Ignacious is a sentient lawful good weapon with an Intelligence of 11, a Wisdom of 19, and a Charisma of 23. It has hearing and darkvision out to a range of 120 feet. The weapon can speak, read, and understand Common, Celestial, and Draconic, and can communicate with its wielder telepathically. It always knows its wielder’s thoughts. Its voice is commanding, righteous, and booming. When drawn, Ignacious casts the zone of truth spell (save DC 20), and maintains concentration on it so that you don’t have to. The zone of truth moves with the blade and remains centred on it.</p> 
+			<p class="indent"><i><b>Personality.</b></i> Ignacious is zealously devoted to the Sacred Flame, and has memorized every word of its holy texts. The blade wishes to be wielded by a faithful devotee of any sort; Ignacious does not care about the religious divide between the Falling Fire and the Sacred Flame so long as its wielder keeps the core tenets shared by both sects.</p> 
+			<p class="indent">The sword’s purpose is to expose all deception and reveal the truth. It does not tolerate any falsehood, duplicitousness, or lies. The sword always knows when it hears a lie, and responds with wrathful fury. If a wielder speaks a lie, it immediately triggers a conflict.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+
+	<element name="Sceptre of Saint Vitruvio" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_SCEPTRE_SAINT_VITRUVIO">
+		<description>
+			<p>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: guiding bolt (1 charge), flaming sphere (2 charges), or flame strike (5 charges). The staff regains 1d6 + 4 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">sorcerer, warlock, wizard</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a spellcaster)">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="charges">10</set>
+		</setters>
+	</element>
+
+	<element name="The Shield of Sacred Flame" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_SHIELD_OF_SACRED_FLAME">
+		<description>
+			<p>This shield has 3 charges, which you regain each day at dawn. When a spellcaster within 60 feet of you targets you with a spell or includes you in the area of a spell, you may expend a charge from the shield to cast counterspell as a reaction.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+	<!-- Delerium -->
+	<element name="Delerium Chip" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_DELERIUM_CHIP">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor that struck Drakkenheim. It appears in geode clusters of translucent, sharp-edged crystals that reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than an average human.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>Crystal Size</td>
+						<td>Market Value</td>
+						<td>Weight</td>
+						<td>AC</td>
+						<td>HP</td>
+						<td>Extraction Time</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>Chip</td>
+					<td>10 gold</td>
+					<td>1/4 lbs</td>
+					<td>15</td>
+					<td>5</td>
+					<td>1 action</td>
+				</tr>
+				<tr>
+					<td>Fragment</td>
+					<td>100 gold</td>
+					<td>1/2 lbs</td>
+					<td>17</td>
+					<td>10</td>
+					<td>1 minute</td>
+				</tr>
+				<tr>
+					<td>Shard</td>
+					<td>500 gold</td>
+					<td>1 lbs</td>
+					<td>19</td>
+					<td>10</td>
+					<td>5 minutes</td>
+				</tr>
+				<tr>
+					<td>Crystal</td>
+					<td>1000 gold</td>
+					<td>2 lbs</td>
+					<td>21</td>
+					<td>20</td>
+					<td>30 minutes</td>
+				</tr>
+				<tr>
+					<td>Geode</td>
+					<td>5000 gold</td>
+					<td>20 lbs +</td>
+					<td>23</td>
+					<td>25</td>
+					<td>1 hour</td>
+				</tr>
+				<tr>
+					<td>Massive Cluster</td>
+					<td>Priceless</td>
+					<td>8000 lbs +</td>
+					<td>20</td>
+					<td>50</td>
+					<td>See text</td>
+				</tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.25">1/4 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Delerium Fragment" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_DELERIUM_FRAGMENT">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor that struck Drakkenheim. It appears in geode clusters of translucent, sharp-edged crystals that reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than an average human.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>Crystal Size</td>
+						<td>Market Value</td>
+						<td>Weight</td>
+						<td>AC</td>
+						<td>HP</td>
+						<td>Extraction Time</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>Chip</td>
+					<td>10 gold</td>
+					<td>1/4 lbs</td>
+					<td>15</td>
+					<td>5</td>
+					<td>1 action</td>
+				</tr>
+				<tr>
+					<td>Fragment</td>
+					<td>100 gold</td>
+					<td>1/2 lbs</td>
+					<td>17</td>
+					<td>10</td>
+					<td>1 minute</td>
+				</tr>
+				<tr>
+					<td>Shard</td>
+					<td>500 gold</td>
+					<td>1 lbs</td>
+					<td>19</td>
+					<td>10</td>
+					<td>5 minutes</td>
+				</tr>
+				<tr>
+					<td>Crystal</td>
+					<td>1000 gold</td>
+					<td>2 lbs</td>
+					<td>21</td>
+					<td>20</td>
+					<td>30 minutes</td>
+				</tr>
+				<tr>
+					<td>Geode</td>
+					<td>5000 gold</td>
+					<td>20 lbs +</td>
+					<td>23</td>
+					<td>25</td>
+					<td>1 hour</td>
+				</tr>
+				<tr>
+					<td>Massive Cluster</td>
+					<td>Priceless</td>
+					<td>8000 lbs +</td>
+					<td>20</td>
+					<td>50</td>
+					<td>See text</td>
+				</tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Delerium Shard" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_DELERIUM_SHARD">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor that struck Drakkenheim. It appears in geode clusters of translucent, sharp-edged crystals that reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than an average human.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>Crystal Size</td>
+						<td>Market Value</td>
+						<td>Weight</td>
+						<td>AC</td>
+						<td>HP</td>
+						<td>Extraction Time</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>Chip</td>
+					<td>10 gold</td>
+					<td>1/4 lbs</td>
+					<td>15</td>
+					<td>5</td>
+					<td>1 action</td>
+				</tr>
+				<tr>
+					<td>Fragment</td>
+					<td>100 gold</td>
+					<td>1/2 lbs</td>
+					<td>17</td>
+					<td>10</td>
+					<td>1 minute</td>
+				</tr>
+				<tr>
+					<td>Shard</td>
+					<td>500 gold</td>
+					<td>1 lbs</td>
+					<td>19</td>
+					<td>10</td>
+					<td>5 minutes</td>
+				</tr>
+				<tr>
+					<td>Crystal</td>
+					<td>1000 gold</td>
+					<td>2 lbs</td>
+					<td>21</td>
+					<td>20</td>
+					<td>30 minutes</td>
+				</tr>
+				<tr>
+					<td>Geode</td>
+					<td>5000 gold</td>
+					<td>20 lbs +</td>
+					<td>23</td>
+					<td>25</td>
+					<td>1 hour</td>
+				</tr>
+				<tr>
+					<td>Massive Cluster</td>
+					<td>Priceless</td>
+					<td>8000 lbs +</td>
+					<td>20</td>
+					<td>50</td>
+					<td>See text</td>
+				</tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Delerium Crystal" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_DELERIUM_CRYSTAL">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor that struck Drakkenheim. It appears in geode clusters of translucent, sharp-edged crystals that reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than an average human.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>Crystal Size</td>
+						<td>Market Value</td>
+						<td>Weight</td>
+						<td>AC</td>
+						<td>HP</td>
+						<td>Extraction Time</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>Chip</td>
+					<td>10 gold</td>
+					<td>1/4 lbs</td>
+					<td>15</td>
+					<td>5</td>
+					<td>1 action</td>
+				</tr>
+				<tr>
+					<td>Fragment</td>
+					<td>100 gold</td>
+					<td>1/2 lbs</td>
+					<td>17</td>
+					<td>10</td>
+					<td>1 minute</td>
+				</tr>
+				<tr>
+					<td>Shard</td>
+					<td>500 gold</td>
+					<td>1 lbs</td>
+					<td>19</td>
+					<td>10</td>
+					<td>5 minutes</td>
+				</tr>
+				<tr>
+					<td>Crystal</td>
+					<td>1000 gold</td>
+					<td>2 lbs</td>
+					<td>21</td>
+					<td>20</td>
+					<td>30 minutes</td>
+				</tr>
+				<tr>
+					<td>Geode</td>
+					<td>5000 gold</td>
+					<td>20 lbs +</td>
+					<td>23</td>
+					<td>25</td>
+					<td>1 hour</td>
+				</tr>
+				<tr>
+					<td>Massive Cluster</td>
+					<td>Priceless</td>
+					<td>8000 lbs +</td>
+					<td>20</td>
+					<td>50</td>
+					<td>See text</td>
+				</tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Delerium Geode" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_DELERIUM_Geode">
+		<description>
+			<p>Delerium is a magical mineral left behind by the meteor that struck Drakkenheim. It appears in geode clusters of translucent, sharp-edged crystals that reflect octarine light. The eldritch stones softly hum in dissonant tones, and glow brightly at night or when exposed to magic. Deposits are found throughout Drakkenheim, often fused into stone streets and buildings like crystalline moss.</p>
+			<p class="indent">A typical delerium fragment is about the size of a finger. Crystals may be fist-sized or slightly larger, and geodes may be as big as a pumpkin. Massive clusters might grow taller than an average human.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>Crystal Size</td>
+						<td>Market Value</td>
+						<td>Weight</td>
+						<td>AC</td>
+						<td>HP</td>
+						<td>Extraction Time</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>Chip</td>
+					<td>10 gold</td>
+					<td>1/4 lbs</td>
+					<td>15</td>
+					<td>5</td>
+					<td>1 action</td>
+				</tr>
+				<tr>
+					<td>Fragment</td>
+					<td>100 gold</td>
+					<td>1/2 lbs</td>
+					<td>17</td>
+					<td>10</td>
+					<td>1 minute</td>
+				</tr>
+				<tr>
+					<td>Shard</td>
+					<td>500 gold</td>
+					<td>1 lbs</td>
+					<td>19</td>
+					<td>10</td>
+					<td>5 minutes</td>
+				</tr>
+				<tr>
+					<td>Crystal</td>
+					<td>1000 gold</td>
+					<td>2 lbs</td>
+					<td>21</td>
+					<td>20</td>
+					<td>30 minutes</td>
+				</tr>
+				<tr>
+					<td>Geode</td>
+					<td>5000 gold</td>
+					<td>20 lbs +</td>
+					<td>23</td>
+					<td>25</td>
+					<td>1 hour</td>
+				</tr>
+				<tr>
+					<td>Massive Cluster</td>
+					<td>Priceless</td>
+					<td>8000 lbs +</td>
+					<td>20</td>
+					<td>50</td>
+					<td>See text</td>
+				</tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Potions -->
+	<element name="Aqua Delerium" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MAGIC_ITEM_AQUA_DELERIUM">		
+		<description>
+			<p>This purple potion glows dimly with octarine light. It swirls and sparkles in its small stoppered bottle.</p>
+			<p>When you drink this potion, you regain expended spell slots. Roll 1d6. You choose spell slots to regain which have a combined level that is equal to or less than the result. None of the slots can be higher than 5th level.</p>
+			<p>For one hour after drinking aqua delerium, roll 1d20 each time you cast a spell of 1st level or higher. On a 1, you trigger a random Arcane Anomaly.</p>
+			<p>If you consume more than one dose of aqua delerium before finishing your next long rest, you take 1d12 necrotic damage for each spell level regained, and your hit point maximum is reduced by an amount equal to the damage taken until you finish a long rest. This damage can’t be reduced or prevented in any way.</p>
+			<p>When a creature who cannot cast spells using spell slots drinks aqua delerium, it takes 10 (3d6) necrotic damage and gains one Contamination Level.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Aqua Expurgo" type="Magic Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_MAGIC_ITEM_AQUA_EXPURGO">		
+		<description>
+			<p>This bright orange fluid is stored in a syringe and charged with arcane magic. You can use an action to administer the injection directly to the heart of yourself or another willing creature.</p>
+			<p>You are protected against contamination for six hours after receiving a dose of aqua expurgo. During this time, whenever you fail a saving throw against an effect which would cause you to gain one or more contamination levels, you can choose to succeed instead. You can use this ability three times, after which the effects of aqua expurgo expire.</p>
+			<p>If the effects of aqua expurgo expire in this manner, you immediately take 10 (3d6) necrotic damage and become incapacitated for 1 minute while you violently retch corrupt bile. Your hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until you finish a long rest. You die if this effect reduces your hit point maximum to 0. The necrotic damage can’t be reduced or prevented by any means.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Rings -->
+	<element name="Spymaster’s Signet" type="Magic Item" source="Dungeons of Drakkenheim" id="ID_GFG_DOD_MAGIC_ITEM_RING_OF_JUMPING">
+		<description>
+			<p>While wearing this ring, you can cast disguise self at-will. In addition, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible for one minute, or until you use a bonus action to become visible again. Once you use this power, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+</elements>

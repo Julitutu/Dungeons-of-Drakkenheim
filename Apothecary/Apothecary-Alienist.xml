@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Apothecary-Alienist.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/warlock-great-old-one.xml" />
+		</update>
+	</info>
+
+	<element name="Alienist" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_OCCULT_PRACTICES_ALIENIST">
+		<supports>Occult Practices</supports>
+		<description>
+			<p>An Alienist seeks to master the mysteries of the mind. Having devoted years to studying the inner workings of the brain, and unlocking its latent potential, an Alienist is able to read and manipulate the thoughts of others, and bend reality itself. They tap into unfathomable realities and shift the world to their will using the psychic energies they call upon from eldritch lore and arcane knowledge</p>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_SPELL"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_ADVANCED_PSYCHOLOGY"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_MENTAL_INFLUENCE"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_METAPHYSICAL_TETHER"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_FORCE_MANIPULATION"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_MENTAL_MAGIC"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_SELF_DIAGNOSIS"/>
+			<div element="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_IMPENETRABLE_MIND"/>
+		</description>
+		<sheet display="false">
+			<description>Having devoted years to studying the inner workings of the brain, and unlocking its latent potential, an Alienist is able to read and manipulate the thoughts of others, and bend reality itself.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_SPELL" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_ADVANCED_PSYCHOLOGY" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_MENTAL_INFLUENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_METAPHYSICAL_TETHER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_FORCE_MANIPULATION" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_MENTAL_MAGIC" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_SELF_DIAGNOSIS" level="14" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_IMPENETRABLE_MIND" level="18" />
+		</rules>
+	</element>
+	<element name="Alienist Spells" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_SPELL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_SPELL</requirements>
+		<description>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alienist Spells table. These spells count as apothecary spells for you, but they don`t count against the number of apothecary spells you prepare.</p>
+			<h5 class="caption">ALIENIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>charm person, hideous laughter</em></td></tr>
+				<tr><td>3nd</td><td><em>detect thoughts, suggestion</em></td></tr>
+				<tr><td>5rd</td><td><em>hypnotic pattern, major image</em></td></tr>
+				<tr><td>7th</td><td><em>arcane eye, dimension door</em></td></tr>
+				<tr><td>9th</td><td><em>animate objects, modify memory</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alienist Spells table</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="1" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" level="5" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="7" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Apothecary" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Apothecary" prepared="true" />
+		</rules>
+	</element>
+	<element name="Advanced Psycology" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_ADVANCED_PSYCHOLOGY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_ADVANCED_PSYCHOLOGY</requirements>
+		<description>
+			<p>You learn the <i>eldritch blast </i>cantrip. You gain proficiency in the Arcana skill. If you already have this proficiency, you gain proficiency with another skill of your choice.</p>
+		</description>
+		<sheet>
+			<description>You learn the <i>eldritch blast </i>cantrip. You gain proficiency in the Arcana skill. If you already have this proficiency, you gain proficiency with another skill of your choice.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" level="1" spellcasting="Apothecary" prepared="true" />
+			<select type="Proficiency" name="Proficiency (Advanced Psycology)" supports="Skill" default="ID_PROFICIENCY_SKILL_ARCANA" />
+		</rules>
+	</element>
+	<element name="Mental Influence" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_MENTAL_INFLUENCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_MENTAL_INFLUENCE</requirements>
+		<description>
+			<p>You have studied hard to unlock the deepest recesses of your psyche, unleashing untapped psychic potential within yourself. This energy is represented by a pool of Psychic Points. You have four psychic points. You gain two more at 6th level, another two at 10th, and two more again at 14th level, which you can expend to use the various psionic powers you have detailed below. If you have expended all your Psychic Points, you cannot use these powers. You regain all your expended Psychic Points when you finish a short or long rest.</p>
+				<ul>
+					<li>
+						<b>Cerebral Breakthrough. </b>When you cast an apothecary spell that deals damage, you can expend a Psychic Point to re-roll any number of the dice. You must use the new rolls.</li>
+					<li>
+						<b>Mind Over Matter </b>. Whenever you take damage, you can use your reaction and expend a Psychic Point, reducing the damage taken by an amount equal to your apothecary level.</li>
+					<li>
+						<b>Mind Whisperer </b>. When you cast an apothecary spell which does not deal damage, you may spend a psychic point to cast it without any somatic or verbal components.</li>
+				</ul>
+		</description>
+		<sheet>
+			<description>You have {{psychycs-points}} which you can expend to use the various psionic powers. If you have expended all your Psychic Points, you cannot use these powers. You regain all your expended Psychic Points when you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="psychycs-points" value="4" level="3"/>
+			<stat name="psychycs-points" value="2" level="6"/>
+			<stat name="psychycs-points" value="2" level="10"/>
+			<stat name="psychycs-points" value="2" level="14"/>
+		</rules>
+	</element>
+	<element name="Metaphysical Tether" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_METAPHYSICAL_TETHER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_METAPHYSICAL_TETHER</requirements>
+		<description>
+			<p>As an action, you can touch a willing creature to create a psychic link with it which lasts a number of hours equal to your Apothecary level or until you end the link (no action required) . The maximum number of links you can have at any time is equal to your proficiency bonus. All the creatures tethered in this way can communicate telepathically with one another as long as they are within 100 feet of each other.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action, you can touch a willing creature to create a psychic link with it which lasts {{apothecary:level}} a  hours or until you end the link (no action required).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Force Manipulation" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_FORCE_MANIPULATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_FORCE_MANIPULATION</requirements>
+		<description>
+			<p>Your mental prowess allows you to control the very fabric of your own reality around you, allowing you to defy gravity and push yourself through the air using only your mind. As a bonus action, you can expend a psychic point to give yourself a flying speed equal to your walking speed for 1 minute, during which you can hover.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> As a bonus action, you can expend a psychic point to give yourself a flying speed equal to your walking speed for 1 minute, during which you can hover.</description>
+		</sheet>
+	</element>	
+	<element name="Mental Magic" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_MENTAL_MAGIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_MENTAL_MAGIC</requirements>
+		<description>
+			<p>You gain new ways to use your latent psychic powers to manipulate the essence of your spells and spellcasting. You gain three new ways to use your Psychic Points:</p>
+				<ul>
+					<li>
+						<b>Prescribed Effects. </b>Once per turn when a target you can see within 30 feet of you succeeds on an Intelligence, Wisdom, or Charisma saving throw against a spell you cast, you can expend a Psychic Point to fill its mind with scrambled psionic energy, forcing it to reroll the d20 and use the lower roll for its saving throw, possibly turning a success into a failure.</li>
+					<li>
+						<b>Mentally Prepared. </b>Once per turn, when a target you can see within 30 feet of you, including yourself, fails an Intelligence, Wisdom, or Charisma saving throw, you can use a Psychic Point and add your Intelligence modifier to the creature`s saving throw, potentially turning the failure into a success.</li>
+					<li>
+						<b>Fight or Flight Response. </b>As a bonus action, you can expend a Psychic Point and teleport up to 30 feet to an unoccupied space you can see. You immediately gain temporary hit points equal to twice your intelligence modifier.</li>
+				</ul>
+		</description>
+		<sheet>
+			<description>You gain new ways to use your latent psychic powers to manipulate the essence of your spells and spellcasting.
+			</description>
+		</sheet>
+	</element>	
+	<element name="Self Diagnosis" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_SELF_DIAGNOSIS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_SELF_DIAGNOSIS</requirements>
+		<description>
+			<p>If you have no Psychic Points remaining, you can use an bonus action and expend a spell slot to regain 1d4 Psychic Points. You also gain two additional psychic features:</p>
+						<ul>
+							<li>
+								<b>Careful Examination. </b>Whenever you cast a spell which restores hit points to a creature, you may expend a Psychic Point. If you do, all creatures targeted by the spell regain an additional amount of hit points equal to twice your Intelligence modifier.</li>
+							<li>
+								<b>Enhanced Cerebellum. </b>When you cast any spell of 1st level or higher from your Alienist Spells feature, you can cast it by expending a spell slot as normal or by spending a number of psychic points equal to the spell`s level.</li>
+						</ul>
+		</description>
+		<sheet>
+			<description>If you have no Psychic Points remaining, you can use an bonus action and expend a spell slot to regain 1d4 Psychic Points.</description>
+		</sheet>
+	</element>	
+	<element name="Impenetrable Mind" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_ALIENIST_IMPENETRABLE_MIND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_IMPENETRABLE_MIND</requirements>
+		<description>
+			<p>You are resistant to psychic damage and immune to being charmed or frightened. Magic cannot put you to sleep and you have advantage on saving throws against spells that attempt to read your thoughts or control your mind or actions, such as dominate person. Additionally, when you use the Self-Diagnosis feature to regain Psychic Points using a spell slot, you now regain Psychic Points equal to the spell`s level.</p>
+		</description>
+		<sheet>
+			<description>You are resistant to psychic damage and immune to being charmed or frightened. You have advantage on saving throws against spells that attempt to read your thoughts or control your mind or actions, such as dominate person.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>	
+
+	<!--Feature Replacement Grants-->
+	<element name="Alienist Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_SPELL" />
+	<element name="Advanced Psycology Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_ADVANCED_PSYCHOLOGY" />
+	<element name="Mental Influence Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_MENTAL_INFLUENCE" />
+	<element name="Metaphysical Tether Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_METAPHYSICAL_TETHER" />
+	<element name="Force Manipulation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_FORCE_MANIPULATION" />
+	<element name="Mental Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_MENTAL_MAGIC" />
+	<element name="Self Diagnosis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_SELF_DIAGNOSIS" />
+	<element name="Impenetrable Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ALIENIST_IMPENETRABLE_MIND" />
+</elements>

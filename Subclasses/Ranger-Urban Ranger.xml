@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="Ranger-Urban Ranger.xml" url="[INSERT CORRECT URL HERE]" />
+		</update>
+	</info>
+	<element name="Urban Ranger" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_URBAN_RANGER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Urban rangers are less accustomed to nature and the wilds, but to the rooftops and guerilla tactics of city warfare. Training for maneuverability and stealth amongst ruined buildings, and twisting streets, these rangers are at home amongst the ruins and rubble. They are agile runners, skilled snipers, and always able to know where the best vantage points against their enemies are.</p>
+			<div element="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_MAGIC" />
+			<div element="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_GUTTER_RUNNER" />
+			<div element="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_VANTAGE_POINT" />
+			<div element="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_ROOFTOP_MOBILITY" />
+			<div element="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_PERFECT_POSITION" />
+			<div element="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_SITTING_DUCK" />
+		</description>
+		<sheet display="false">
+			<description>Urban rangers are less accustomed to nature and the wilds, but to the rooftops and guerilla tactics of city warfare. Training for maneuverability and stealth amongst ruined buildings, and twisting streets, these rangers are at home amongst the ruins and rubble.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_GUTTER_RUNNER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_VANTAGE_POINT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_ROOFTOP_MOBILITY" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_PERFECT_POSITION" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_SITTING_DUCK" level="15" />
+		</rules>
+	</element>
+
+	<element name="Urban Ranger Magic" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_MAGIC">
+		<description>
+			<p>You learn an additional spell when you reach certain levels in this class, as shown in the Urban Ranger Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
+			<h5>Urban Ranger Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Spell</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>3rd</td><td><i>feather fall</i></td></tr>
+					<tr><td>5th</td><td><i>invisibility</i></td></tr>
+					<tr><td>9th</td><td><i>haste</i></td></tr>
+					<tr><td>13th</td><td><i>dimension door</i></td></tr>
+					<tr><td>17th</td><td><i>animate objects</i></td></tr>
+				</tbody>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You learn an additional spell when you reach certain levels in this class, as shown in the Urban Ranger Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="17" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Gutter Runner" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_GUTTER_RUNNER">
+		<description>
+			<p>You gain a climb speed equal to your walking speed, and proficiency in the Athletics and Acrobatic skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p>
+			<p>In addition, when you take the Dash action on your turn, you can move through other creature’s spaces without penalty (but not stop there). When you do, your movement doesn’t provoke opportunity attacks.</p>
+		</description>
+		<sheet>
+			<description>You gain a climb speed equal to your walking speed, and proficiency in the Athletics and Acrobatic skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</description>
+			<description>In addition, when you take the Dash action on your turn, you can move through other creature’s spaces without penalty (but not stop there). When you do, your movement doesn’t provoke opportunity attacks.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+		</rules>
+	</element>
+
+	<element name="Vantage Point" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_VANTAGE_POINT">
+		<description>
+			<p>When you make a ranged weapon attack against a creature, you gain advantage on the attack roll if there are no other creatures within 5 feet of that target, or if you are 20 feet or more above the target and that creature doesn’t have cover.</p>
+		</description>
+		<sheet>
+			<description>When you make a ranged weapon attack against a creature, you gain advantage on the attack roll if there are no other creatures within 5 feet of that target, or if you are 20 feet or more above the target and that creature doesn’t have cover.</description>
+		</sheet>
+	</element>
+
+	<element name="Rooftop Mobility" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_ROOFTOP_MOBILITY">
+		<description>
+			<p>Your movement speed increases by 10 feet, and you can take the Dash action as a bonus action on your turn. In addition, you have mastered the means to propel yourself forwards and upwards when you move and climb. When you take the Dash action on your turn, your jumping distance increases to match your movement speed.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Your movement speed increases by 10 feet, and you can take the Dash action as a bonus action on your turn. In addition, you have mastered the means to propel yourself forwards and upwards when you move and climb. When you take the Dash action on your turn, your jumping distance increases to match your movement speed.</description>
+		</sheet>
+	</element>
+
+	<element name="Perfect Position" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_PERFECT_POSITION">
+		<description>
+			<p>When you attack a creature with the benefits of your Vantage Point feature, you deal an additional 2d6 damage to the target, and score a critical hit on a d20 roll of 19–20.</p>
+		</description>
+		<sheet>
+			<description>When you attack a creature with the benefits of your Vantage Point feature, you deal an additional 2d6 damage to the target, and score a critical hit on a d20 roll of 19–20.</description>
+		</sheet>
+	</element>
+
+	<element name="Sitting Duck" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_SITTING_DUCK">
+		<description>
+			<p>Once on your turn, when you hit a creature that did not move on its last turn with a ranged weapon attack, that attack automatically becomes a critical hit.</p>
+		</description>
+		<sheet>
+			<description>Once on your turn, when you hit a creature that did not move on its last turn with a ranged weapon attack, that attack automatically becomes a critical hit.</description>
+		</sheet>
+	</element>
+</elements>

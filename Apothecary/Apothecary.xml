@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Apothecary</name>
+		<description>The Apothecary class from Sebastien Crowe's Guide to Drakkenheim.</description>
+		<author url="https://ghostfiregaming.com/product/sebastian-crowes-guide-to-drakkenheim-hardcover-book/">Ghostfire Gaming</author>
+		<update version="0.3.9">
+			<file name="Apothecary.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-warlock.xml" />
+		</update>
+	</info>
+
+	<element name="Apothecary" type="Class" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLASS_APOTHECARY">
+		<description>
+			<p class="ident"><i>A bespectacled man stands at an operating table, studying the dissected monstrosity resting upon the slab. The crackle of electric conductors harmonize with his arcane mumblings as he takes up his scalpels and saws. As he finishes the final stitch, the creature`s hand twitches and jolts to life once more.</i></p>
+            <p class="ident"><i>Cloaked in an acid-stained heavy coat, a tall half-elf brews tinctures and tonics. Her face is concealed behind thick black goggles and a heavy breathing mask as she performs an unusual combination of herbalism, alchemy, medicine, and magic. Her mixtures bubble and boil as she muses whether the cure will be worse than the disease.</i></p>
+            <p class="ident"><i>A lithe tiefling soothes a suffering patient as they draw a sample of contaminated blood. Lifting the vial to examine the liquid within, they pull upon eldritch energy to distill the sample into a pure contagion. Scribbling their findings down in a withered notebook, they add the vial to their collection of pathogens and scourges to use against their foes.</i></p>
+            <h4>Apothecaries in Drakkenheim</h4>
+            <p>Apothecaries can be found throughout the continent in many forms. The term is broadly used to describe many magic-adjacent professions found on the continent and the vast array of possible fields of study is ever expanding.</p>
+            <p>The Amethyst Academy has departments of apothecaries managing their labs and research centers. Within their many schools and strongholds, they teach advanced sciences and using magic to better understand the body and mind, and the various modern medical practices that can be combined with magic to save lives -- or end them.</p>
+            <p>Not all apothecaries are mageborn. The broad term has been used to describe several practices that combine herbal ingredients, chemicals, and poisons with biological study to induce outcomes similar to the effects of evocation or necromantic magic. Pathogenists working in distant labs perform studies to create new powerful strains of disease and poison. Chemists find ways to surpass the potency of mageborn spellcasting with the right dose of chemicals for their explosive and destructive results. Other Mutagenists working with the mutating effects of delerium seek to control and isolate the elements of mutation and apply them in a more controlled manner. There are even reports of apothecaries who are studying techniques to unlock the potential of the mind. These Alienists have caused a stir amongst nobles, mages, and clergy for their ability to tap into mental capabilities that mirror magic, without requiring a mageborn`s lineage.</p>
+            <p>Secretive reanimators pursue grisly studies into the realms of death and undeath, mimicking necromantic magic using little more than new science and invention. There are apothecaries working under the Sacred Flame as exorcists, channeling their occult knowledge and research into helping rid holy sites of undead, dispatch unwanted spirits, and remove terrible curses.</p>
+            <p>Apothecaries are found on every continent; whether mageborn or not, many are skilled academics who have a keen mind for pushing the boundaries of science. These researchers have found themselves on the path of the apothecary, lending their aid to cities and towns throughout the continent, and occasionally bringing unique chemical warfare to the battlefield of great wars.</p>
+			<h4>MEDICAL EXPERTS</h4>
+			<p>An apothecary is a practiced medical expert and arcane magic user. They wield their knowledge to both heal and harm, augmenting their conventional skills with alchemy and occult magic. Some apothecaries might first attempt treatment with traditional means like medicinal herbs and surgical techniques. When these mundane methods are not enough, they use arcane magic and eldritch forces to restore their patients. An apothecary’s unique skills prove useful whether their patients suffer from natural or supernatural ailments, but apothecaries possess knowledge of the body which can be used for more than just healing. Their arcane methods can strengthen, transform, or protect their allies, and some apothecaries know deadly techniques which can harm and kill their enemies. An apothecary understands how the difference between a poison and a cure lies often only in the dose.</p>
+			<p class="indent">Their careful study of life and death gives an apothecary the tools to both help allies survive horrible ailments, injuries, and pluck them from the clutches of death, or use their enemies as test subjects for their dangerous compounds, terrible diseases and poisonous magic.</p>
+			<h4>KNOWLEDGE SEEKERS</h4>
+			<p>Most apothecaries set out with the goal of furthering their studies and expanding their magical horizons, uncovering new ways to wield magic for dangerous or life-saving effects, and learning forbidden knowledge kept from the rest of the world. They believe that knowledge is power, and see themselves as seekers of knowledge. Some kinder apothecaries see their duty as protectors of the innocent, dedicating their lives to helping sick and injured people. Others see every opportunity to exploit the weak and push their search for true power forward. Many fall somewhere in between, riding the lines of mad scientist and renowned doctor.</p>
+            <h4>OCCULT PRACTITIONERS</h4>
+			<p>Apothecaries seek out occult lore and use it to study and practice scientific theories. Many of their magical incantations, whether it be for the purposes of saving lives, or ending them, are deemed experimental. Many apothecaries keep a notebook close at hand and write down esoteric theories based on their findings and field work.</p>
+			<p class="indent">Apothecaries are gaining renown within some remote communities on the continent as doctors and healers to whom one can turn to instead of religious figures. However, they are more often viewed as dangerous scientists and mysterious witches who use magic to create toxins and poisons that could eradicate entire armies.</p>
+			<h4>CREATING A APOTHECARY</h4>
+			<p>When you set out to create an apothecary, the most important question is to decide your path of study. What is it that drives you to seek knowledge? Are you working in the service of good? Is your life dedicated to helping those in need? By studying poisons, diseases, occult lore, and forbidden knowledge, do you hope to help the sick and wounded? Perhaps you aim to save someone you care about, or protect your kingdom or homeland from the evils of this world. Or maybe your studies are more dangerous in nature. Do you set out on adventure to test your dangerous chemical formulae? Do you see each monster or enemy as a test subject for your concoctions and spells?</p>
+            <p class="indent">All apothecaries share a search for knowledge, and dabble in forbidden lore and occult practices. Although many in their practice are happy to sell their services or potions in cities or to well-paying nobles and kings, some are called to adventure, setting out on the endless hunt for knowledge. Others work as investigators and researchers. Many apothecaries see adventure as a means to perform direct field research, perfect their skills, and test the true potential of their theories.</p>
+			<h5>QUICK BUILD</h5>
+            <p>You can make an apothecary quickly by following these suggestions.</p>
+            <ul class="unstyled">
+                <li>First, Intelligence should be your highest ability score, followed by Constitution.</li>
+                <li>Second, choose your character ancestry and background.</li>
+                <li>Third, choose the <i>poison needle*</i> and <i>spare the dying</i> cantrips, along with the 1st-level spells <i>envenom*</i> and <i>healing word</i>.</li>
+            </ul>
+			<h3>CLASS FEATURES</h3>
+			<p>As an apothecary, you gain the following class features:</p>
+            <h5>HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per apothecary level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per apothecary level after 1st</li>
+            </ul>
+            <h5>PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor, Medium armor</li>
+                <li><strong>Weapons:</strong> Simple weapons, Short swords, Hand crossbows</li>
+                <li><strong>Tools:</strong> any tool proficiency, plus another of your choice from the following: poisoner`s kit, herbalism kit, or alchemist`s supplies.</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+                <li><strong>Skills:</strong> Choose two skills from Arcana, History, Investigation, Medicine, Nature, and Religion</li>
+            </ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>a light crossbow and 20 bolts, a shortsword, or any simple weapon</li>
+                <li>a component pouch or an arcane focus</li>
+                <li>a scholar`s pack or a dungeoneer`s pack</li>
+                <li>hide armor, any simple weapon, and two daggers</li>
+                <li>A healer`s kit</li>
+			</ul>
+			<h5 class="caption">THE APOTHECARY</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-10">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spell Slots</td><td class="col-10">Slot Level</td><td class="col-10">Theories Known</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Apothecary Magic, Occult Practice</td><td>3</td><td>1</td><td>1st</td><td>—</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Esoteric Theories</td><td>3</td><td>2</td><td>1st</td><td>2</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Occult Practice Feature</td><td>3</td><td>2</td><td>2nd</td><td>2</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>4</td><td>2</td><td>2nd</td><td>3</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">—</td><td>4</td><td>3</td><td>3rd</td><td>3</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Occult Practice Feature</td><td>4</td><td>3</td><td>3rd</td><td>4</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">—</td><td>4</td><td>3</td><td>4th</td><td>4</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>4th</td><td>5</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">—</td><td>4</td><td>4</td><td>5th</td><td>5</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Occult Practice Feature</td><td>5</td><td>4</td><td>5th</td><td>6</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Greater Formula (6th)</td><td>5</td><td>4</td><td>5th</td><td>6</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>5</td><td>4</td><td>5th</td><td>7</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Greater Formula (7th)</td><td>5</td><td>5</td><td>5th</td><td>7</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Occult Practice Feature</td><td>5</td><td>5</td><td>5th</td><td>8</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Greater Formula (8th)</td><td>5</td><td>5</td><td>5th</td><td>8</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>5</td><td>5</td><td>5th</td><td>9</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Greater Formula (9th)</td><td>5</td><td>6</td><td>5th</td><td>9</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Occult Practice Feature</td><td>5</td><td>6</td><td>5th</td><td>10</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement, Additional Greater Formula (6th)</td><td>5</td><td>6</td><td>5th</td><td>10</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Miraculous Recovery, Additional Greater Formula (7th)</td><td>5</td><td>6</td><td>5th</td><td>11</td></tr>
+			</table>
+			<div element="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_SPELLCASTING_APOTHECARY_MAGIC" />
+            <div element="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_OCCULT_PRACTICES" />
+			<div element="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_ESOTERIC_THEORIES" />
+			<div element="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_ABILITY_SCORE_IMPROVEMENT_APOTHECARY" />
+			<div element="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_GREATER_FORMULA" />
+			<div element="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_MIRACULOUS_RECOVERY" />
+		</description>
+		<sheet display="false">
+			<description>An apothecary is a practiced medical expert and arcane magic user.</description>
+		</sheet>
+		<setters>
+			<set name="short">An apothecary is a practiced medical expert and arcane magic user.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_GFG_SCGTD_MULTICLASS_APOTHECARY"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_GFG_SCGTD_MULTICLASS_APOTHECARY"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_GFG_SCGTD_MULTICLASS_APOTHECARY"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_GFG_SCGTD_MULTICLASS_APOTHECARY"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_GFG_SCGTD_MULTICLASS_APOTHECARY"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_GFG_SCGTD_MULTICLASS_APOTHECARY"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_GFG_SCGTD_MULTICLASS_APOTHECARY"/>
+			<select type="Proficiency" name="Skill Proficiency (Apothecary)" supports="Skill,Apothecary" number="2" requirements="!ID_GFG_SCGTD_MULTICLASS_APOTHECARY"/>
+			<grant type="Class Feature" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_OCCULT_PRACTICES" level="1"/>
+			<grant type="Class Feature" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_SPELLCASTING_APOTHECARY_MAGIC" level="1" />
+			<grant type="Class Feature" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_ESOTERIC_THEORIES" level="2" />
+			<grant type="Class Feature" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_ABILITY_SCORE_IMPROVEMENT_APOTHECARY" level="4" />
+			<grant type="Class Feature" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_GREATER_FORMULA" level="11" />
+			<grant type="Class Feature" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_MIRACULOUS_RECOVERY" level="20" />
+		</rules>
+		<multiclass id="ID_GFG_SCGTD_MULTICLASS_APOTHECARY">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, One Tool proficiency</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<select type="Proficiency" name="Tool Proficiency, Apothecary" supports="Items Tools" number="1" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Occult Practices" type="Class Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_OCCULT_PRACTICES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_OCCULT_PRACTICES</requirements>
+		<description>
+			<p>At 1st level, you take up one of the Occult Practices, a chosen discipline which defines your ongoing research of the body and spirit: the Alienist, the Chemist, the Exorcist, the Mutagenist, the Pathogenist, or the Reanimator</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Occult Practices" supports="Occult Practices" />
+		</rules>
+	</element>
+	<element name="Apothecary Magic" type="Class Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_SPELLCASTING_APOTHECARY_MAGIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_SPELLCASTING_APOTHECARY_MAGIC</requirements>
+		<description>
+			<p>Your arcane research has given you facility with spells. Refer to the Core Rules for the general rules of spellcasting and the Spells Listing in this book for the apothecary spell list.</p>
+			<h5>FORMULA BOOK</h5>
+			<p>You have a book or collection of notes that you study to prepare your apothecary spells, develop your esoteric theories, and record your occult practices. You may use your formula book as an arcane focus for your apothecary spells. You may describe this book any way you like. Some examples of your book's appearance include:</p>
+			<ul>
+				<li>A large leatherbound tome with yellowing pages bound shut with an iron lock</li>
+				<li>A scattered assortment of scribbled notes loosely held together by rope</li>
+				<li>A pristine journal with perfect edges and beautiful penmanship</li>
+				<li>A leather briefcase with two small golden locks</li>
+				<li>A medical bag with surgical symbols on the sides</li>
+				<li>A beat-up satchel slung over one shoulder with vials and bottles poking out of every pocket</li>
+			</ul>
+			<p>If the book is destroyed or lost, you can recreate it using inks and paper during a long rest.</p>
+			<h5>CANTRIPS</h5>
+			<p>You know three cantrips of your choice from the apothecary spell list. You learn additional apothecary cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Apothecary table.</p>
+			<p><b>Elementary Reformulation.</b>Whenever you finish a long rest and consult your formula book, you can replace one apothecary cantrip you know with another cantrip from the apothecary spell list.</p>
+			<h5>PREPARING AND CASTING SPELL</h5>
+			<p>The Apothecary table shows how many spell slots you have to cast your apothecary spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your apothecary spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
+			<p>You prepare the list of apothecary spells that are available for you to cast, choosing from the apothecary spell list. When you do so, choose a number of apothecary spells equal to your Intelligence modifier + your apothecary level (minimum of one spell). A spell you prepare must be of a level no higher than what's shown in the Apothecary table's Slot Level column for your level.</p>
+			<p>For example, if you are a 5th-level apothecary, you have three 3rd-level spell slots. With an Intelligence of 16, your list of prepared spells can include eight spells of 1st, 2nd, or 3rd level, in any combination. To cast the 1st-level spell cure wounds, you must spend one of those slots, and you cast it as a 3rd-level spell. Casting a spell doesn't remove it from your list of prepared spells.</p>
+			<p>You can change your list of prepared spells when you finish a long rest. Preparing a new list of apothecary spells requires at least 1 minute per spell level for each spell on your list.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your apothecary spells, since you learn your spells through dedicated study and occult knowledge. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for an apothecary spell you cast and when making an attack roll with one.</p>
+			<p class="indent">
+				<b>Spell save DC</b> = 8 + your proficiency bonus + your Intelligence modifier</p>
+			<p class="indent">
+				<b>Spell attack modifier</b> = your proficiency bonus + your Intelligence modifier</p>
+			<h5>RITUAL CASTING</h5>
+			<p>You can cast an apothecary spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus (see the Adventuring Gear section of the Core Rules) as a spellcasting focus for your apothecary spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You have a book or collection of notes that you study to prepare your apothecary spells. You have {{apothecary:spellcasting:slots:count}} slots of level {{apothecary:spellcasting:slot}}</description>
+		</sheet>
+		<spellcasting name="Apothecary" ability="Intelligence" allowReplace="true" prepare="true">
+			<list known="true">Apothecary</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="apothecary:spellcasting:slots:count" value="1" level="1"/>
+			<stat name="apothecary:spellcasting:slots:count" value="1" level="2"/>
+			<stat name="apothecary:spellcasting:slots:count" value="1" level="5"/>
+			<stat name="apothecary:spellcasting:slots:count" value="1" level="9"/>
+			<stat name="apothecary:spellcasting:slots:count" value="1" level="13"/>
+			<stat name="apothecary:spellcasting:slots:count" value="1" level="17"/>
+
+			<stat name="apothecary:spellcasting:slot" value="1" level="1" />
+			<stat name="apothecary:spellcasting:slot" value="1" level="3" />
+			<stat name="apothecary:spellcasting:slot" value="1" level="5" />
+			<stat name="apothecary:spellcasting:slot" value="1" level="7" />
+			<stat name="apothecary:spellcasting:slot" value="1" level="9" />
+
+			<!-- negative count to remove slots -->
+			<stat name="apothecary:spellcasting:slots:1" value="apothecary:spellcasting:slots:count" level="1" />
+			<stat name="apothecary:spellcasting:slots:1" value="-apothecary:spellcasting:slots:count" level="3" />
+			<stat name="apothecary:spellcasting:slots:2" value="apothecary:spellcasting:slots:count" level="3" />
+			<stat name="apothecary:spellcasting:slots:2" value="-apothecary:spellcasting:slots:count" level="5" />
+			<stat name="apothecary:spellcasting:slots:3" value="apothecary:spellcasting:slots:count" level="5" />
+			<stat name="apothecary:spellcasting:slots:3" value="-apothecary:spellcasting:slots:count" level="7" />
+			<stat name="apothecary:spellcasting:slots:4" value="apothecary:spellcasting:slots:count" level="7" />
+			<stat name="apothecary:spellcasting:slots:4" value="-apothecary:spellcasting:slots:count" level="9" />
+			<stat name="apothecary:spellcasting:slots:5" value="apothecary:spellcasting:slots:count" level="9" />
+
+			<stat name="apothecary:spellcasting:prepare" value="intelligence:modifier" />
+			<stat name="apothecary:spellcasting:prepare" value="level:apothecary" />
+
+			<select type="Spell" name="Cantrip (Apothecary)" supports="$(spellcasting:list),0" level="1" number="3" spellcasting="Apothecary" />
+			<select type="Spell" name="Cantrip (Apothecary)" supports="$(spellcasting:list),0" level="4" spellcasting="Apothecary" />
+			<select type="Spell" name="Cantrip (Apothecary)" supports="$(spellcasting:list),0" level="10" spellcasting="Apothecary" />
+		</rules>
+	</element>
+	<element name="Esoteric Theories" type="Class Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_ESOTERIC_THEORIES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ESOTERIC_THEORIES</requirements>
+		<description>
+			<p>You have discovered esoteric theories, scraps of forbidden lore that you can use to augment your magical abilities.</p>
+			<p>At 2nd level, you gain two esoteric theories of your choice. Your theory options are detailed at the end of the class description. When you gain certain apothecary levels, you gain additional theories of your choice, as shown in the Theories Known column of the Apothecary table. Additionally, when you gain a level in this class, you can choose one of the theories you know and replace it with another theory that you could learn at that level.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Esoteric Theory (Level 2)" supports="Esoteric Theory" level="2" number="2" />
+			<select type="Class Feature" name="Esoteric Theory (Level 4)" supports="Esoteric Theory" level="4" />
+			<select type="Class Feature" name="Esoteric Theory (Level 6)" supports="Esoteric Theory" level="6" />
+			<select type="Class Feature" name="Esoteric Theory (Level 8)" supports="Esoteric Theory" level="8" />
+			<select type="Class Feature" name="Esoteric Theory (Level 10)" supports="Esoteric Theory" level="10" />
+			<select type="Class Feature" name="Esoteric Theory (Level 12)" supports="Esoteric Theory" level="12" />
+			<select type="Class Feature" name="Esoteric Theory (Level 14)" supports="Esoteric Theory" level="14" />
+			<select type="Class Feature" name="Esoteric Theory (Level 16)" supports="Esoteric Theory" level="16" />
+			<select type="Class Feature" name="Esoteric Theory (Level 18)" supports="Esoteric Theory" level="18" />
+			<select type="Class Feature" name="Esoteric Theory (Level 20)" supports="Esoteric Theory" level="20" number="1" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_ABILITY_SCORE_IMPROVEMENT_APOTHECARY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Apothecary 4)" supports="Improvement Option,Apothecary,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Apothecary 8)" supports="Improvement Option,Apothecary,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Apothecary 12)" supports="Improvement Option,Apothecary,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Apothecary 16)" supports="Improvement Option,Apothecary,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Apothecary 19)" supports="Improvement Option,Apothecary,19" level="19" />
+		</rules>
+	</element>
+	<element name="Greater Formula" type="Class Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_GREATER_FORMULA">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_GREATER_FORMULA</requirements>
+		<description>
+			<p>At 11th level, you discover a magical secret called a Greater Formula. Choose one 6th-level spell from the apothecary spell list as this formula.</p>
+			<p>You can cast your Greater Formula once without expending a spell slot. You must finish a long rest before you can do so again.</p>
+			<p>At higher levels, you gain more apothecary spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You learn an additional 6th level spell at 19th level, and an additional 7th level spell at 20th level.</p>
+			<p>You regain all uses when you finish a long rest.</p>
+			<p><b>Master Reformulation.</b>Whenever you finish a long rest and consult your formula book, you can replace one spell you gained from this feature with another spell of the same level from the Apothecary spell list.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast your Greater Formula once without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Greater Formula" supports="Apothecary,6" level="11" spellcasting="Apothecary" />
+			<select type="Spell" name="Greater Formula" supports="Apothecary,7" level="13" spellcasting="Apothecary" />
+			<select type="Spell" name="Greater Formula" supports="Apothecary,8" level="15" spellcasting="Apothecary" />
+			<select type="Spell" name="Greater Formula" supports="Apothecary,9" level="17" spellcasting="Apothecary" />
+			<select type="Spell" name="Greater Formula" supports="Apothecary,6" level="19" spellcasting="Apothecary" />
+			<select type="Spell" name="Greater Formula" supports="Apothecary,7" level="20" spellcasting="Apothecary" />
+		</rules>
+	</element>
+	<element name="Miraculous Recovery" type="Class Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLASS_FEATURE_APOTHECARY_MIRACULOUS_RECOVERY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MIRACULOUS_RECOVERY</requirements>
+		<description>
+			<p>At 20th level, you can spend 5 minutes channeling power into a number of creatures (which can include yourself) equal to your Intelligence modifier to facilitate an abnormally fast recovery. You must tend to the creatures during this period, using a healer´s kit with at least one use remaining. The targets regain hit points, spell slots, hit dice, and other abilities as if they completed a long rest. A creature can only benefit from one Miraculous Recovery in a 24-hour period. Once you use this feature, you can´t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can spend 5 minutes channeling power into a number of creatures (which can include yourself) equal to your Intelligence modifier to facilitate an abnormally fast recovery. The targets regain hit points, spell slots, hit dice, and other abilities as if they completed a long rest.</description>
+		</sheet>
+	</element>
+
+
+	<!--Feature Replacement Grants-->
+	<element name="Occult Practices Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_OCCULT_PRACTICES" />
+	<element name="Apothecary Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_SPELLCASTING_APOTHECARY_MAGIC" />
+	<element name="Esoteric Theories Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ESOTERIC_THEORIES" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Greater Formula Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_GREATER_FORMULA" />
+	<element name="Miraculous Recovery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_APOTHECARY_MIRACULOUS_RECOVERY" />
+
+	<!-- Spell List -->
+	<append id="ID_PHB_SPELL_CHILL_TOUCH">
+  		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUIDANCE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LIGHT">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MENDING">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MESSAGE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POISON_SPRAY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RESISTANCE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHOCKING_GRASP">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPARE_THE_DYING">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_THAUMATURGY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ALARM">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_COMPREHEND_LANGUAGES">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CURE_WOUNDS">
+		<supports>Apothecary</supports>
+		</append>
+	<append id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_MAGIC">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FALSE_LIFE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEATHER_FALL">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLOATING_DISK">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FOG_CLOUD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREASE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HEALING_WORD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HIDEOUS_LAUGHTER">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_IDENTIFY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ILLUSORY_SCRIPT">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_JUMP">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLEEP">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_UNSEEN_SERVANT">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ACID_ARROW">
+  		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_AID">
+  		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GENTLE_REPOSE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_PERSON">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LESSER_RESTORATION">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SEE_INVISIBILITY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SILENCE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPIDER_CLIMB">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WEB">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BESTOW_CURSE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISPEL_MAGIC">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEAR">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GASEOUS_FORM">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GLYPH_OF_WARDING">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HASTE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HYPNOTIC_PATTERN">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MASS_HEALING_WORD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REMOVE_CURSE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REVIVIFY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SENDING">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SLOW">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPEAK_WITH_DEAD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STINKING_CLOUD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WATER_BREATHING">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLACK_TENTACLES">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_BLIGHT">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DEATH_WARD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POLYMORPH">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_STONESKIN">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ANTILIFE_SHELL">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CLOUDKILL">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTACT_OTHER_PLANE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_RESTORATION">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HOLD_MONSTER">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MASS_CURE_WOUNDS">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAISE_DEAD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SCRYING">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TELEPATHIC_BOND">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TELEPORTATION_CIRCLE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CHAIN_LIGHTNING">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CIRCLE_OF_DEATH">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CREATE_UNDEAD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DISINTEGRATE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_EYEBITE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FLESH_TO_STONE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GLOBE_OF_INVULNERABILITY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HARM">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_HEAL">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TRUE_SEEING">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ETHEREALNESS">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FINGER_OF_DEATH">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FORCECAGE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PLANE_SHIFT">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PRISMATIC_SPRAY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_REGENERATE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RESURRECTION">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ANTIMAGIC_FIELD">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ANTIPATHY_SYMPATHY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CLONE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DOMINATE_MONSTER">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FEEBLEMIND">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MIND_BLANK">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POWER_WORD_STUN">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_ASTRAL_PROJECTION">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FORESIGHT">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MASS_HEAL">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POWER_WORD_KILL">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TIME_STOP">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TRUE_POLYMORPH">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TRUE_RESURRECTION">
+		<supports>Apothecary</supports>
+	</append>	
+</elements>
