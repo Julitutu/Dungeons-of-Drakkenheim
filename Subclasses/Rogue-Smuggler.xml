@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Rogue-Smuggler.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Rogue-Smuggler.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Rogue-Smuggler.xml" />
 		</update>
 	</info>
 	<element name="Smuggler" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ROGUE_ARCHETYPE_SMUGGLER">
