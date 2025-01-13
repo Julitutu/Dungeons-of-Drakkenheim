@@ -4,8 +4,8 @@
 		<name>Apothecary</name>
 		<description>The Apothecary class from Sebastien Crowe's Guide to Drakkenheim.</description>
 		<author url="https://ghostfiregaming.com/product/sebastian-crowes-guide-to-drakkenheim-hardcover-book/">Ghostfire Gaming</author>
-		<update version="0.3.9">
-			<file name="Apothecary.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-warlock.xml" />
+		<update version="0.1.0">
+			<file name="Apothecary.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary.xml" />
 		</update>
 	</info>
 
