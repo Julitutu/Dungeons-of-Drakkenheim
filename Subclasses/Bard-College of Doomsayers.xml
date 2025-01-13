@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Bard-College of Doomsayers.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Bard-College of Doomsayers.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Bard-College%20of%20Doomsayers.xml" />
 		</update>
 	</info>
 	<element name="College of Doomsayers" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_BARD_ARCHETYPE_COLLEGE_OF_DOOMSAYERS">
