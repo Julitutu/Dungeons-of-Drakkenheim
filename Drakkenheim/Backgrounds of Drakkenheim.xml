@@ -4,7 +4,7 @@
 		<name>Dungeons of Drakkenheim Backgrounds</name>
 		<description>Backgrounds from the Dungeons of Drakkenheim setting.</description>
 		<author url="https://www.dungeonmastersguild.com/product/356696/Dungeons-of-Drakkenheim">Monty Martin, Kelly McLaughlin</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="Backgrounds of Drakkenheim.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Drakkenheim/Backgrounds%20of%20Drakkenheim.xml"/>
 		</update>
 	</info>
@@ -266,7 +266,7 @@
 		</setters>
 		<rules>
 			<select type="Proficiency" name="Skill Proficiency (Survivor)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ATHLETICS" number="2" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_COOKS_UTENSILS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
 			<select type="Proficiency" name="Artisan’s Tools Proficiency (Survivor)" supports="Artisan" number="1" />
 			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_MAKESHIFT_MEALS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
@@ -348,8 +348,8 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 			<select type="Proficiency" name="Skill Proficiency (Treasure Seeker)" supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION" number="1" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_THIEVES_TOOLS" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_CARTOGRAPHERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
 			<grant type="Background Feature" id="ID_DOD_BACKGROUND_FEATURE_DETAIL_ORIENTED" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 			<select type="List" name="Treasure Hunters’ Secrets">
