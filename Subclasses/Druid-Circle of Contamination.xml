@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Druid-Circle of Contamination.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Druid-Circle of Contamination.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Druid-Circle%20of%20Contamination.xml" />
 		</update>
 	</info>
 	<element name="Circle of Contamination" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_CIRCLE_OF_CONTAMINATION">
