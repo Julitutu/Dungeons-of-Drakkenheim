@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Apothecary-Mutagenist.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Apothecary-Mutagenist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Mutagenist.xml" />
 		</update>
 	</info>
 
