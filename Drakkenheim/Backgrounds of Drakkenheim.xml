@@ -4,7 +4,7 @@
 		<name>Dungeons of Drakkenheim Backgrounds</name>
 		<description>Backgrounds from the Dungeons of Drakkenheim setting.</description>
 		<author url="https://www.dungeonmastersguild.com/product/356696/Dungeons-of-Drakkenheim">Monty Martin, Kelly McLaughlin</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Backgrounds of Drakkenheim.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Drakkenheim/Backgrounds%20of%20Drakkenheim.xml"/>
 		</update>
 	</info>
