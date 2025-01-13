@@ -624,4 +624,22 @@
 	<append id="ID_PHB_SPELL_TRUE_RESURRECTION">
 		<supports>Apothecary</supports>
 	</append>	
+	<append id="ID_PROFICIENCY_SKILL_ARCANA">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_HISTORY">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_INVESTIGATION">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_MEDICINE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_NATURE">
+		<supports>Apothecary</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_RELIGION">
+		<supports>Apothecary</supports>
+	</append>
 </elements>
