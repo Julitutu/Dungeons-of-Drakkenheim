@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="Cleric-Shadow Domain.xml" url="[INSERT CORRECT URL HERE]" />
+			<file name="Cleric-Shadow Domain.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Cleric-Shadow%20Domain.xml" />
 		</update>
 	</info>
 	<element name="Shadow Domain" type="Archetype" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLERIC_ARCHETYPE_SHADOW_DOMAIN">
