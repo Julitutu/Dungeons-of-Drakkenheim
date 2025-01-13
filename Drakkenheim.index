@@ -4,7 +4,7 @@
 		<name>Dungeons of Drakkenheim</name>
 		<description>This book expands the world originally presented in our adventure <em>Dungeons of Drakkenheim</em>. If you own a copy of that book and are planning to run the campaign, you’ll find a wealth of information herein to broaden the scope of the campaign, taking the conflict beyond the walls of Drakkenheim.</description>
 		<author url="https://ghostfiregaming.com/sc-guide-to-drakkenheim/">Ghostfire Gaming</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Drakkenheim.index" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Drakkenheim.index" />
 		</update>
 	</info>
