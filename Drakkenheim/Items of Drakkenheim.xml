@@ -3,7 +3,7 @@
 	<info>
 		<name>Items of Drakkenheim</name>
 		<update version="0.0.1">
-			<file name="Items of Drakkenheim.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/items/items-tools.xml" />
+			<file name="Items of Drakkenheim.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Drakkenheim/Items%20of%20Drakkenheim.xml" />
 		</update>
 	</info>
 	<!-- Tools -->
