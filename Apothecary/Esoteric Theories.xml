@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="Esoteric Theories.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Esoteric%20Theories.xml" />
 		</update>
 	</info>
@@ -212,7 +212,6 @@
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_IMMUNITY_DISEASE" />
 		</rules>
 	</element>
 	<element name="Interdisciplinary Practice" type="Class Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLASS_FEATURE_ESOTERIC_THEORY_INTERDISCIPLINARY_PRACTICE">
