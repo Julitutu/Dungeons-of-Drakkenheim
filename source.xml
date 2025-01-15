@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/source.xml" />
 		</update>
 	</info>	
@@ -30,7 +30,7 @@
 			<p>The material in this book is meant for both players and Game Masters. As such, the secrets behind the origins of the meteor, the secrets of delerium, and the true prophecies of Lucretia Mathias remain unrevealed herein. The explanations behind these mysteries can be found within Dungeons of Drakkenheim!</p>
 		</description>
 		<setters>
-			<set name="abbreviation">SCGTD</set>
+			<set name="abbreviation">DOD</set>
 			<set name="url">https://ghostfiregaming.com/sc-guide-to-drakkenheim/</set>
 			<set name="image">https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/000.jpg</set>
 			<set name="author" abbreviation="DOD" url="https://ghostfiregaming.com/dungeons-of-drakkenheim/">Ghostfire Gaming</set>
