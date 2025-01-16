@@ -77,11 +77,11 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Your magic becomes a twisted mockery of druidic principles, and you can twist your spells to suit your needs. Your spells which conjure creatures or natural flora and fauna now appear like sickly, fleshy tentacles, and animals you summon are cancerous and mutated. In addition, when you cast a spell, you can choose one of the following blighted magic options:</description>
-			<description>Twin Spell. If the spell you cast targets only one creature and doesn’t have a range of self, you can expend a use of your Wild Shape feature to target a second creature in range with the same spell. To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level.</description>
-			<description>Quicken Spell. When you cast a spell that has a casting time of 1 action, you can expend a use of your Wild Shape feature to cast the spell as a bonus action.</description>
-			<description>Corrupt Spell. When you roll damage for a spell, you can expend a use of your Wild Shape feature to change the damage type of all damage caused by the spell to necrotic. In addition, you can reroll a number of the damage dice up to your Wisdom modifier (minimum one). You must use the new rolls.</description>
-			<description>Purify Spell. When you cast a contaminated spell (found in Chapter 4), you can expend a use of your Wild Shape feature to cast the spell without gaining a Contamination Level.</description>
+			<description>YWhen you cast a spell, you can choose one of the following blighted magic options:
+			Twin Spell. If the spell you cast targets only one creature and doesn’t have a range of self, you can expend a use of your Wild Shape feature to target a second creature in range with the same spell. To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level.
+			Quicken Spell. When you cast a spell that has a casting time of 1 action, you can expend a use of your Wild Shape feature to cast the spell as a bonus action.
+			Corrupt Spell. When you roll damage for a spell, you can expend a use of your Wild Shape feature to change the damage type of all damage caused by the spell to necrotic. In addition, you can reroll a number of the damage dice up to {{wisdom:modifier}} (minimum one). You must use the new rolls.
+			Purify Spell. When you cast a contaminated spell, you can expend a use of your Wild Shape feature to cast the spell without gaining a Contamination Level.</description>
 		</sheet>
 	</element>
 
@@ -89,9 +89,13 @@
 		<description>
 			<p>You gain resistance to poison and necrotic damage.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You gain resistance to poison and necrotic damage.</description>
 		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
 	</element>
 
 	<element name="Cycle of Contamination" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_DRUID_ARCHETYPE_FEATURE_CONTAMINATION_CYCLE_OF_CONTAMINATION">
@@ -130,8 +134,13 @@
 			<p>A creature which makes a successful saving throw against your Haze Aura is immune to its effects for 24 hours.</p>
 		</description>
 		<sheet>
-			<description>You have become such a locus for contamination that you project the Haze around your body. The aura persists so long as you are not incapacitated. Creatures of your choice which start their turn within 10 feet of you must make a Constitution saving throw against your spell save DC. Those who fail the save take 3d6 necrotic damage. A creature who fails this saving throw by 5 or more gains one Contamination Level.</description>
-			<description>A creature which makes a successful saving throw against your Haze Aura is immune to its effects for 24 hours.</description>
+			<description>You emanate a Haze that persists so long as you are not incapacitated. Creatures of your choice which start their turn within 10 feet of you must make a DC {{haze aura:dc}} Constitution saving throw. Those who fail the save take 3d6 necrotic damage. A creature who fails this saving throw by 5 or more gains one Contamination Level.
+			A creature which makes a successful saving throw against your Haze Aura is immune to its effects for 24 hours.</description>
 		</sheet>
+		<rules>
+			<stat name="haze aura:dc" value="8" />
+			<stat name="haze aura:dc" value="proficiency" />
+			<stat name="haze aura:dc" value="wisdom:modifier" />
+		</rules>
 	</element>
 </elements>
