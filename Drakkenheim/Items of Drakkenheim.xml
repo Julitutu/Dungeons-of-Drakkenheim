@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items of Drakkenheim</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Items of Drakkenheim.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Drakkenheim/Items%20of%20Drakkenheim.xml" />
 		</update>
 	</info>
@@ -1240,7 +1240,7 @@
 		</setters>
 	</element>
 	<element name="Improvised Weapon" type="Weapon" source="Player’s Handbook" id="ID_WOTC_PHB_IMPROVISED_WEAPON">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+		<supports>ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
 		<description>
 			<p>An improvised weapon is an object wielded as a makeshift weapon, such as broken glass, a table leg, or a frying pan. A Simple or  Martial weapon also counts as an improvised weapon if it's wielded in a way contrary to its design; if you use a Ranged weapon to make a melee attack or throw a Melee weapon that lacks the Thrown property, the weapon counts as an improvised weapon. An improvised weapon follows the rules below.				
 <b>Proficiency.</b> Don't add your Proficiency Bonus to attack rolls with an improvised weapon.
@@ -1255,6 +1255,7 @@
 			<set name="slot">onehand</set>
 			<set name="range">20/60</set>
 			<set name="damage" type="bludgeoning/piercing/slashing">1d4</set>
+			<set name="versatile">1d12</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_IMPROVISED_WEAPONS</set>
 		</setters>
 	</element>
