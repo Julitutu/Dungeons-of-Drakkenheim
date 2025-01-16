@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Barbarian-Path of the Haze Rager.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Barbarian-Path%20of%20the%20Haze%20Rager.xml" />
 		</update>
 	</info>
@@ -40,12 +40,9 @@
 			<p>In addition, you can draw contamination into yourself to empower your melee weapon attacks further. When you hit a creature with a melee weapon attack, you can choose to give yourself one or more levels of contamination to deal necrotic damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for each level of contamination you choose to gain.</p>
 		</description>
 		<sheet>
-			<description>Once per turn while you are raging, you can deal an extra 1d8 necrotic damage to a target you hit with one of your weapon attacks unarmed strikes. 
-				When you hit a creature with a melee weapon attack, you can choose to give yourself one or more levels of contamination to deal necrotic damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for each level of contamination you choose to gain.</description>
-			<description level="10">Once per turn while you are raging, you can deal an extra 2d8 necrotic damage to a target you hit with one of your weapon attacks unarmed strikes. 
-				When you hit a creature with a melee weapon attack, you can choose to give yourself one or more levels of contamination to deal necrotic damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for each level of contamination you choose to gain.</description>
-			<description level="14">Once per turn while you are raging, you can deal an extra 3d8 necrotic damage to a target you hit with one of your weapon attacks unarmed strikes. 
-				When you hit a creature with a melee weapon attack, you can choose to give yourself one or more levels of contamination to deal necrotic damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for each level of contamination you choose to gain.</description>
+			<description>Once per turn while you are raging, you can deal an extra 1d8 necrotic damage to a target you hit with one of your weapon attacks unarmed strikes. When you hit a creature with a melee weapon attack, you can choose to give yourself one or more levels of contamination to deal necrotic damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for each level of contamination you choose to gain.</description>
+			<description level="10">Once per turn while you are raging, you can deal an extra 2d8 necrotic damage to a target you hit with one of your weapon attacks unarmed strikes. When you hit a creature with a melee weapon attack, you can choose to give yourself one or more levels of contamination to deal necrotic damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for each level of contamination you choose to gain.</description>
+			<description level="14">Once per turn while you are raging, you can deal an extra 3d8 necrotic damage to a target you hit with one of your weapon attacks unarmed strikes. When you hit a creature with a melee weapon attack, you can choose to give yourself one or more levels of contamination to deal necrotic damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for each level of contamination you choose to gain.</description>
 		</sheet>
 	</element>
 
@@ -78,8 +75,7 @@
 			<p>Whenever you would suffer a Mutation from contamination, you can roll twice and choose which Mutation you gain.</p>
 		</description>
 		<sheet>
-			<description>While you are raging, you ignore the Symptoms of any Contamination Levels you have gained, except for a Monstrous Transformation.
-			Whenever you would suffer a Mutation from contamination, you can roll twice and choose which Mutation you gain.</description>
+			<description>While you are raging, you ignore the Symptoms of any Contamination Levels you have gained, except for a Monstrous Transformation. Whenever you would suffer a Mutation from contamination, you can roll twice and choose which Mutation you gain.</description>
 		</sheet>
 	</element>
 
