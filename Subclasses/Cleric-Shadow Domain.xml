@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="Cleric-Shadow Domain.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Cleric-Shadow%20Domain.xml" />
 		</update>
 	</info>
@@ -93,8 +93,8 @@
 			<p>In addition, when you draw the cloak of night, all nonmagical light sources within 60 feet of you become extinguished. Magical light sources are dispelled if they were created by a spell with a level equal to or lower than your proficiency bonus.</p>
 		</description>
 		<sheet action="Action">
-			<description>You can use your Channel Divinity to invoke protective shadows. As an action, you draw upon a curtain of magical shadow which lasts for 1 minute. When you do, choose one creature you can see within 60 feet of you to be enveloped by the cloak of the night (which can be yourself). While the cloak lasts, that creature has resistance to all damage while it is in dim light or darkness.</description>
-			<description>In addition, when you draw the cloak of night, all nonmagical light sources within 60 feet of you become extinguished. Magical light sources are dispelled if they were created by a spell with a level equal to or lower than your proficiency bonus.</description>
+			<description>You can use your Channel Divinity to invoke protective shadows. As an action, you draw upon a curtain of magical shadow which lasts for 1 minute. When you do, choose one creature you can see within 60 feet of you to be enveloped by the cloak of the night (which can be yourself). While the cloak lasts, that creature has resistance to all damage while it is in dim light or darkness.
+			In addition, when you draw the cloak of night, all nonmagical light sources within 60 feet of you become extinguished. Magical light sources are dispelled if they were created by a spell with a level equal to or lower than your proficiency bonus.</description>
 		</sheet>
 	</element>
 
@@ -105,8 +105,13 @@
 			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</p>
 		</description>
 		<sheet usage="{{proficiency}}/Long Rest" action="Action">
-			<description>You can target one creature you can see within 60 feet of you that is in dim light or darkness. You teleport that creature up to 60 feet to an unoccupied space of your choice you can see that is also in dim light or darkness. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze. An unwilling creature that succeeds on a Wisdom saving throw against your spell save DC is unaffected.</description>
+			<description>You can target one creature you can see within 60 feet of you that is in dim light or darkness. You teleport that creature up to 60 feet to an unoccupied space of your choice you can see that is also in dim light or darkness. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze. An unwilling creature that succeeds on a DC {{shifting shadows:dc}} Wisdom saving throw is unaffected.</description>
 		</sheet>
+		<rules>
+			<stat name="shifting shadows:dc" value="8" />
+			<stat name="shifting shadows:dc" value="proficiency" />
+			<stat name="shifting shadows:dc" value="wisdom:modifier" />
+		</rules>
 	</element>
 
 	<element name="Potent Spellcasting" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLERIC_ARCHETYPE_FEATURE_SHADOW_DOMAIN_POTENT_SPELLCASTING">
@@ -114,11 +119,8 @@
 			<p>You can add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
 		</description>
 		<sheet>
-			<description>You can add your Wisdom modifier to the damage you deal with any cleric cantrip.</description>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
 		</sheet>
-		<rules>
-			<stat type="bonus" name="cleric:cantrip:damage" value="wisdom:modifier" />
-		</rules>
 	</element>
 
 	<element name="Reborn in Darkness" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_CLERIC_ARCHETYPE_FEATURE_SHADOW_DOMAIN_REBORN_IN_DARKNESS">
