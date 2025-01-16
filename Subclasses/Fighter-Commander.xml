@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="Fighter-Commander.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Fighter-Commander.xml" />
 		</update>
 	</info>
@@ -34,11 +34,13 @@
 			<p>You gain proficiency in the History and Persuasion skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p>
 		</description>
 		<sheet>
-			<description>You gain proficiency in the History and Persuasion skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</description>
+			<description display="false">You gain proficiency in the History and Persuasion skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<stat name="history:proficiency" value="proficiency" bonus="double" />
+			<stat name="persuasion:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
@@ -52,12 +54,13 @@
 				<li><b>Never Falter!</b> The target recovers from one charmed or frightened condition. Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</li>
 			</ul>
 		</description>
-		<sheet action="Bonus Action">
-			<description>You can issue a battle command as a bonus action to an ally within 120 feet of you who can hear you. Choose one of the following commands:</description>
-			<description usage="1/Short Rest">Fight On! The target regains a number of hit points equal to 1d10 + your fighter level. The creature can’t regain hit points from this command again until it finishes a short or long rest.</description>
-			<description>For Glory! The target can use their reaction to make a melee or ranged weapon attack.</description>
-			<description>Move It! The target can use their reaction to move up to their speed without provoking opportunity attacks.</description>
-			<description usage="1/Short Rest">Never Falter! The target recovers from one charmed or frightened condition. Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</description>
+		<sheet action="Bonus Action" >
+			<description>You can issue a battle command as a bonus action to an ally within 120 feet of you who can hear you. Choose one of the following commands:
+				Fight On! The target regains a number of hit points equal to 1d10 + {{level:fighter}. The creature can’t regain hit points from this command again until it finishes a short or long rest.
+				+ For Glory! The target can use their reaction to make a melee or ranged weapon attack.
+				+ Move It! The target can use their reaction to move up to their speed without provoking opportunity attacks.
+				+ Never Falter! The target recovers from one charmed or frightened condition. 
+				Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</description>
 		</sheet>
 	</element>
 
@@ -96,7 +99,7 @@
 			<p>At 18th level, when you use your Action Surge ability, instead of taking an additional action yourself, one ally you can see can immediately take an additional tturn immediately after you finish your turn.</p>
 		</description>
 		<sheet>
-			<description>At 18th level, when you use your Action Surge ability, instead of taking an additional action yourself, one ally you can see can immediately take an additional tturn immediately after you finish your turn.</description>
+			<description>When you use your Action Surge ability, instead of taking an additional action yourself, one ally you can see can immediately take an additional turn immediately after you finish your turn.</description>
 		</sheet>
 	</element>
 </elements>
