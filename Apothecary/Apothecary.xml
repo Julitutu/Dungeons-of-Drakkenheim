@@ -4,7 +4,7 @@
 		<name>Apothecary</name>
 		<description>The Apothecary class from Sebastien Crowe's Guide to Drakkenheim.</description>
 		<author url="https://ghostfiregaming.com/product/sebastian-crowes-guide-to-drakkenheim-hardcover-book/">Ghostfire Gaming</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Apothecary.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary.xml" />
 		</update>
 	</info>
@@ -229,7 +229,7 @@
 			<p>At 2nd level, you gain two esoteric theories of your choice. Your theory options are detailed at the end of the class description. When you gain certain apothecary levels, you gain additional theories of your choice, as shown in the Theories Known column of the Apothecary table. Additionally, when you gain a level in this class, you can choose one of the theories you know and replace it with another theory that you could learn at that level.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Esoteric Theory (Level 2)" supports="Esoteric Theory" level="2" number="2" />
+			<select type="Class Feature" name="Esoteric Theory (Level 2)" supports="Esoteric Theory" number="2" />
 			<select type="Class Feature" name="Esoteric Theory (Level 4)" supports="Esoteric Theory" level="4" />
 			<select type="Class Feature" name="Esoteric Theory (Level 6)" supports="Esoteric Theory" level="6" />
 			<select type="Class Feature" name="Esoteric Theory (Level 8)" supports="Esoteric Theory" level="8" />
