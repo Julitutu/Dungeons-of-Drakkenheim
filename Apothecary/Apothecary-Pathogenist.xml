@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Apothecary-Pathogenist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Pathogenist.xml" />
 		</update>
 	</info>
@@ -117,16 +117,16 @@
 			</table>
 			<p>Whenever you cast a spell which inflicts diseases (such as infect* or contagion) you can apply an additional effect from your mutant strain to one of the targets of the spell, which lasts for the duration of that spell.</p>
 			<p>The following mutant strains are available to you when you learn a mutant strain. If a strain has a level requirement, you must be at least that level in this class to learn the strain.</p>
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DIZZINESS">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_FATIGUE">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_COUGHING_FITS">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_SHIVERS">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_WEAKNESS">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DRY_EYES">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_INTENSE_FEVER">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_LESIONS">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_NAUSEA">
-				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DYSTROPHY">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DIZZINESS"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_FATIGUE"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_COUGHING_FITS"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_SHIVERS"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_WEAKNESS"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DRY_EYES"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_INTENSE_FEVER"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_LESIONS"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_NAUSEA"/>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DYSTROPHY"/>
 		</description>
 		<sheet>
 			<description>You can evolve your diseases to cause new symptoms. You know {{mutant strain:known}} mutant strains of your choice, and each time you gain a level in this class, you can replace one mutant strain you know with a different one from this feature.&#13;Whenever you cast a spell which inflicts diseases (such as infect* or contagion) you can apply an additional effect from your mutant strain to one of the targets of the spell, which lasts for the duration of that spell.</description>
