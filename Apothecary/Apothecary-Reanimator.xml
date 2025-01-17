@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.0">
 			<file name="Apothecary-Reanimator.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Reanimator.xml" />
 		</update>
 	</info>
@@ -95,12 +95,7 @@
 			</div>
 		</description>
 		<sheet>
-			<description>The creature is friendly to you and your companions, and it obeys your commands.
-			In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action</description>
-			<description action="Bonus Action">
-			You can take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the creature can take any action of its choice, not just Dodge.</description>
-			<description>If your corpsewrought creature has died within the last hour, you can use your healer’s kit as an action to revive it, provided you are within 5 feet of it and you expend an apothecary spell slot. The corpsewrought companion returns to life after 1 minute with all its hit points restored.
-			At the end of a long rest, you can create a new corpsewrought creature if you have your healer’s kit with you and access to suitable “materials.” If you already have a corpsewrought creature from this feature, the first one immediately perishes. The creature also perishes if you die.</description>
+			<description>The creature is friendly to you and your companions, and it obeys your commands.&#13;In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action&#13;You can take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the creature can take any action of its choice, not just Dodge.&#13;If your corpsewrought creature has died within the last hour, you can use your healer’s kit as an action to revive it, provided you are within 5 feet of it and you expend an apothecary spell slot. The corpsewrought companion returns to life after 1 minute with all its hit points restored.&#13;At the end of a long rest, you can create a new corpsewrought creature if you have your healer’s kit with you and access to suitable “materials.” If you already have a corpsewrought creature from this feature, the first one immediately perishes. The creature also perishes if you die.</description>
 		</sheet>
 		<rules>
 			<select type="Companion" name="Corpsewrought Creature" supports="Corpsewrought Creature" default="ID_GFG_SCGTD_COMPANION_CORPSEWROUGHT_CREATURE_MEDIUM" requirements="!ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_REANIMATOR_BEHOLD_MY_CREATION, !ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_REANIMATOR_I_CANT_STOP_THE_MONSTER_I_CREATED"/>
@@ -115,9 +110,8 @@
 			<p>When a creature within 5 feet of your corpsewrought creature makes an attack against you, it can use its reaction to make a melee weapon attack against the attacking creature. In addition, your corpsewrought creature’s slam attack counts as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 			<p>In addition, you can cast animate dead once using an Apothecary spell slot. Once you do, you can’t cast the spell again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description>When a creature within 5 feet of your corpsewrought creature makes an attack against you, it can use its reaction to make a melee weapon attack against the attacking creature. In addition, your corpsewrought creature’s slam attack counts as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage.</description>
-			<description usage="1/Long Rest">In addition, you can cast animate dead once using an Apothecary spell slot. Once you do, you can’t cast the spell again until you finish a long rest.</description>
+		<sheet usage="1/Long Rest">
+			<description>When a creature within 5 feet of your corpsewrought creature makes an attack against you, it can use its reaction to make a melee weapon attack against the attacking creature. In addition, your corpsewrought creature’s slam attack counts as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage.&#13;In addition, you can cast animate dead once using an Apothecary spell slot. Once you do, you can’t cast the spell again until you finish a long rest.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Apothecary" prepared="true" />
@@ -132,9 +126,7 @@
 			<p>You can use the head to cast speak with dead without expending a spell slot. Once you use this feature you can’t do so again until you finish a short or long rest.</p>
 		</description>
 		<sheet>
-			<description>You have reanimated the head of a dead humanoid creature which now serves you in your studies. You may use the head as a spellcasting focus. The head speaks common and one other language of your choice.</description>
-			<description>Whenever you make an Intelligence ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10. Additionally, you gain proficiency in the Arcana and Investigation skills.</description>
-			<description usage="1/Short Rest">You can use the head to cast speak with dead without expending a spell slot. Once you use this feature you can’t do so again until you finish a short or long rest.</description>
+			<description usage="1/Short Rest">You have reanimated the head of a dead humanoid creature which now serves you in your studies. You may use the head as a spellcasting focus. The head speaks common and one other language of your choice.&#13;Whenever you make an Intelligence ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10. Additionally, you gain proficiency in the Arcana and Investigation skills.&#13;You can use the head to cast speak with dead without expending a spell slot. Once you use this feature you can’t do so again until you finish a short or long rest.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
@@ -150,9 +142,13 @@
 			<p>When your corpsewrought creature hits a creature with a melee attack, it can immediately make a grapple attempt against the target. The DC to escape this grapple is equal to 8 + the corpsewrought creature’s strength modifier (+4) + your PB.</p>
 		</description>
 		<sheet>
-			<description>Your corpsewrought creature’s size increases to Large, and its speed increases to 40 feet.</description>
-			<description>When your corpsewrought creature hits a creature with a melee attack, it can immediately make a grapple attempt against the target. The DC to escape this grapple is equal to 8 + the corpsewrought creature’s strength modifier (+4) + your PB.</description>
+			<description>Your corpsewrought creature’s size increases to Large, and its speed increases to 40 feet.&#13;When your corpsewrought creature hits a creature with a melee attack, it can immediately make a grapple attempt against the target. The DC to escape this grapple is {{corpsewrought creature:grappled:dc}}.</description>
 		</sheet>
+		<rules>
+		    <stat name="corpsewrought creature:grappled:dc" value="8" />
+		    <stat name="corpsewrought creature:grappled:dc" value="proficiency" />
+		    <stat name="corpsewrought creature:grappled:dc" value="4" />
+		</rules>
 	</element>
 
 	<element name="Berserk Fury" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_REANIMATOR_BERSERK_FURY">
@@ -172,8 +168,7 @@
 			<p>Additionally, the weight your corpsewrought creature can push or lift is doubled.</p>
 		</description>
 		<sheet>
-			<description>Your corpsewrought creature increases in size to Huge, gains a reach of 10 feet, and its speed increases to 50 feet. Its slam attack deals an additional 1d8 bludgeoning damage.</description>
-			<description>Additionally, the weight your corpsewrought creature can push or lift is doubled.</description>
+			<description>Your corpsewrought creature increases in size to Huge, gains a reach of 10 feet, and its speed increases to 50 feet. Its slam attack deals an additional 1d8 bludgeoning damage.&#13;Additionally, the weight your corpsewrought creature can push or lift is doubled.</description>
 		</sheet>
 	</element>
 
