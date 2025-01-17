@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/source.xml" />
 		</update>
 	</info>	
@@ -17,8 +17,7 @@
 			<set name="url">https://ghostfiregaming.com/sc-guide-to-drakkenheim/</set>
 			<set name="image">https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/image.png</set>
 			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com/sc-guide-to-drakkenheim/">Ghostfire Gaming</set>
-			<set name="Third Party">true</set>
-			<set name="supplement">true</set>
+			<set name="third-party">true</set>
 			<set name="release">20230706</set>
 		</setters>
 	</element>
@@ -34,8 +33,7 @@
 			<set name="url">https://ghostfiregaming.com/sc-guide-to-drakkenheim/</set>
 			<set name="image">https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/000.jpg</set>
 			<set name="author" abbreviation="DOD" url="https://ghostfiregaming.com/dungeons-of-drakkenheim/">Ghostfire Gaming</set>
-			<set name="Third Party">true</set>
-			<set name="supplement">true</set>
+			<set name="third-party">true</set>
 			<set name="release">20231221</set>
 		</setters>
 	</element>
