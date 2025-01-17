@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Apothecary-Alienist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Alienist.xml" />
 		</update>
 	</info>
@@ -92,8 +92,7 @@
 				</ul>
 		</description>
 		<sheet usage="{{psychycs-points}}/Short Rest">
-			<description>You have studied hard to unlock the deepest recesses of your psyche, unleashing untapped psychic potential within yourself. This energy is represented by a pool of Psychic Points which you can expend to use the various psionic powers you have detailed below.&#13;+ Cerebral Breakthrough. When you cast an apothecary spell that deals damage, you can expend a Psychic Point to re-roll any number of the dice. You must use the new rolls.&#13;+ Mind Over Matter. Whenever you take damage, you can use your reaction and expend a Psychic Point, reducing the damage taken by an amount equal to your apothecary level.&#13;+ Mind Whisperer. When you cast an apothecary spell which does not deal damage, you may spend a psychic point to cast it without any somatic or verbal components.</li>
-				</ul></description>
+			<description>You have studied hard to unlock the deepest recesses of your psyche, unleashing untapped psychic potential within yourself. This energy is represented by a pool of Psychic Points which you can expend to use the various psionic powers you have detailed below.&#13;+ Cerebral Breakthrough. When you cast an apothecary spell that deals damage, you can expend a Psychic Point to re-roll any number of the dice. You must use the new rolls.&#13;+ Mind Over Matter. Whenever you take damage, you can use your reaction and expend a Psychic Point, reducing the damage taken by an amount equal to your apothecary level.&#13;+ Mind Whisperer. When you cast an apothecary spell which does not deal damage, you may spend a psychic point to cast it without any somatic or verbal components.</description>
 		</sheet>
 		<rules>
 			<stat name="psychycs-points" value="4" level="3"/>
