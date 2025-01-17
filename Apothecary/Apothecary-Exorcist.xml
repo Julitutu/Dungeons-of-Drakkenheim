@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.0">
 			<file name="Apothecary-Exorcist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Exorcist.xml" />
 		</update>
 	</info>
@@ -93,12 +93,15 @@
 			<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
 			<p><b>Purge Corruption.</b> You touch a creature or item and can end either one condition afflicting it. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. Additionally, if a creature is possessed or mind controlled by a spirit or foreign entity, you can use this feature to remove any traits or other features related to the possession. If possessed, the creature possessing it is shunted out of its host to an unoccupied space within 5 feet and takes psychic damage equal to 2d8 + your apothecary level.</p>
 		</description>
-		<sheet usage="{{proficiency:half}}/Long Rest">
-			<description>You can use this feature {{proficiency:half}} times, you regain all expended uses on a short or long rest. If an Exorcism effect requires a saving throw, the DC equals your Apothecary spell save DC.</description>
-			<description action="Action">Expel Evil. As an action, you present your holy symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</description>
-			<description>Purge Corruption. You touch a creature or item and can end either one condition afflicting it. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. Additionally, if a creature is possessed or mind controlled by a spirit or foreign entity, you can use this feature to remove any traits or other features related to the possession. The creature possessing takes psychic damage equal to 2d8 + {{apothecary:level}}.</description>
-			<description level="5">Expel Evil. As an action, you present your holy symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. Starting at 5th level, when an undead or fiend fails its saving throw against your Expel Evil feature, that creature suffers 4d8 radiant damage.</description>
+		<sheet usage="{{proficiency:half}}/Short Rest">
+			<description action="Action">You gain the ability to imbue divine energy through your holy symbol to expel evil entities in the area, or purge their harmful effects from your allies.&#13;+ Expel Evil. As an action, you present your holy symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a DC {{exorcism:dc}} Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.&#13;+ Purge Corruption. You touch a creature or item and can end either one condition afflicting it. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. Additionally, if a creature is possessed or mind controlled by a spirit or foreign entity, you can use this feature to remove any traits or other features related to the possession. The creature possessing takes psychic damage equal to 2d8 + {{level:apothecary}}.</description>
+			<description level="18">You gain the ability to imbue divine energy through your holy symbol to expel evil entities in the area, or purge their harmful effects from your allies.&#13;+ Expel Evil. As an action, you present your holy symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a DC {{exorcism:dc}} Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage and that creature suffers 4d8 radiant damage.&#13;+ Purge Corruption. You touch a creature or item and can end either one condition afflicting it. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned and gain 4d8 temporary hit points. Additionally, if a creature is possessed or mind controlled by a spirit or foreign entity, you can use this feature to remove any traits or other features related to the possession. The creature possessing takes psychic damage equal to 2d8 + {{apothecary:level}}.</description>
 		</sheet>
+		<rules>
+		    <stat name="exorcism:dc" value="8" />
+		    <stat name="exorcism:dc" value="proficiency" />
+		    <stat name="exorcism:dc" value="intelligence:modifier" />
+		</rules>
 	</element>
 
 	<element name="Sacred Vessel" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_ARCHETYPE_FEATURE_EXORCIST_SACRED_VESSEL">
@@ -127,7 +130,7 @@
 			<p>Whenever you cast a spell that heals a creature, that spell deals maximum healing and the creature immediately gains temporary hit points equal to your apothecary level.</p>
 		</description>
 		<sheet>
-			<description>Whenever you cast a spell that heals a creature, that spell deals maximum healing and the creature immediately gains {{apothecary:level}} temporary hit points.</description>
+			<description>Whenever you cast a spell that heals a creature, that spell deals maximum healing and the creature immediately gains {{level:apothecary}} temporary hit points.</description>
 		</sheet>
 	</element>
 
@@ -140,10 +143,8 @@
 				<li>Creatures who are aided by your Exorcism: Purge Corruption feature gain 4d8 temporary hit points.</li>
 			</ul>
 		</description>
-		<sheet>
-			<description>As a Devout Witness, you speak on behalf of your gods and can feel their powers surging through you. Commanding spirits and vanquishing evil is second nature to you. You have added benefits that bolster your abilities.</description>
-			<description>Creatures who fail their saving throws against your Exorcism: Expel Evil feature take an additional 4d8 radiant damage.</description>
-			<description>Creatures who are aided by your Exorcism: Purge Corruption feature gain 4d8 temporary hit points.</description>
+		<sheet display="false">
+			<description>As a Devout Witness, you speak on behalf of your gods and can feel their powers surging through you. Commanding spirits and vanquishing evil is second nature to you. You have added benefits that bolster your abilities.&#13;+ Creatures who fail their saving throws against your Exorcism: Expel Evil feature take an additional 4d8 radiant damage.&#13;+ Creatures who are aided by your Exorcism: Purge Corruption feature gain 4d8 temporary hit points.</description>
 		</sheet>
 	</element>
 
