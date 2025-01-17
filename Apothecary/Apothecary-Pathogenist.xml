@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.0">
 			<file name="Apothecary-Pathogenist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Pathogenist.xml" />
 		</update>
 	</info>
@@ -91,8 +91,13 @@
 			<p>Whenever a creature casts a spell or uses a trait or feature that would cure or remove one of your diseases (such as casting lesser restoration to remove your infect* spell), the creature must first make an ability check using its spellcasting ability (or its Charisma modifier, if the spell or special ability does not specify a spellcasting ability score). The DC equals your spell save DC. On a failed check, the creature’s spell, trait, or feature fails and has no effect. Any material components used are expended, and any spell slot expended is wasted.</p>
 		</description>
 		<sheet>
-			<description>Whenever a creature casts try cure or remove one of your diseases, must first make an ability check using its spellcasting ability (or its Charisma modifier, if the spell or special ability does not specify a spellcasting ability score). The DC equals your spell save DC. On a failed check, has no effect. Any material components used are expended, and any spell slot expended is wasted.</description>
+			<description>Whenever a creature casts try cure or remove one of your diseases, must first make an ability check using its spellcasting ability (or its Charisma modifier, if the spell or special ability does not specify a spellcasting ability score). The DC {{pernicious pathogens}}. On a failed check, has no effect. Any material components used are expended, and any spell slot expended is wasted.</description>
 		</sheet>
+		<rules>
+		    <stat name="pernicious pathogens:dc" value="8" />
+		    <stat name="pernicious pathogens:dc" value="proficiency" />
+		    <stat name="pernicious pathogens:dc" value="intelligence:modifier" />
+		</rules>
 	</element>
 
 	<element name="Mutant Strain" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN">
@@ -112,27 +117,27 @@
 			</table>
 			<p>Whenever you cast a spell which inflicts diseases (such as infect* or contagion) you can apply an additional effect from your mutant strain to one of the targets of the spell, which lasts for the duration of that spell.</p>
 			<p>The following mutant strains are available to you when you learn a mutant strain. If a strain has a level requirement, you must be at least that level in this class to learn the strain.</p>
-			<ul>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DIZZINESS"><b>Dizziness.</b> The target can’t take reactions.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_FATIGUE"><b>Fatigue.</b> Each time the target fails a saving throw against your disease, its speed is reduced to five feet until the start of its next turn.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_COUGHING_FITS"><b>Coughing Fits.</b> At the start of each of the targets’ turns, it must make a Constitution saving throw against your spell save DC. On a failed save, it is unable to speak until the start of its next turn.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_SHIVERS"><b>Shivers.</b> The target shakes uncontrollably. At the start of each of the target’s turns, it drops whatever it is holding in its hands.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_WEAKNESS"><b>Weakness (9th level).</b> The target deals half damage with melee weapon attacks.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DRY_EYES"><b>Dry Eyes (9th level).</b> Each time the target fails a saving throw against your disease, it becomes blinded until the start of its next turn.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_INTENSE_FEVER"><b>Intense Fever (9th level).</b> The target can’t regain hit points.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_LESIONS"><b>Lesions (9th level).</b> The target loses any damage resistances.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_NAUSEA"><b>Nausea (15th level).</b> Each time a target fails a saving throw against your disease, it becomes incapacitated until the start of its next turn.</li>
-				<li element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DYSTROPHY"><b>Dystrophy (15th level).</b> The target becomes vulnerable to bludgeoning, piercing, and slashing damage.</li>
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DIZZINESS">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_FATIGUE">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_COUGHING_FITS">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_SHIVERS">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_WEAKNESS">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DRY_EYES">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_INTENSE_FEVER">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_LESIONS">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_NAUSEA">
+				<div element="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DYSTROPHY">
 			</ul>
 		</description>
 		<sheet>
-			<description>You can evolve your diseases to cause new symptoms. You learn two mutant strains of your choice, and each time you gain a level in this class, you can replace one mutant strain you know with a different one from this feature. When you reach certain levels in this class, you learn additional mutant strains, as shown in the Mutant Strains Known table.</description>
-			<description level="3">Whenever you cast a spell which inflicts diseases (such as infect* or contagion) you can apply an additional effect from your mutant strain to one of the targets of the spell, which lasts for the duration of that spell.</description>
-			<description level="9">Whenever you cast a spell which inflicts diseases (such as infect* or contagion) you can apply an additional effect from your mutant strain to one of the targets of the spell, which lasts for the duration of that spell.</description>
-			<description level="15">Whenever you cast a spell which inflicts diseases (such as infect* or contagion) you can apply an additional effect from your mutant strain to one of the targets of the spell, which lasts for the duration of that spell.</description>
+			<description>You can evolve your diseases to cause new symptoms. You know {{mutant strain:known}} mutant strains of your choice, and each time you gain a level in this class, you can replace one mutant strain you know with a different one from this feature.&#13;Whenever you cast a spell which inflicts diseases (such as infect* or contagion) you can apply an additional effect from your mutant strain to one of the targets of the spell, which lasts for the duration of that spell.</description>
 		</sheet>
 		<rules>
-			<select type="Mutant Strain" name="Mutant Strain" supports="Mutant Strain" number="2" level="3" />
+			<stat name="mutant strain:known" value="2" />
+			<stat name="mutant strain:known" value="1" level="9"/>
+			<stat name="mutant strain:known" value="1" level="15"/>
+			
+			<select type="Mutant Strain" name="Mutant Strain" supports="Mutant Strain" number="2" />
 			<select type="Mutant Strain" name="Mutant Strain" supports="Mutant Strain" level="9" />
 			<select type="Mutant Strain" name="Mutant Strain" supports="Mutant Strain" level="15" />
 		</rules>
@@ -286,7 +291,7 @@
 
 	<element name="Nausea" type="Mutant Strain" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_NAUSEA">
 		<supports>Mutant Strain</supports>
-		<requirements>[level:18]</requirements>
+		<requirements>[level:15]</requirements>
 		<description>
 			<p>Each time a target fails a saving throw against your disease, it becomes incapacitated until the start of its next turn.</p>
 		</description>
@@ -297,7 +302,7 @@
 
 	<element name="Dystrophy" type="Mutant Strain" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_APOTHECARY_PATHOGENIST_MUTANT_STRAIN_DYSTROPHY">
 		<supports>Mutant Strain</supports>
-		<requirements>[level:18]</requirements>
+		<requirements>[level:15]</requirements>
 		<description>
 			<p>The target becomes vulnerable to bludgeoning, piercing, and slashing damage.</p>
 		</description>
