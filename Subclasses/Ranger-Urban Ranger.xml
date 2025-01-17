@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="Ranger-Urban Ranger.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Ranger-Urban%20Ranger.xml" />
 		</update>
 	</info>
@@ -64,7 +64,8 @@
 			<p>In addition, when you take the Dash action on your turn, you can move through other creature’s spaces without penalty (but not stop there). When you do, your movement doesn’t provoke opportunity attacks.</p>
 		</description>
 		<sheet>
-			<description>You gain a climb speed equal to your walking spee.&#13;In addition, when you take the Dash action on your turn, you can move through other creature’s spaces without penalty (but not stop there). When you do, your movement doesn’t provoke opportunity attacks.</description>
+			<description>You gain a climb speed equal to your walking spee.&#13;
+			In addition, when you take the Dash action on your turn, you can move through other creature’s spaces without penalty (but not stop there). When you do, your movement doesn’t provoke opportunity attacks.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
