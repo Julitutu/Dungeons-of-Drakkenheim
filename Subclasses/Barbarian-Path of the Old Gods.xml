@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Barbarian-Path of the Old Gods.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Barbarian-Path%20of%20the%20Old%20Gods.xml" />
 		</update>
 	</info>
@@ -41,14 +41,11 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Your unarmed strike and attacks with any melee weapons or improvised weapons that aren’t light deal damage equal to 1d12 plus your Strength modifier. While you are raging, you gain the following benefits: 
-				+ All melee weapons you wield that aren’t light gain the heavy and thrown properties, including improvised weapons. A weapon which doesn’t specify a thrown range gains a range of 30/60 while you are wielding it. 
-				+ Once on your turn when you hit a creature within 5 feet of you with a melee weapon attack, you can try to grapple or shove that creature as part of the same attack. 
+			<description>Your unarmed strike and attacks with any melee weapons or improvised weapons that aren’t light deal damage equal to 1d12 plus your Strength modifier. While you are raging, you gain the following benefits:
+				+ All melee weapons you wield that aren’t light gain the heavy and thrown properties, including improvised weapons. A weapon which doesn’t specify a thrown range gains a range of 30/60 while you are wielding it.
+				+ Once on your turn when you hit a creature within 5 feet of you with a melee weapon attack, you can try to grapple or shove that creature as part of the same attack.
 				+ If your size is Small, you don’t have disadvantage on attack rolls when wielding a heavy weapon.</description>
 		</sheet>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_IMPROVISED_WEAPONS" />
-		</rules>
 	</element>
 
 	<element name="Imbued by the Gods" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_BARBARIAN_ARCHETYPE_FEATURE_OLD_GODS_IMBUED_BY_THE_GODS">
@@ -80,10 +77,10 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Additionally, your ability to grab enemies and turn anything into a weapon grows stronger. You gain the following benefits: 
-				+ You can try to grapple or shove a creature up to two size categories larger than you. 
-				+ Your speed is no longer halved when you try to move a creature you’re grappling. 
-				+ Your unarmed strikes and attacks with improvised weapons count as magical for the purposes of overcoming resistance to bludgeoning, piercing, and slashing damage. 
+			<description>Additionally, your ability to grab enemies and turn anything into a weapon grows stronger. You gain the following benefits:
+				+ You can try to grapple or shove a creature up to two size categories larger than you
+				+ Your speed is no longer halved when you try to move a creature you’re grappling
+				+ Your unarmed strikes and attacks with improvised weapons count as magical for the purposes of overcoming resistance to bludgeoning, piercing, and slashing damage
 				+ You can treat a creature you are grappling as an improvised weapon. When you hit another target using a grappled creature as an improvised weapon, the grappled creature takes damage equal to {{adaptable combatant}}. When you use a creature as an improvised weapon, thrown attacks made with it have a range of 10/20 feet.</description>
 		</sheet>
 		<rules>
