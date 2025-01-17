@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.0">
 			<file name="Apothecary-Chemist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Chemist.xml" />
 		</update>
 	</info>
@@ -112,7 +112,7 @@
 			<p>You can store a spell from your Chemist Spells feature as a liquid in a small vial or bottle you touch when you cast the spell. The spell has no effect other than to be stored in the bottle. The spell remains stored inside until a creature opens the bottle. Once you use this feature, any unused bottled spell you previously created becomes inert, and you can`t bottle another spell until you finish a short rest. Any creature holding the bottle may spend an action to open it and cast the spell inside. The spell uses your spell attack bonus and save DC, but the spell treats the creature who released it as the caster in all other respects.</p>
 		</description>
 		<sheet>
-			<description>You can store a spell from your Chemist Spells feature as a liquid in a small vial or bottle you touch when you cast the spell.</description>
+			<description>You can store a spell from your Chemist Spells feature as a liquid in a small vial or bottle you touch when you cast the spell. The spell has no effect other than to be stored in the bottle. The spell remains stored inside until a creature opens the bottle. Once you use this feature, any unused bottled spell you previously created becomes inert, and you can`t bottle another spell until you finish a short rest. Any creature holding the bottle may spend an action to open it and cast the spell inside. The spell uses your spell attack bonus and save DC, but the spell treats the creature who released it as the caster in all other respects.</description>
 		</sheet>
 	</element>	
 	<element name="Elemental Adjustment" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ARCHETYPE_FEATURE_CHEMIST_ELEMENTAL_ADJUSTMENT">
