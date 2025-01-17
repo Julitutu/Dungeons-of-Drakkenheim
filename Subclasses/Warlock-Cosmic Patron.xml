@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="Warlock-Cosmic Patron.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Warlock-Cosmic%20Patron.xml" />
 		</update>
 	</info>
@@ -87,10 +87,10 @@
 			<p>Beginning at first level, you learn the eldritch blast cantrip if you don’t know it already. It doesn’t count against the number of warlock cantrips you know. When you cast eldritch blast, you can have it deal radiant damage instead of force damage.</p>
 		</description>
 		<sheet>
-			<description>Beginning at first level, you learn the eldritch blast cantrip if you don’t know it already. It doesn’t count against the number of warlock cantrips you know. When you cast eldritch blast, you can have it deal radiant damage instead of force damage.</description>
+			<description>You learn the eldritch blast cantrip if you don’t know it already. It doesn’t count against the number of warlock cantrips you know. When you cast eldritch blast, you can have it deal radiant damage instead of force damage.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" level="1" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" level="1" spellcasting="Warlock" prepared="true"/>
 		</rules>
 	</element>
 
@@ -99,7 +99,7 @@
 			<p>You can speak, read, and write Celestial and Deep Speech. In addition, you learn the guidance cantrip. It doesn’t count against the number of warlock cantrips you know. Additionally, you may cast the spell augury once without expending a spell slot. You can’t do so again until you finish a long rest.</p>
 		</description>
 		<sheet>
-			<description>You can speak, read, and write Celestial and Deep Speech. In addition, you learn the guidance cantrip. It doesn’t count against the number of warlock cantrips you know. Additionally, you may cast the spell augury once without expending a spell slot. You can’t do so again until you finish a long rest.</description>
+			<description usage="1/Long Rest">You can speak, read, and write Celestial and Deep Speech. In addition, you learn the guidance cantrip. It doesn’t count against the number of warlock cantrips you know. Additionally, you may cast the spell augury once without expending a spell slot. You can’t do so again until you finish a long rest.</description>
 		</sheet>
 		<rules>
 			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
@@ -120,11 +120,11 @@
 			<p>You can have a maximum number of orbiting comets equal to your proficiency bonus. As long as you have comets, you glow with bright light out to 20 feet, and dim light for an additional 10 feet. The comets last until you finish a short or long rest, or until you dismiss them (no action required).</p>
 		</description>
 		<sheet>
-			<description>Once per turn when you miss a creature with eldritch blast, the beam returns to you as an orbiting comet around your head. While you have an orbiting comet, you can absorb its energy to do the following:</description>
-			<description>Cosmic Power. Once on your turn when you cast eldritch blast, you can consume one orbiting comet to fire an additional beam.</description>
-			<description>Interception. You can use your reaction to intercept a melee or ranged attack, gaining resistance to the damage from that attack.</description>
-			<description>Lightspeed. As a bonus action, you can consume a comet to teleport 30 feet to an unoccupied space you can see.</description>
-			<description>You can have a maximum number of orbiting comets equal to your proficiency bonus. As long as you have comets, you glow with bright light out to 20 feet, and dim light for an additional 10 feet. The comets last until you finish a short or long rest, or until you dismiss them (no action required).</description>
+			<description>Once per turn when you miss a creature with eldritch blast, the beam returns to you as an orbiting comet around your head. While you have an orbiting comet, you can absorb its energy to do the following:
+			Cosmic Power. Once on your turn when you cast eldritch blast, you can consume one orbiting comet to fire an additional beam.
+			Interception. You can use your reaction to intercept a melee or ranged attack, gaining resistance to the damage from that attack.
+			Lightspeed. As a bonus action, you can consume a comet to teleport 30 feet to an unoccupied space you can see.
+			You can have a maximum number of orbiting comets equal to {{proficiency}}. As long as you have comets, you glow with bright light out to 20 feet, and dim light for an additional 10 feet. The comets last until you finish a short or long rest, or until you dismiss them (no action required).</description>
 		</sheet>
 	</element>
 
@@ -134,10 +134,15 @@
 			<p>The damage increases to 4d6 damage at 14th level, and to 5d6 damage at 17th level.</p>
 		</description>
 		<sheet>
-			<description>Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a Dexterity saving throw or take 3d6 fire damage.</description>
-			<description level="14">Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a Dexterity saving throw or take 4d6 fire damage.</description>
-			<description level="17">Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a Dexterity saving throw or take 5d6 fire damage.</description>
+			<description>Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a DC{{meteoric impact:dc}} Dexterity saving throw or take 3d6 fire damage.</description>
+			<description level="14">Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. EEach creature within 10 feet of the target must succeed on a DC{{meteoric impact:dc}} Dexterity saving throw or take 4d6 fire damage.</description>
+			<description level="17">Once per turn when you hit a creature with eldritch blast, you can cause the beam to explode. Each creature within 10 feet of the target must succeed on a DC{{meteoric impact:dc}} Dexterity saving throw or take 5d6 fire damage.</description>
 		</sheet>
+		<rules>
+		    <stat name="meteoric impact:dc" value="8" />
+		    <stat name="meteoric impact:dc" value="proficiency" />
+		    <stat name="meteoric impact:dc" value="charisma:modifier" />
+		</rules>
 	</element>
 
 	<element name="Supernova" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_WARLOCK_ARCHETYPE_FEATURE_COSMIC_SUPERNOVA">
@@ -149,9 +154,9 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Charged by the energy of the stars, you gain additional benefits from the otherworldly entities lurking in the deep void of space.</description>
-			<description>When you cast eldritch blast, you can fire one additional beam.</description>
-			<description>Whenever you score a critical hit with eldritch blast, you can use your Meteoric Impact feature an additional time that turn.</description>
+			<description>Charged by the energy of the stars, you gain additional benefits from the otherworldly entities lurking in the deep void of space.
+			When you cast eldritch blast, you can fire one additional beam.
+			Whenever you score a critical hit with eldritch blast, you can use your Meteoric Impact feature an additional time that turn.</description>
 		</sheet>
 	</element>
 </elements>
