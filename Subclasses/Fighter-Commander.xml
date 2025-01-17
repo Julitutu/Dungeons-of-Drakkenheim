@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.4">
 			<file name="Fighter-Commander.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Fighter-Commander.xml" />
 		</update>
 	</info>
@@ -51,16 +51,12 @@
 				<li><b>Fight On!</b> The target regains a number of hit points equal to 1d10 + your fighter level. The creature can’t regain hit points from this command again until it finishes a short or long rest.</li>
 				<li><b>For Glory!</b> The target can use their reaction to make a melee or ranged weapon attack.</li>
 				<li><b>Move It!</b> The target can use their reaction to move up to their speed without provoking opportunity attacks.</li>
-				<li><b>Never Falter!</b> The target recovers from one charmed or frightened condition. Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</li>
+				<li><b>Never Falter!</b> The target recovers from one charmed or frightened condition. </li>
 			</ul>
+			<p>Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</p>
 		</description>
 		<sheet action="Bonus Action" >
-			<description>You can issue a battle command as a bonus action to an ally within 120 feet of you who can hear you. Choose one of the following commands:
-				Fight On! The target regains a number of hit points equal to 1d10 + {{level:fighter}. The creature can’t regain hit points from this command again until it finishes a short or long rest.
-				+ For Glory! The target can use their reaction to make a melee or ranged weapon attack.
-				+ Move It! The target can use their reaction to move up to their speed without provoking opportunity attacks.
-				+ Never Falter! The target recovers from one charmed or frightened condition. 
-				Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</description>
+			<description>You can issue a battle command as a bonus action to an ally within 120 feet of you who can hear you. Choose one of the following commands:&#13;+ Fight On! The target regains a number of hit points equal to 1d10 + {{level:fighter}. The creature can’t regain hit points from this command again until it finishes a short or long rest.&#13;+ For Glory! The target can use their reaction to make a melee or ranged weapon attack.&#13;+ Move It! The target can use their reaction to move up to their speed without provoking opportunity attacks.&#13;+ Never Falter! The target recovers from one charmed or frightened condition.&#13;Once a creature benefits from this command, it can’t do so again until it finishes a short or long rest.</description>
 		</sheet>
 	</element>
 
@@ -69,7 +65,7 @@
 			<p>You gain proficiency in Wisdom saving throws, and you have advantage on saving throws against effects which charm or frighten you.</p>
 		</description>
 		<sheet>
-			<description>You gain proficiency in Wisdom saving throws, and you have advantage on saving throws against effects which charm or frighten you.</description>
+			<description>You have advantage on saving throws against effects which charm or frighten you.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
