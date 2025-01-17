@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="Monk-Way of the Arcane Hand.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Monk-Way%20of%20the%20Arcane%20Hand.xml" />
 		</update>
 	</info>
@@ -136,7 +136,8 @@
 			<p>When you use your Flurry of Blows, you can cast a spell with a casting time of 1 action as a bonus action instead of making unarmed strikes. Finally, when you use your action to cast a spell, you may treat this as taking an attack with a monk weapon for the purposes of your other monk features.</p>
 		</description>
 		<sheet>
-			<description>Whenever you take the Attack action on your turn, you can cast one of your cantrips in place of one of those attacks.&#13;When you use your Flurry of Blows, you can cast a spell with a casting time of 1 action as a bonus action instead of making unarmed strikes. Finally, when you use your action to cast a spell, you may treat this as taking an attack with a monk weapon for the purposes of your other monk features.</description>
+			<description>Whenever you take the Attack action on your turn, you can cast one of your cantrips in place of one of those attacks.&#13;
+			When you use your Flurry of Blows, you can cast a spell with a casting time of 1 action as a bonus action instead of making unarmed strikes. Finally, when you use your action to cast a spell, you may treat this as taking an attack with a monk weapon for the purposes of your other monk features.</description>
 		</sheet>
 	</element>
 
