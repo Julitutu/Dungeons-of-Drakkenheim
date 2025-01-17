@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="Fighter-Commander.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Fighter-Commander.xml" />
 		</update>
 	</info>
