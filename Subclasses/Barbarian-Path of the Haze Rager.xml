@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Barbarian-Path of the Haze Rager.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Barbarian-Path%20of%20the%20Haze%20Rager.xml" />
 		</update>
 	</info>
@@ -75,7 +75,8 @@
 			<p>Whenever you would suffer a Mutation from contamination, you can roll twice and choose which Mutation you gain.</p>
 		</description>
 		<sheet>
-			<description>While you are raging, you ignore the Symptoms of any Contamination Levels you have gained, except for a Monstrous Transformation. Whenever you would suffer a Mutation from contamination, you can roll twice and choose which Mutation you gain.</description>
+			<description>While you are raging, you ignore the Symptoms of any Contamination Levels you have gained, except for a Monstrous Transformation.
+				Whenever you would suffer a Mutation from contamination, you can roll twice and choose which Mutation you gain.</description>
 		</sheet>
 	</element>
 
