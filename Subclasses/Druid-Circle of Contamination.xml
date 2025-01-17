@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Druid-Circle of Contamination.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Druid-Circle%20of%20Contamination.xml" />
 		</update>
 	</info>
@@ -77,7 +77,11 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>YWhen you cast a spell, you can choose one of the following blighted magic options: +Twin Spell. If the spell you cast targets only one creature and doesn’t have a range of self, you can expend a use of your Wild Shape feature to target a second creature in range with the same spell. To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level. +Quicken Spell. When you cast a spell that has a casting time of 1 action, you can expend a use of your Wild Shape feature to cast the spell as a bonus action. +Corrupt Spell. When you roll damage for a spell, you can expend a use of your Wild Shape feature to change the damage type of all damage caused by the spell to necrotic. In addition, you can reroll a number of the damage dice up to {{wisdom:modifier}} (minimum one). You must use the new rolls. +Purify Spell. When you cast a contaminated spell, you can expend a use of your Wild Shape feature to cast the spell without gaining a Contamination Level.</description>
+			<description>YWhen you cast a spell, you can choose one of the following blighted magic options: 
+				+ Twin Spell. If the spell you cast targets only one creature and doesn’t have a range of self, you can expend a use of your Wild Shape feature to target a second creature in range with the same spell. To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level.
+				+ Quicken Spell. When you cast a spell that has a casting time of 1 action, you can expend a use of your Wild Shape feature to cast the spell as a bonus action. 
+				+ Corrupt Spell. When you roll damage for a spell, you can expend a use of your Wild Shape feature to change the damage type of all damage caused by the spell to necrotic. In addition, you can reroll a number of the damage dice up to {{wisdom:modifier}} (minimum one). You must use the new rolls. 
+				+ Purify Spell. When you cast a contaminated spell, you can expend a use of your Wild Shape feature to cast the spell without gaining a Contamination Level.</description>
 		</sheet>
 	</element>
 
