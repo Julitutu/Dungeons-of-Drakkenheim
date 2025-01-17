@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.4">
 			<file name="Wizard-Malfeasant.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Wizard-Malfeasant.xml" />
 		</update>
 	</info>
@@ -59,7 +59,7 @@
 			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</p>
 		</description>
 		<sheet usage="{{proficiency}}/Long Rest">
-			<description>You’ve learned how to cast Contaminated Spells while shielding yourself from their harmful energies. You don’t gain a Contamination Level when you cast a Contaminated Spell. Any delerium required as material components for the spell isn’t consumed when you cast the spell in this way, but you must still provide those components.</description>
+			<description>You’ve learned how to cast Contaminated Spells while shielding yourself from their harmful energies.&#13;You don’t gain a Contamination Level when you cast a Contaminated Spell. Any delerium required as material components for the spell isn’t consumed when you cast the spell in this way, but you must still provide those components.</description>
 		</sheet>
 	</element>
 
@@ -72,11 +72,7 @@
 			<p>Note that if you have six or more contamination levels, being subject to the purge contamination* spell will cause you to gain six (or more) levels of exhaustion, and you’ll die as a result.</p>
 		</description>
 		<sheet>
-			<description>Your dedicated long-term exposure to eldritch contamination has inured your body to its effects, and you can withstand a greater accumulation of contamination.
-			You gain proficiency in Constitution saving throws and resistance to necrotic damage.
-			When determining which Symptoms apply to you as a result of gaining Eldritch Contamination, you are treated as having a number of Contamination Levels equal to half your current Contamination Level instead, rounded down. For example, if you gained 5 Contamination Levels, you would only suffer the Symptoms of Contamination Level 2. Thus, you would need to gain 12 Contamination Levels to undergo a Monstrous Transformation, instead of 6.
-			In the same manner, when checking to see if you develop a mutation when you gain a new Contamination Level, you are treated as having a number of Contamination Levels equal to half your current Contamination Level instead, rounded down. For example, if you gained 4 Contamination Levels, you would only develop a new mutation if the result of the 1d6 roll is 2 or lower.
-			Note that if you have six or more contamination levels, being subject to the purge contamination* spell will cause you to gain six (or more) levels of exhaustion, and you’ll die as a result.</description>
+			<description>Your dedicated long-term exposure to eldritch contamination has inured your body to its effects, and you can withstand a greater accumulation of contamination.&#13;You gain proficiency in Constitution saving throws and resistance to necrotic damage.&#13;When determining which Symptoms apply to you as a result of gaining Eldritch Contamination, you are treated as having a number of Contamination Levels equal to half your current Contamination Level instead, rounded down. For example, if you gained 5 Contamination Levels, you would only suffer the Symptoms of Contamination Level 2. Thus, you would need to gain 12 Contamination Levels to undergo a Monstrous Transformation, instead of 6.&#13;In the same manner, when checking to see if you develop a mutation when you gain a new Contamination Level, you are treated as having a number of Contamination Levels equal to half your current Contamination Level instead, rounded down. For example, if you gained 4 Contamination Levels, you would only develop a new mutation if the result of the 1d6 roll is 2 or lower.&#13;Note that if you have six or more contamination levels, being subject to the purge contamination* spell will cause you to gain six (or more) levels of exhaustion, and you’ll die as a result.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
@@ -99,8 +95,7 @@
 			<p>You can’t use this feature on a Contaminated Spell, nor to increase a spell’s level higher than your highest level spell slot.</p>
 		</description>
 		<sheet>
-			<description>You can gain Contamination Levels to empower your spells. Whenever you cast a spell which has increased effects from being cast using a higher-level spell slot, you can increase the spell’s level without expending a higher-level spell slot. For each level you increase the spell’s level in this way, you gain 1 Contamination Level.
-			You can’t use this feature on a Contaminated Spell, nor to increase a spell’s level higher than your highest level spell slot.</description>
+			<description>You can gain Contamination Levels to empower your spells. Whenever you cast a spell which has increased effects from being cast using a higher-level spell slot, you can increase the spell’s level without expending a higher-level spell slot. For each level you increase the spell’s level in this way, you gain 1 Contamination Level.&#13;You can’t use this feature on a Contaminated Spell, nor to increase a spell’s level higher than your highest level spell slot.</description>
 		</sheet>
 	</element>
 
@@ -120,9 +115,7 @@
 			<p>The Game Master determines what memories you retain from your transformation, if any. Regardless, the harrowing experience will haunt you in your nightmares forever, and you gain one form of Drakkenheim Madness (see page 231).</p>
 		</description>
 		<sheet>
-			<description>If you undergo a Monstrous Transformation, you maintain control over your new form for 1 minute.
-			Unless you die, you revert back to your original form after 24 hours. When you assume your original form, you gain the benefits of a long rest and all Contamination Levels are removed from you.
-			The Game Master determines what memories you retain from your transformation, if any. Regardless, the harrowing experience will haunt you in your nightmares forever, and you gain one form of Drakkenheim Madness (see page 231).</description>
+			<description>If you undergo a Monstrous Transformation, you maintain control over your new form for 1 minute.&#13;Unless you die, you revert back to your original form after 24 hours. When you assume your original form, you gain the benefits of a long rest and all Contamination Levels are removed from you.&#13;The Game Master determines what memories you retain from your transformation, if any. Regardless, the harrowing experience will haunt you in your nightmares forever, and you gain one form of Drakkenheim Madness (see page 231).</description>
 		</sheet>
 	</element>
 </elements>
