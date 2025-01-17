@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="Barbarian-Path of the Old Gods.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Barbarian-Path%20of%20the%20Old%20Gods.xml" />
 		</update>
 	</info>
@@ -41,10 +41,7 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Your unarmed strike and attacks with any melee weapons or improvised weapons that aren’t light deal damage equal to 1d12 plus your Strength modifier. While you are raging, you gain the following benefits:
-				+ All melee weapons you wield that aren’t light gain the heavy and thrown properties, including improvised weapons. A weapon which doesn’t specify a thrown range gains a range of 30/60 while you are wielding it.
-				+ Once on your turn when you hit a creature within 5 feet of you with a melee weapon attack, you can try to grapple or shove that creature as part of the same attack.
-				+ If your size is Small, you don’t have disadvantage on attack rolls when wielding a heavy weapon.</description>
+			<description>Your unarmed strike and attacks with any melee weapons or improvised weapons that aren’t light deal damage equal to 1d12 plus your Strength modifier. While you are raging, you gain the following benefits:&#13;+ All melee weapons you wield that aren’t light gain the heavy and thrown properties, including improvised weapons. A weapon which doesn’t specify a thrown range gains a range of 30/60 while you are wielding it.&#13;+ Once on your turn when you hit a creature within 5 feet of you with a melee weapon attack, you can try to grapple or shove that creature as part of the same attack.&#13;+ If your size is Small, you don’t have disadvantage on attack rolls when wielding a heavy weapon.</description>
 		</sheet>
 	</element>
 
@@ -77,11 +74,7 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Additionally, your ability to grab enemies and turn anything into a weapon grows stronger. You gain the following benefits:
-				+ You can try to grapple or shove a creature up to two size categories larger than you
-				+ Your speed is no longer halved when you try to move a creature you’re grappling
-				+ Your unarmed strikes and attacks with improvised weapons count as magical for the purposes of overcoming resistance to bludgeoning, piercing, and slashing damage
-				+ You can treat a creature you are grappling as an improvised weapon. When you hit another target using a grappled creature as an improvised weapon, the grappled creature takes damage equal to {{adaptable combatant}}. When you use a creature as an improvised weapon, thrown attacks made with it have a range of 10/20 feet.</description>
+			<description>Additionally, your ability to grab enemies and turn anything into a weapon grows stronger. You gain the following benefits:&#13;+ You can try to grapple or shove a creature up to two size categories larger than you.&#13;+ Your speed is no longer halved when you try to move a creature you’re grappling.&#13;+ Your unarmed strikes and attacks with improvised weapons count as magical for the purposes of overcoming resistance to bludgeoning, piercing, and slashing damage.&#13;+ You can treat a creature you are grappling as an improvised weapon. When you hit another target using a grappled creature as an improvised weapon, the grappled creature takes damage equal to {{adaptable combatant}}. When you use a creature as an improvised weapon, thrown attacks made with it have a range of 10/20 feet.</description>
 		</sheet>
 		<rules>
 			<stat name="innate speed:climb" value="innate speed" bonus="base" />
@@ -107,8 +100,7 @@
 			<p>Once you use this feature, you must finish a short or long rest you can do so again.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>While you are raging, if you reduce a creature to 0 hit points, you can choose to kill them brutally, tearing off limbs, and savaging your enemy. The violent display terrifies those around you. 
-				Any enemies that can see you must make a successful DC {{brutal kill:dc}} Wisdom saving throw or become frightened of you for the next minute.</description>
+			<description>While you are raging, if you reduce a creature to 0 hit points, you can choose to kill them brutally, tearing off limbs, and savaging your enemy. The violent display terrifies those around you.&#13;Any enemies that can see you must make a successful DC {{brutal kill:dc}} Wisdom saving throw or become frightened of you for the next minute.</description>
 		</sheet>
 		<rules>
 			<stat name="brutal kill:dc" value="8" />
@@ -128,11 +120,7 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>The Old Gods have chosen you as their divine weapon, a tool to be used against evil. You gain the following benefits: 
-				+ When you are raging, you can attack three times whenever you take the Attack action on your turn. 
-				+ You can grapple or shove any creature, regardless of size. 
-				+ You can add your Strength score to the range of all thrown weapons. 
-				+ When you shove a creature, you can push it 10 feet.</description>
+			<description>The Old Gods have chosen you as their divine weapon, a tool to be used against evil. You gain the following benefits:&#13;+ When you are raging, you can attack three times whenever you take the Attack action on your turn.&#13;+ You can grapple or shove any creature, regardless of size.&#13;+ You can add your Strength score to the range of all thrown weapons. &#13;+ When you shove a creature, you can push it 10 feet.</description>
 		</sheet>
 	</element>
 </elements>
