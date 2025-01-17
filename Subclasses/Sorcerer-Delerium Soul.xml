@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="Sorcerer-Delerium Soul.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Sorcerer-Delerium%20Soul.xml" />
 		</update>
 	</info>
@@ -65,19 +65,19 @@
 
 	<element name="Mutant Manifestation" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_MUTANT_MANIFESTATION">
 		<description>
-			<p>When you finish a long rest, you can choose to roll twice on the Mutations table (see page 231), and must select one of the results. You gain that mutation, which remains until you finish a long rest, even if you don’t currently have any contamination levels.</p>
+			<p>When you finish a long rest, you can choose to roll twice on the Mutations table, and must select one of the results. You gain that mutation, which remains until you finish a long rest, even if you don’t currently have any contamination levels.</p>
 		</description>
 		<sheet>
-			<description>When you finish a long rest, you can choose to roll twice on the Mutations table (see page 231), and must select one of the results. You gain that mutation, which remains until you finish a long rest, even if you don’t currently have any contamination levels.</description>
+			<description>When you finish a long rest, you can choose to roll twice on the Mutations table, and must select one of the results. You gain that mutation, which remains until you finish a long rest, even if you don’t currently have any contamination levels.</description>
 		</sheet>
 	</element>
 
 	<element name="Contaminated Sorcery" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_CONTAMINATED_SORCERY">
 		<description>
-			<p>When you cast a contaminated spell, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell’s level. If you cast the spell using sorcery points, you don’t gain a Contamination Level by casting the spell, and if the spell requires delerium as a material component, it is not consumed by the spell. In addition, casting a contaminated spell in this manner immediately causes an Arcane Anomaly (see page 233).</p>
+			<p>When you cast a contaminated spell, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell’s level. If you cast the spell using sorcery points, you don’t gain a Contamination Level by casting the spell, and if the spell requires delerium as a material component, it is not consumed by the spell. In addition, casting a contaminated spell in this manner immediately causes an Arcane Anomal.</p>
 		</description>
 		<sheet>
-			<description>When you cast a contaminated spell, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell’s level. If you cast the spell using sorcery points, you don’t gain a Contamination Level by casting the spell, and if the spell requires delerium as a material component, it is not consumed by the spell. In addition, casting a contaminated spell in this manner immediately causes an Arcane Anomaly (see page 233).</description>
+			<description>When you cast a contaminated spell, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell’s level. If you cast the spell using sorcery points, you don’t gain a Contamination Level by casting the spell, and if the spell requires delerium as a material component, it is not consumed by the spell. In addition, casting a contaminated spell in this manner immediately causes an Arcane Anomaly.</description>
 		</sheet>
 	</element>
 
@@ -92,10 +92,10 @@
 
 	<element name="Chaos Theory" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_SORCERER_ARCHETYPE_FEATURE_DELERIUM_SOUL_CHAOS_THEORY">
 		<description>
-			<p>Once per turn when you make an attack roll, ability check, or saving throw, you can choose to trigger an Arcane Anomaly (see page 233). If you do, you make that roll with advantage. You can use this feature a number of times equal to your Charisma modifier (minimum once). You regain all expended uses when you finish a long rest.</p>
+			<p>Once per turn when you make an attack roll, ability check, or saving throw, you can choose to trigger an Arcane Anomaly. If you do, you make that roll with advantage. You can use this feature a number of times equal to your Charisma modifier (minimum once). You regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet usage="{{charisma:modifier}}/Long Rest">
-			<description>Once per turn when you make an attack roll, ability check, or saving throw, you can choose to trigger an Arcane Anomaly (see page 233). If you do, you make that roll with advantage. You can use this feature a number of times equal to your Charisma modifier (minimum once). You regain all expended uses when you finish a long rest.</description>
+			<description>Once per turn when you make an attack roll, ability check, or saving throw, you can choose to trigger an Arcane Anomaly. If you do, you make that roll with advantage. You regain all expended uses when you finish a long rest.</description>
 		</sheet>
 	</element>
 </elements>
