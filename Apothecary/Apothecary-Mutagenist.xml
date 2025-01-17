@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Apothecary-Mutagenist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Mutagenist.xml" />
 		</update>
 	</info>
@@ -105,7 +105,16 @@
 			</ul>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You may expend a spell slot to undergo a grotesque transformation. The transformation ends after one minute, or if you are reduced to 0 hit points or incapacitated. When you undergo this transformation you maintain your personality, alignment, and game statistics. However, several changes occur:&#13;+ Your Strength and Intelligence ability scores are swapped.&#13;+ Your size becomes Large, your jump distance is doubled, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.&#13;+ Each of your hands transform into a big meaty fist, which you can use to make melee weapon attacks. It counts as a simple weapon for you. Your big meaty fists deal 1d10 + {{transmogrifying elixir:big meaty fist}} bludgeoning damage on a hit.&#13;+ You cannot cast or concentrate on spells.&#13;+ You have darkvision out to a range of 120 feet.&#13;+ You gain temporary hit points equal to {{transmogrifying elixir:temphp}}.&#13;+ Your speed increases by 5 feet per level of spell slot used.&#13;+ Your AC is 13 + the level of spell slot used.&#13;+ At the start of each of your turns and as long as you have at least 1 hit point remaining, you regain a number of hit points equal to the level of the spell slot used.</description>
+			<description>You may expend a spell slot to undergo a grotesque transformation. The transformation ends after one minute, or if you are reduced to 0 hit points or incapacitated. When you undergo this transformation you maintain your personality, alignment, and game statistics. However, several changes occur:&#13;
+			• Your Strength and Intelligence ability scores are swapped.&#13;
+			• Your size becomes Large, your jump distance is doubled, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.&#13;
+			• Each of your hands transform into a big meaty fist, which you can use to make melee weapon attacks. It counts as a simple weapon for you. Your big meaty fists deal 1d10 + {{transmogrifying elixir:big meaty fist}} bludgeoning damage on a hit.&#13;
+			• You cannot cast or concentrate on spells.&#13;
+			• You have darkvision out to a range of 120 feet.&#13;
+			• You gain temporary hit points equal to {{transmogrifying elixir:temphp}}.&#13;
+			• Your speed increases by 5 feet per level of spell slot used.&#13;
+			• Your AC is 13 + the level of spell slot used.&#13;
+			• At the start of each of your turns and as long as you have at least 1 hit point remaining, you regain a number of hit points equal to the level of the spell slot used.</description>
 		</sheet>
 		<rules>
 		    <stat name="transmogrifying elixir:big meaty fist" value="intelligence:modifier" />
@@ -137,7 +146,8 @@
 			<p>When you hit with an attack using your big meaty fists, you can expend a spell slot to empower the force of your blow with unnatural energy. When you expend a spell slot in this way you deal an additional 1d8 force damage per level of spell slot used.</p>
 		</description>
 		<sheet>
-			<description>When you are in your transmogrified form, you have more powerful attacks capable of bypassing your enemy’s greatest defenses. Your big meaty fist attacks count as magical for overcoming resistance and immunity to non-magical attacks and damage.&#13; When you hit with an attack using your big meaty fists, you can expend a spell slot to empower the force of your blow with unnatural energy. When you expend a spell slot in this way you deal an additional 1d8 force damage per level of spell slot used.</description>
+			<description>When you are in your transmogrified form, you have more powerful attacks capable of bypassing your enemy’s greatest defenses. Your big meaty fist attacks count as magical for overcoming resistance and immunity to non-magical attacks and damage.&#13;
+			When you hit with an attack using your big meaty fists, you can expend a spell slot to empower the force of your blow with unnatural energy. When you expend a spell slot in this way you deal an additional 1d8 force damage per level of spell slot used.</description>
 		</sheet>
 	</element>
 
@@ -151,7 +161,9 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>You are able to use your changed biology to protect yourself from the clutches of death. When you are reduced to 0 hit points in either your natural, or transmogrified state, your other self is ready to take over.&#13;When in your natural form and reduced to 0 hit points you can immediately transform using your Transmogrifying Elixir feature expending a spell slot as normal. You regain a {{apothecary:level}} of hit points when you do (in addition to gaining temporary hit points from your transformation).&#13;When you are reduced to 0 hit points in your transmogrified form, you revert to your natural form with 1 hit point remaining. If you do, you can’t assume your transmogrified form again until you finish a short or long rest.</description>
+			<description>You are able to use your changed biology to protect yourself from the clutches of death. When you are reduced to 0 hit points in either your natural, or transmogrified state, your other self is ready to take over.&#13;
+			When in your natural form and reduced to 0 hit points you can immediately transform using your Transmogrifying Elixir feature expending a spell slot as normal. You regain a {{apothecary:level}} of hit points when you do (in addition to gaining temporary hit points from your transformation).&#13;
+			When you are reduced to 0 hit points in your transmogrified form, you revert to your natural form with 1 hit point remaining. If you do, you can’t assume your transmogrified form again until you finish a short or long rest.</description>
 		</sheet>
 	</element>
 
@@ -166,7 +178,10 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>You can use your Greater Formulas feature to transmogrify as if you had used a spell slot of that level. When you transform in this way you gain one of the additional genome mutations listed below.&#13;+ Draconic Genome. You grow fleshy wings from your back and your skin takes on a scaly appearance. You gain a flying speed equal to your walking speed and as an action can spew bile in a 30-foot cone. All creatures in the area must succeed on a DC {{unnatural evolution:dc}} Constitution saving throw or take 8d6 acid damage, or half as much on a successful save. Once you use this feature, you can not do so again until you finish a short or long rest.&#13;+ Giant Genome. You become a hulking mass of flesh and muscle, turning yourself into a living siege weapon. Your size becomes Huge and all damage dealt to objects and structures is now doubled. As an action, you can expend a spell slot on your turn to slam your fists into the ground, sending shockwaves and rubble crashing around you. All creatures in a 30-foot radius centered on you must succeed on a DC {{unnatural evolution:dc}} Dexterity saving throw or they take 8d6 bludgeoning damage and are knocked prone. If they succeed on the saving throw, they take half damage and are not knocked prone.&#13;+ Cerebellum Genome. You maintain a fraction of your mind as you transform, allowing remnants of your studies to linger in your monstrous brain. You now have the ability to maintain concentration on spells while in your transmogrified form. While transmogrified, your concentration can’t be broken as a result of taking damage.</description>
+			<description>You can use your Greater Formulas feature to transmogrify as if you had used a spell slot of that level. When you transform in this way you gain one of the additional genome mutations listed below.&#13;
+			• Draconic Genome. You grow fleshy wings from your back and your skin takes on a scaly appearance. You gain a flying speed equal to your walking speed and as an action can spew bile in a 30-foot cone. All creatures in the area must succeed on a DC {{unnatural evolution:dc}} Constitution saving throw or take 8d6 acid damage, or half as much on a successful save. Once you use this feature, you can not do so again until you finish a short or long rest.&#13;
+			• Giant Genome. You become a hulking mass of flesh and muscle, turning yourself into a living siege weapon. Your size becomes Huge and all damage dealt to objects and structures is now doubled. As an action, you can expend a spell slot on your turn to slam your fists into the ground, sending shockwaves and rubble crashing around you. All creatures in a 30-foot radius centered on you must succeed on a DC {{unnatural evolution:dc}} Dexterity saving throw or they take 8d6 bludgeoning damage and are knocked prone. If they succeed on the saving throw, they take half damage and are not knocked prone.&#13;
+			• Cerebellum Genome. You maintain a fraction of your mind as you transform, allowing remnants of your studies to linger in your monstrous brain. You now have the ability to maintain concentration on spells while in your transmogrified form. While transmogrified, your concentration can’t be broken as a result of taking damage.</description>
 		</sheet>
 		<rules>
 		    <stat name="unnatural evolution:dc" value="8" />
@@ -186,7 +201,10 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>You have perfected your Transmogrifying Elixir, breaking the confines of evolution and pushing your form to what you deem the apex of evolution. You gain the following benefits while transmogrified:&#13;+ As long as you have one or more hit points remaining, you can use a bonus action and expend a spell slot to regain hit points equal to ten times the level of the spell slot used.&#13;+ If you fail a saving throw, as a reaction you can expend a spell slot to succeed instead.&#13;+ Your Strength score becomes equal to your Intelligence score when transmogrified. Additionally, you can cast spells while in your transmogrified form.</description>
+			<description>You have perfected your Transmogrifying Elixir, breaking the confines of evolution and pushing your form to what you deem the apex of evolution. You gain the following benefits while transmogrified:&#13;
+			• As long as you have one or more hit points remaining, you can use a bonus action and expend a spell slot to regain hit points equal to ten times the level of the spell slot used.&#13;
+			• If you fail a saving throw, as a reaction you can expend a spell slot to succeed instead.&#13;
+			• Your Strength score becomes equal to your Intelligence score when transmogrified. Additionally, you can cast spells while in your transmogrified form.</description>
 		</sheet>
 	</element>
 
