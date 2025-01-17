@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Cleric-Shadow Domain.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Cleric-Shadow%20Domain.xml" />
 		</update>
 	</info>
@@ -93,7 +93,8 @@
 			<p>In addition, when you draw the cloak of night, all nonmagical light sources within 60 feet of you become extinguished. Magical light sources are dispelled if they were created by a spell with a level equal to or lower than your proficiency bonus.</p>
 		</description>
 		<sheet action="Action">
-			<description>You can use your Channel Divinity to invoke protective shadows. As an action, you draw upon a curtain of magical shadow which lasts for 1 minute. When you do, choose one creature you can see within 60 feet of you to be enveloped by the cloak of the night (which can be yourself). While the cloak lasts, that creature has resistance to all damage while it is in dim light or darkness. In addition, when you draw the cloak of night, all nonmagical light sources within 60 feet of you become extinguished. Magical light sources are dispelled if they were created by a spell with a level equal to or lower than your proficiency bonus.</description>
+			<description>You can use your Channel Divinity to invoke protective shadows. As an action, you draw upon a curtain of magical shadow which lasts for 1 minute. When you do, choose one creature you can see within 60 feet of you to be enveloped by the cloak of the night (which can be yourself). While the cloak lasts, that creature has resistance to all damage while it is in dim light or darkness.
+				In addition, when you draw the cloak of night, all nonmagical light sources within 60 feet of you become extinguished. Magical light sources are dispelled if they were created by a spell with a level equal to or lower than your proficiency bonus.</description>
 		</sheet>
 	</element>
 
