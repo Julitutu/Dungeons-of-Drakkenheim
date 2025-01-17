@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Apothecary-Alienist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Alienist.xml" />
 		</update>
 	</info>
@@ -108,7 +108,7 @@
 			<p>As an action, you can touch a willing creature to create a psychic link with it which lasts a number of hours equal to your Apothecary level or until you end the link (no action required) . The maximum number of links you can have at any time is equal to your proficiency bonus. All the creatures tethered in this way can communicate telepathically with one another as long as they are within 100 feet of each other.</p>
 		</description>
 		<sheet action="Action">
-			<description>As an action, you can touch a willing creature to create a psychic link with it which lasts {{apothecary:level}} hours or until you end the link (no action required).</description>
+			<description>As an action, you can touch a willing creature to create a psychic link with it which lasts {{level:apothecary}} hours or until you end the link (no action required).</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
