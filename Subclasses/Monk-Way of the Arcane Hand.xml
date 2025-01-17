@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Monk-Way of the Arcane Hand.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Monk-Way%20of%20the%20Arcane%20Hand.xml" />
 		</update>
 	</info>
@@ -42,7 +42,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
 			<stat name="arcana" value="wisdom:modifire" bonus="base" />
 			<stat name="history" value="wisdom:modifire" bonus="base" />
-			<stat name="investigation<" value="wisdom:modifire" bonus="base" />
+			<stat name="investigation" value="wisdom:modifire" bonus="base" />
 			<stat name="nature" value="wisdom:modifire" bonus="base" />
 			<stat name="religion" value="wisdom:modifire" bonus="base" />
 		</rules>
