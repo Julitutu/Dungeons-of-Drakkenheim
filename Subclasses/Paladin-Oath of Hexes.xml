@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="Paladin-Oath of Hexes.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Paladin-Oath%20of%20Hexes.xml" />
 		</update>
 	</info>
@@ -75,9 +75,14 @@
 			<p class="indent"><b><i>Curse of Torment.</i></b> As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for one minute. While suffering this pain, it takes necrotic damage equal to your paladin level at the start of each of its turns. Each time it takes this damage, it can make a Wisdom saving throw against your spell save DC. On a successful save, the pain ends.</p>
 		</description>
 		<sheet usage="Channel Divinity">
-			<description>Curse of Hexes. As an action, you curse one creature you can see within 30 feet of you. When you curse a target, choose an ability score. The chosen creature has disadvantage on attack rolls, saving throws, and ability checks using that ability score for one minute or until it drops to 0 hit points or falls unconscious. At the end of each of the cursed creature’s turns, it can make a Charisma saving throw against your spell save DC. On a successful save, the curse ends.</description>
-			<description>Curse of Torment. As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for one minute. While suffering this pain, it takes necrotic damage equal to your paladin level at the start of each of its turns. Each time it takes this damage, it can make a Wisdom saving throw against your spell save DC. On a successful save, the pain ends.</description>
+			<description>Curse of Hexes. As an action, you curse one creature you can see within 30 feet of you. When you curse a target, choose an ability score. The chosen creature has disadvantage on attack rolls, saving throws, and ability checks using that ability score for one minute or until it drops to 0 hit points or falls unconscious. At the end of each of the cursed creature’s turns, it can make a DC {{channel divinity:hexes:dc}} Charisma saving throw. On a successful save, the curse ends.
+			Curse of Torment. As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for one minute. While suffering this pain, it takes {{level:paladin}} necrotic damage at the start of each of its turns. Each time it takes this damage, it can make a DC {{channel divinity:hexes:dc}} Wisdom saving throw. On a successful save, the pain ends.</description>
 		</sheet>
+		<rules>
+		    <stat name="channel divinity:hexes:dc" value="8" />
+		    <stat name="channel divinity:hexes:dc" value="proficiency" />
+		    <stat name="channel divinity:hexes:dc" value="charisma:modifier" />
+		</rules>
 	</element>
 
 	<element name="Bewitching Aura" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_BEWITCHING_AURA">
@@ -86,9 +91,14 @@
 			<p>At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>You emit an eldritch aura out to a range of 10 feet. When an enemy hits you or a creature within 10 feet of you with an attack, you can use your reaction to force that enemy to make a Charisma saving throw against your spell save DC. On a failed save, you can magically redirect the attack to another creature of your choice within 10 feet of you and within range of the attack. The new target is hit by the attack and suffers all damage and effects.</description>
-			<description level="18">You emit an eldritch aura out to a range of 30 feet. When an enemy hits you or a creature within 30 feet of you with an attack, you can use your reaction to force that enemy to make a Charisma saving throw against your spell save DC. On a failed save, you can magically redirect the attack to another creature of your choice within 30 feet of you and within range of the attack. The new target is hit by the attack and suffers all damage and effects.</description>
+			<description>You emit an eldritch aura out to a range of 10 feet. When an enemy hits you or a creature within 10 feet of you with an attack, you can use your reaction to force that enemy to make a DC {{channel divinity:hexes:dc}} Charisma saving throw. On a failed save, you can magically redirect the attack to another creature of your choice within 10 feet of you and within range of the attack. The new target is hit by the attack and suffers all damage and effects.</description>
+			<description level="18">You emit an eldritch aura out to a range of 30 feet. When an enemy hits you or a creature within 30 feet of you with an attack, you can use your reaction to force that enemy to make a DC {{channel divinity:hexes:dc}} Charisma saving throw. On a failed save, you can magically redirect the attack to another creature of your choice within 30 feet of you and within range of the attack. The new target is hit by the attack and suffers all damage and effects.</description>
 		</sheet>
+		<rules>
+		    <stat name="channel divinity:hexes:dc" value="8" />
+		    <stat name="channel divinity:hexes:dc" value="proficiency" />
+		    <stat name="channel divinity:hexes:dc" value="charisma:modifier" />
+		</rules>
 	</element>
 
 	<element name="Reversal of Fortune" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_PALADIN_ARCHETYPE_FEATURE_OATH_OF_HEXES_REVERSAL_OF_FORTUNE">
