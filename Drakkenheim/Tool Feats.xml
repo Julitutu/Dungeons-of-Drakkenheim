@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Tool Feats</name>
-		<update version="0.1.0">
+		<update version="0.1.2">
 			<file name="Tool Feats.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Drakkenheim/Tool%20Feats.xml" />
 		</update>
 	</info>
@@ -16,7 +16,8 @@
 			<p>During a long rest, you can prepare a hearty meal for up to eight creatures using any ingredients at hand. Creatures who consume the meal gain a hearty resistance for 24 hours. While a creature has this hearty resistance, if that creature fails a saving throw, it can choose to succeed instead. It can use this benefit once, then the hearty resistance expires.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>Whenever you take a short rest, you and up to 6 allies can enjoy a quick meal prepared by you. When they do, any hit dice they use during that rest count as if they had rolled their maximum.&#13;During a long rest, you can prepare a hearty meal for up to eight creatures using any ingredients at hand. Creatures who consume the meal gain a hearty resistance for 24 hours. While a creature has this hearty resistance, if that creature fails a saving throw, it can choose to succeed instead.</description>
+			<description>Whenever you take a short rest, you and up to 6 allies can enjoy a quick meal prepared by you. When they do, any hit dice they use during that rest count as if they had rolled their maximum.&#13;
+			During a long rest, you can prepare a hearty meal for up to eight creatures using any ingredients at hand. Creatures who consume the meal gain a hearty resistance for 24 hours. While a creature has this hearty resistance, if that creature fails a saving throw, it can choose to succeed instead.</description>
 		</sheet>
 	</element>
 	<element name="Arcane Fletcher" type="Feat" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_FEAT_ARCANE_FLETCHER">
@@ -49,25 +50,19 @@
 			</ul>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description usage="1/Long Rest">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create
-			<div class="reference">
-				<div element="ID_WOTC_PHB_ITEM_ALCHEMISTS_FIRE_FLASK" />
-			</div></description>
-			<description level="5">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field.
-			<div class="reference">
-				<div element="ID_WOTC_PHB_ITEM_ALCHEMISTS_FIRE_FLASK" />
-			</div><div class="reference">
-				<div element="ID_WOTC_DMG_ITEM_BOMB" />
-			</div></description>
-			<description level="11">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field.
-			<div class="reference">
-				<div element="ID_WOTC_PHB_ITEM_ALCHEMISTS_FIRE_FLASK" />
-			</div><div class="reference">
-				<div element="ID_WOTC_DMG_ITEM_BOMB" />
-			</div>
-			<div class="reference">
-				<div element="ID_WOTC_DMG_ITEM_GRENADE_FRAGMENTATION" />
-			</div></description>
+			<description usage="1/Long Rest">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create:&#13;
+			• Level 1 — Alchemist’s fire.&#13;
+			• Level 5 — Bomb.&#13;
+			• Level 11 — Grenade.
+			</description>
+			<description level="5">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field.You can create:&#13;
+			• Level 1 — Alchemist’s fire.&#13;
+			• Level 5 — Bomb.&#13;
+			</description>
+			<description level="11">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field.You can create:&#13;
+			• Level 1 — Alchemist’s fire.&#13;
+			• Level 5 — Bomb.&#13;
+			• Level 11 — Grenade.</description>
 		</sheet>
 	</element>
 	<element name="Expert Armorsmith" type="Feat" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_FEAT_EXPERT_ARMOSMITH">
@@ -81,8 +76,10 @@
 			<p class="indent">Starting at 12th level, your smithing skills now grant immunity instead of resistance to the chosen damage type.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>Whenever you take a long rest, you are able to improve one piece of non-magical armor for you or an ally. You must spend 1 hour to do so, and have access to your tools during this time..&#13;You may choose one of the following damage types: fire, cold, lightning, acid, or poison. The armor grants its wearer resistance to that damage type until you use this feature again.</description>
-			<description level="12">Whenever you take a long rest, you are able to improve one piece of non-magical armor for you or an ally. You must spend 1 hour to do so, and have access to your tools during this time.&#13;You may choose one of the following damage types: fire, cold, lightning, acid, or poison. The armor grants its wearer immunity to that damage type until you use this feature again.</description>
+			<description>Whenever you take a long rest, you are able to improve one piece of non-magical armor for you or an ally. You must spend 1 hour to do so, and have access to your tools during this time.&#13;
+			You may choose one of the following damage types: fire, cold, lightning, acid, or poison. The armor grants its wearer resistance to that damage type until you use this feature again.</description>
+			<description level="12">Whenever you take a long rest, you are able to improve one piece of non-magical armor for you or an ally. You must spend 1 hour to do so, and have access to your tools during this time.&#13;
+			You may choose one of the following damage types: fire, cold, lightning, acid, or poison. The armor grants its wearer immunity to that damage type until you use this feature again.</description>
 		</sheet>
 	</element>
 	<element name="Expert Bowyer" type="Feat" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_FEAT_EXPERT_BOWYER">
@@ -188,25 +185,15 @@
 			</ul>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create
-			<div class="reference">
-				<div element="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_HEALING" />
-			</div></description>
-			<description level="5">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field.
-			<div class="reference">
-				<div element="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_HEALING" />
-			</div><div class="reference">
-				<div element="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_GREATER_HEALING" />
-			</div></description>
-			<description level="11">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field.
-			<div class="reference">
-				<div element="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_HEALING" />
-			</div><div class="reference">
-				<div element="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_GREATER_HEALING" />
-			</div>
-			<div class="reference">
-				<div element="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_SUPREME_HEALING" />
-			</div></description>
+			<description>Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create:&#13;
+			• Level 1 — Potion of healing.&#13;</description>
+			<description level="5">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create:&#13;
+			• Level 1 — Potion of healing.&#13;
+			• Level 5 — Potion of greater healing.&#13;</description>
+			<description level="11">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create:&#13;
+			• Level 1 — Potion of healing.&#13;
+			• Level 5 — Potion of greater healing.&#13;
+			• Level 11 — Potion of supreme healing.</description>
 		</sheet>
 	</element>
 	<element name="Proficient Poisoner" type="Feat" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_FEAT_PROFCIENT_POISONER">
@@ -223,25 +210,15 @@
 			</ul>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create
-			<div class="reference">
-				<div element="ID_WOTC_PHB_ITEM_POISON_BASIC_VIAL" />
-			</div></description>
-			<description level="5">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field.
-			<div class="reference">
-				<div element="ID_WOTC_PHB_ITEM_POISON_BASIC_VIAL" />
-			</div><div class="reference">
-				<div element="ID_WOTC_DMG_ITEM_POISON_SERPENT_VENOM" />
-			</div></description>
-			<description level="11">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field.
-			<div class="reference">
-				<div element="ID_WOTC_PHB_ITEM_POISON_BASIC_VIAL" />
-			</div><div class="reference">
-				<div element="ID_WOTC_DMG_ITEM_POISON_SERPENT_VENOM" />
-			</div>
-			<div class="reference">
-				<div element="ID_WOTC_DMG_ITEM_POISON_WYVERN_POISON" />
-			</div></description>
+			<description>Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create:&#13;
+			• Level 1 — Basic Poison.&#13;</description>
+			<description level="5">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create:&#13;
+			• Level 1 — Basic Poison.&#13;
+			• Level 5 — Serpent Venom.&#13;</description>
+			<description level="11">Once per day after finishing a long rest, you can spend one hour working with your chosen tools to create a special concoction or infusion using materials harvested or found in the field. You can create:&#13;
+			• Level 1 — Basic Poison.&#13;
+			• Level 5 — Serpent Venom.&#13;
+			• Level 11 — Wyvern Poison.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
@@ -256,7 +233,8 @@
 			<p>The scroll you create can be any spell you know of a level equal to or lower than your proficiency bonus. Any scroll created this way loses its magical potency if you use this feature again.</p>
 		</description>
 		<sheet>
-			<description>After finishing a long rest, you can spend one hour working with your chosen tools to create a spell scroll.&#13;The scroll you create can be any spell you know of {{proficiency}} level or lower. Any scroll created this way loses its magical potency if you use this feature again.</description>
+			<description>After finishing a long rest, you can spend one hour working with your chosen tools to create a spell scroll.&#13;
+			The scroll you create can be any spell you know of {{proficiency}} level or lower. Any scroll created this way loses its magical potency if you use this feature again.</description>
 		</sheet>
 	</element>
 	<element name="Trapmaker" type="Feat" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_SCGTD_FEAT_TRAMAKER">
@@ -277,8 +255,17 @@
 			<p>The saving throw DC for your traps equals 8 + your proficiency bonus + your Intelligence or Dexterity modifier (your choice)</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>These traps can be placed on the ground as an action and take up a 5-foot-by-5-foot square. A creature who investigates the area must succeed on a DC 15 Wisdom (Perception) or Intelligence (Investigation) to see the trap..&#13;+ Ensnaring trap.DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, it is restrained until it escapes by spending an action to make a DC {{trapmaker:dc}} strength check.&#13;+ Spiked trap.DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, the creature takes 2d6 piercing damage..&#13;+ Sonic trap.The trap makes a sound audible out to 300 feet.</description>
-			<description level="10">These traps can be placed on the ground as an action and take up a 5-foot-by-5-foot square. A creature who investigates the area must succeed on a DC 15 Wisdom (Perception) or Intelligence (Investigation) to see the trap..&#13;+ Ensnaring trap. DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, it is restrained until it escapes by spending an action to make a DC {{trapmaker:dc}} strength check..&#13;+ Spiked trap. DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, the creature takes 2d6 piercing damage..&#13;+ Sonic trap.The trap makes a sound audible out to 300 feet..&#13;+ Exploding trap. DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, the creature takes 4d6 fire damage and is knocked prone..&#13;+ Poison trap. DC {{trapmaker:dc}} Constitution saving throw. On a failed save, the creature takes 3d8 poison damage and becomes poisoned until the end of its next turn..&#13;+ Gas trap. DC {{trapmaker:dc}} Wisdom saving throw. On a failed save, the creature is incapacitated until the end of its next turn.</description>
+			<description>These traps can be placed on the ground as an action and take up a 5-foot-by-5-foot square. A creature who investigates the area must succeed on a DC 15 Wisdom (Perception) or Intelligence (Investigation) to see the trap.&#13;
+			• Ensnaring trap.DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, it is restrained until it escapes by spending an action to make a DC {{trapmaker:dc}} strength check.&#13;
+			• Spiked trap.DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, the creature takes 2d6 piercing damage.&#13;
+			• Sonic trap.The trap makes a sound audible out to 300 feet.</description>
+			<description level="10">These traps can be placed on the ground as an action and take up a 5-foot-by-5-foot square. A creature who investigates the area must succeed on a DC 15 Wisdom (Perception) or Intelligence (Investigation) to see the trap.&#13;
+			• Ensnaring trap. DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, it is restrained until it escapes by spending an action to make a DC {{trapmaker:dc}} strength check.&#13;
+			• Spiked trap. DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, the creature takes 2d6 piercing damage.&#13;
+			• Sonic trap.The trap makes a sound audible out to 300 feet.&#13;
+			• Exploding trap. DC {{trapmaker:dc}} Dexterity saving throw. On a failed save, the creature takes 4d6 fire damage and is knocked prone.&#13;
+			• Poison trap. DC {{trapmaker:dc}} Constitution saving throw. On a failed save, the creature takes 3d8 poison damage and becomes poisoned until the end of its next turn.&#13;
+			• Gas trap. DC {{trapmaker:dc}} Wisdom saving throw. On a failed save, the creature is incapacitated until the end of its next turn.</description>
 		</sheet>
 		<rules>
 			<stat name="trapmaker:ability" value="intelligence:modifier" bonus="trapmaker:ability" />
