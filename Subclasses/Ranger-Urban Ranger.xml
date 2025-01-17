@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="Ranger-Urban Ranger.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Ranger-Urban%20Ranger.xml" />
 		</update>
 	</info>
@@ -64,12 +64,15 @@
 			<p>In addition, when you take the Dash action on your turn, you can move through other creature’s spaces without penalty (but not stop there). When you do, your movement doesn’t provoke opportunity attacks.</p>
 		</description>
 		<sheet>
-			<description>You gain a climb speed equal to your walking speed, and proficiency in the Athletics and Acrobatic skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</description>
-			<description>In addition, when you take the Dash action on your turn, you can move through other creature’s spaces without penalty (but not stop there). When you do, your movement doesn’t provoke opportunity attacks.</description>
+			<description>You gain a climb speed equal to your walking speed, and proficiency in the Athletics and Acrobatic skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
+			In addition, when you take the Dash action on your turn, you can move through other creature’s spaces without penalty (but not stop there). When you do, your movement doesn’t provoke opportunity attacks.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+			<stat name="athletics:proficiency" value="proficiency" bonus="double" />
+			<stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
@@ -89,6 +92,9 @@
 		<sheet action="Bonus Action">
 			<description>Your movement speed increases by 10 feet, and you can take the Dash action as a bonus action on your turn. In addition, you have mastered the means to propel yourself forwards and upwards when you move and climb. When you take the Dash action on your turn, your jumping distance increases to match your movement speed.</description>
 		</sheet>
+		<rules>
+			<stat name="innate speed" value="10" bonus="base" />
+		</rules>
 	</element>
 
 	<element name="Perfect Position" type="Archetype Feature" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_RANGER_ARCHETYPE_FEATURE_URBAN_RANGER_PERFECT_POSITION">
