@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.4">
 			<file name="Paladin-Oath of Hexes.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Paladin-Oath%20of%20Hexes.xml" />
 		</update>
 	</info>
@@ -75,8 +75,7 @@
 			<p class="indent"><b><i>Curse of Torment.</i></b> As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for one minute. While suffering this pain, it takes necrotic damage equal to your paladin level at the start of each of its turns. Each time it takes this damage, it can make a Wisdom saving throw against your spell save DC. On a successful save, the pain ends.</p>
 		</description>
 		<sheet usage="Channel Divinity">
-			<description>Curse of Hexes. As an action, you curse one creature you can see within 30 feet of you. When you curse a target, choose an ability score. The chosen creature has disadvantage on attack rolls, saving throws, and ability checks using that ability score for one minute or until it drops to 0 hit points or falls unconscious. At the end of each of the cursed creature’s turns, it can make a DC {{channel divinity:hexes:dc}} Charisma saving throw. On a successful save, the curse ends.
-			Curse of Torment. As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for one minute. While suffering this pain, it takes {{level:paladin}} necrotic damage at the start of each of its turns. Each time it takes this damage, it can make a DC {{channel divinity:hexes:dc}} Wisdom saving throw. On a successful save, the pain ends.</description>
+			<description>Curse of Hexes. As an action, you curse one creature you can see within 30 feet of you. When you curse a target, choose an ability score. The chosen creature has disadvantage on attack rolls, saving throws, and ability checks using that ability score for one minute or until it drops to 0 hit points or falls unconscious. At the end of each of the cursed creature’s turns, it can make a DC {{channel divinity:hexes:dc}} Charisma saving throw. On a successful save, the curse ends.&#13;Curse of Torment. As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for one minute. While suffering this pain, it takes {{level:paladin}} necrotic damage at the start of each of its turns. Each time it takes this damage, it can make a DC {{channel divinity:hexes:dc}} Wisdom saving throw. On a successful save, the pain ends.</description>
 		</sheet>
 		<rules>
 		    <stat name="channel divinity:hexes:dc" value="8" />
