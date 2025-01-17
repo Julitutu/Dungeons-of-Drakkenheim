@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Apothecary-Mutagenist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Mutagenist.xml" />
 		</update>
 	</info>
@@ -105,7 +105,7 @@
 			</ul>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You may expend a spell slot to undergo a grotesque transformation. The transformation ends after one minute, or if you are reduced to 0 hit points or incapacitated. When you undergo this transformation you maintain your personality, alignment, and game statistics. However, several changes occur:&#13;+ Your Strength and Intelligence ability scores are swapped.&#13;+ Your size becomes Large, your jump distance is doubled, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.&#13;+ Each of your hands transform into a big meaty fist, which you can use to make melee weapon attacks. It counts as a simple weapon for you. Your big meaty fists deal 1d10 + {{transmogrifying elixir:big meaty fist}} bludgeoning damage on a hit.&#13;+ You cannot cast or concentrate on spells.&#13;+ You have darkvision out to a range of 120 feet.&#13;+ You gain temporary hit points equal to {{transmogrifying elixir:temphp}}.&#13;+ Your speed increases by 5 feet per level of spell slot used.<&#13;+ Your AC is 13 + the level of spell slot used.&#13;+ At the start of each of your turns and as long as you have at least 1 hit point remaining, you regain a number of hit points equal to the level of the spell slot used.</description>
+			<description>You may expend a spell slot to undergo a grotesque transformation. The transformation ends after one minute, or if you are reduced to 0 hit points or incapacitated. When you undergo this transformation you maintain your personality, alignment, and game statistics. However, several changes occur:&#13;+ Your Strength and Intelligence ability scores are swapped.&#13;+ Your size becomes Large, your jump distance is doubled, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.&#13;+ Each of your hands transform into a big meaty fist, which you can use to make melee weapon attacks. It counts as a simple weapon for you. Your big meaty fists deal 1d10 + {{transmogrifying elixir:big meaty fist}} bludgeoning damage on a hit.&#13;+ You cannot cast or concentrate on spells.&#13;+ You have darkvision out to a range of 120 feet.&#13;+ You gain temporary hit points equal to {{transmogrifying elixir:temphp}}.&#13;+ Your speed increases by 5 feet per level of spell slot used.&#13;+ Your AC is 13 + the level of spell slot used.&#13;+ At the start of each of your turns and as long as you have at least 1 hit point remaining, you regain a number of hit points equal to the level of the spell slot used.</description>
 		</sheet>
 		<rules>
 		    <stat name="transmogrifying elixir:big meaty fist" value="intelligence:modifier" />
