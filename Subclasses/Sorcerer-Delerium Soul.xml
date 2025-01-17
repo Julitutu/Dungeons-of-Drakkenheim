@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.4">
 			<file name="Sorcerer-Delerium Soul.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Sorcerer-Delerium%20Soul.xml" />
 		</update>
 	</info>
