@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="Monk-Way of the Serpent.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Monk-Way%20of%20the%20Serpent.xml" />
 		</update>
 	</info>
@@ -33,8 +33,8 @@
 			<p>While wielding a quarterstaff, spear, or trident in two hands, that weapon gains the Reach property.</p>
 		</description>
 		<sheet>
-			<description>You gain proficiency with the glaive, halberd, pike, trident, and similar spears and polearms. These weapons count as monk weapons for you, even if they have the heavy or two-handed properties. Furthermore, your grace and mastery of these weapons does not limit your ability to make unarmed strikes while wielding a two-handed weapon.</description>
-			<description>While wielding a quarterstaff, spear, or trident in two hands, that weapon gains the Reach property.</description>
+			<description>You gain proficiency with the glaive, halberd, pike, trident, and similar spears and polearms. These weapons count as monk weapons for you, even if they have the heavy or two-handed properties. Furthermore, your grace and mastery of these weapons does not limit your ability to make unarmed strikes while wielding a two-handed weapon.
+			While wielding a quarterstaff, spear, or trident in two hands, that weapon gains the Reach property.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" />
@@ -50,8 +50,8 @@
 			<p>While wielding a weapon with the Reach property, when you expend a ki point to use your Step of the Wind feature, your jump distance is instead tripled for the turn, and you gain advantage on your next melee weapon attack you make this turn.</p>
 		</description>
 		<sheet>
-			<description>You can use polearm weapons to vault into the air. While you are wielding a weapon with the Reach property, your jump distance is doubled.</description>
-			<description>While wielding a weapon with the Reach property, when you expend a ki point to use your Step of the Wind feature, your jump distance is instead tripled for the turn, and you gain advantage on your next melee weapon attack you make this turn.</description>
+			<description>You can use polearm weapons to vault into the air. While you are wielding a weapon with the Reach property, your jump distance is doubled.
+			While wielding a weapon with the Reach property, when you expend a ki point to use your Step of the Wind feature, your jump distance is instead tripled for the turn, and you gain advantage on your next melee weapon attack you make this turn.</description>
 		</sheet>
 	</element>
 
@@ -65,10 +65,10 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>You learn the following techniques to augment your attacks:</description>
-			<description>Cobra Strike. When a creature you can see moves into your reach, you can use your reaction to make one attack against that creature.</description>
-			<description>Python Strike. When you hit a creature with an opportunity attack, you can also use your Stunning Strike on that attack without expending a ki point.</description>
-			<description>Viper Strike. Once on your turn when you hit a creature with a melee weapon attack, you can expend 1 or more ki points, up to a number equal to your proficiency bonus. The attack deals 1d6 poison damage, plus 1d6 additional poison damage per ki point spent, and the target is poisoned until the end of your next turn.</description>
+			<description>You learn the following techniques to augment your attacks:
+			Cobra Strike. When a creature you can see moves into your reach, you can use your reaction to make one attack against that creature.
+			Python Strike. When you hit a creature with an opportunity attack, you can also use your Stunning Strike on that attack without expending a ki point.
+			Viper Strike. Once on your turn when you hit a creature with a melee weapon attack, you can expend 1 or more ki points, up to a number equal to {{proficiency}}. The attack deals 1d6 poison damage, plus 1d6 additional poison damage per ki point spent, and the target is poisoned until the end of your next turn.</description>
 		</sheet>
 	</element>
 
@@ -83,7 +83,11 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>At the start of your turn, you can adopt a serpent stance (no action required). When you do, choose one of the following serpent stances, which last until you are incapacitated or use this feature again.</description>
+			<description>At the start of your turn, you can adopt a serpent stance (no action required). When you do, choose one of the following serpent stances, which last until you are incapacitated or use this feature again.
+			Anaconda Stance. While using this stance, increase the reach of your melee weapon attacks and unarmed strikes by 10 feet.
+			Black Mamba Stance. While using this stance, once per turn when you miss with a weapon attack, you can take one reaction on every turn in combat, instead of once each round.
+			Couatl Stance. While using this stance, you gain a flying speed equal to your walking speed.
+			Marilith Stance. While using this stance, you can take one reaction on every turn in combat, instead of once each round.</description>
 		</sheet>
 		<rules>
 			<select type="Archetype Feature" name="Serpent Stance" supports="Serpent Stance" level="11" />
