@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="Rogue-Smuggler.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Subclasses/Rogue-Smuggler.xml" />
 		</update>
 	</info>
@@ -55,7 +55,7 @@
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LAND_VEHICLES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
 		</rules>
 	</element>
 
