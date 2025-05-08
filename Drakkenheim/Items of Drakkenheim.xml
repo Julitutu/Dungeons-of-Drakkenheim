@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items of Drakkenheim</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Items of Drakkenheim.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Drakkenheim/Items%20of%20Drakkenheim.xml" />
 		</update>
 	</info>
@@ -55,7 +55,7 @@
 			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_OCCULTISTS_TOOLS</set>
 		</setters>
 	</element>
-	<element name="Cosmologist’s Tools" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_CARTOGRAPHERS_TOOLS">
+	<element name="Cosmologist’s Tools" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_COSMOLOGIST_TOOLS">
 		<description>
 			<p>This small lockbox contains a star map, a scroll of known constellations, an armillary sphere, sun dial, astrolabe, and a spyglass. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to determine time of day, location, or direction, as well as recalling any relevant information related to stars, cosmos, gods, or planes.</p>
 		</description>
@@ -64,7 +64,7 @@
 			<set name="cost" currency="gp">15</set>
 			<set name="weight" lb="6">6 lbs.</set>
 			<set name="type">Tool</set>
-			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_COSMOLOGIST_TOOLS</set>
 		</setters>
 	</element>
 	<element name="Doctor’s Bag" type="Item" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_GFG_SCGTD_ITEM_TOOL_DOCTORS_BAG">
@@ -1259,4 +1259,26 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_IMPROVISED_WEAPONS</set>
 		</setters>
 	</element>
+
+
+	<!--Adding Proficiencies To Tools-->
+
+	<element name="Tool Proficiency (Investigator’s Kit)" type="Proficiency" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_PROFICIENCY_TOOL_PROFICIENCY_INVESTIGATORS_KIT">
+        <supports>Tool</supports>
+    </element>
+	<element name="Tool Proficiency (Vampire Hunter’s Case)" type="Proficiency" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VAMPIRE_HUNTERS_CASE">
+        <supports>Tool</supports>
+    </element>
+	<element name="Tool Proficiency (Exorcist’s Kit)" type="Proficiency" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_PROFICIENCY_TOOL_PROFICIENCY_EXORCISTS_KIT">
+        <supports>Tool</supports>
+    </element>
+	<element name="Tool Proficiency (Occultist’s Tools)" type="Proficiency" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_PROFICIENCY_TOOL_PROFICIENCY_OCCULTISTS_TOOLS">
+        <supports>Tool</supports>
+    </element>
+	<element name="Tool Proficiency (Cosmologist’s Tools)" type="Proficiency" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COSMOLOGIST_TOOLS">
+        <supports>Tool</supports>
+    </element>
+	<element name="Tool Proficiency (Doctor’s Bag)" type="Proficiency" source="Sebastien Crowe's Guide to Drakkenheim" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DOCTORS_BAG">
+        <supports>Tool</supports>
+    </element>
 </elements>
