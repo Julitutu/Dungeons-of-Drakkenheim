@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Apothecary-Mutagenist.xml" url="https://raw.githubusercontent.com/Julitutu/Dungeons-of-Drakkenheim/refs/heads/main/Apothecary/Apothecary-Mutagenist.xml" />
 		</update>
 	</info>
@@ -44,7 +44,7 @@
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
-			<select type="Proficiency" name="Tool Proficiency (Natural Philosophy)" supports="ID_WOTC_PHB_ITEM_TOOL_HERBALISM_KIT||ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT" />
+			<select type="Proficiency" name="Tool Proficiency (Natural Philosophy)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
 			<select type="Language" name="Language (Natural Philosophy)" number="2" supports="Standard||Exotic" />
 			<select type="Proficiency" name="Skill Proficiency (Natural Philosophy)" supports="Skill" default="ID_PROFICIENCY_SKILL_NATURE" />
 		</rules>
